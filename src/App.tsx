@@ -1,10 +1,10 @@
 // Replace the placeholder href values here when your social profiles are ready.
 const socialLinks = [
-  { label: 'TikTok', href: '#' },
-  { label: 'Instagram', href: '#' },
-  { label: 'YouTube', href: '#' },
-  { label: 'Facebook', href: '#' },
-  { label: 'Substack', href: '#' },
+  { label: 'TikTok', href: 'https://www.tiktok.com/@simpleteacherai' },
+  { label: 'Instagram', href: 'https://www.instagram.com/simple_teacher_ai/' },
+  { label: 'YouTube', href: 'https://www.youtube.com/@SimpleTeacherAI' },
+  { label: 'Facebook', href: 'https://www.facebook.com/SimpleTeacherAI' },
+  { label: 'Substack', href: 'https://simpleteacherai.substack.com/' },
 ] as const
 
 const resources = [
@@ -78,7 +78,7 @@ function App() {
             <p className="mx-auto mt-3 max-w-xl text-base leading-7 text-white/80">Find practical ideas, honest experiments, and teacher-friendly tips wherever you like to scroll.</p>
             <nav aria-label="Social media" className="mt-8 flex flex-wrap justify-center gap-3">
               {socialLinks.map((social) => (
-                <a key={social.label} href={social.href} className="rounded-full border border-white/35 bg-white/10 px-5 py-3 text-sm font-bold text-white transition-colors hover:bg-white hover:text-[var(--green)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--focus-light)]">{social.label}</a>
+                <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer" className="rounded-full border border-white/35 bg-white/10 px-5 py-3 text-sm font-bold text-white transition-colors hover:bg-white hover:text-[var(--green)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--focus-light)]">{social.label}</a>
               ))}
             </nav>
           </div>
