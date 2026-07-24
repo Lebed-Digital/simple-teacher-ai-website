@@ -153,7 +153,12 @@ function App() {
               <p className="mt-4 text-lg leading-8 text-[var(--muted)]">Copy a prompt, paste it into ChatGPT, Claude, or Gemini, then add your own details. Each one is built to help in under a minute.</p>
             </div>
 
-            <article className="mt-12 rounded-3xl border-2 border-[var(--green)] bg-white p-7 shadow-[6px_6px_0_var(--yellow)] sm:p-10">
+            <aside className="mt-8 rounded-2xl border border-[var(--blue)] bg-[var(--blue-light)] p-6 sm:p-7" aria-label="Privacy reminder">
+              <p className="text-sm font-bold uppercase tracking-[0.14em] text-[var(--blue-dark)]">Read this first: a quick privacy note</p>
+              <p className="mt-3 text-base leading-7 text-[var(--ink)]">Tools like Claude for Teachers add extra K-12 privacy protections and do not use your content to train the AI. Even so, your school and district policies still apply. When you can, remove student names and other identifying details before pasting anything into an AI tool. The AI does not need a real name to help you, and you can add it back afterward.</p>
+            </aside>
+
+            <article className="mt-6 rounded-3xl border-2 border-[var(--green)] bg-white p-7 shadow-[6px_6px_0_var(--yellow)] sm:p-10">
               <span className="inline-flex rounded-full bg-[var(--green)] px-3 py-1 text-sm font-bold uppercase tracking-[0.12em] text-white">{featuredPrompt.eyebrow}</span>
               <h3 className="mt-5 font-serif text-2xl font-bold tracking-[-0.02em] text-[var(--green)] sm:text-3xl">{featuredPrompt.title}</h3>
               <p className="mt-3 text-base leading-7 text-[var(--muted)] sm:text-lg">{featuredPrompt.description}</p>
@@ -175,11 +180,6 @@ function App() {
                 </article>
               ))}
             </div>
-
-            <aside className="mt-10 rounded-2xl border border-[var(--blue)] bg-[var(--blue-light)] p-6 sm:p-7" aria-label="Privacy reminder">
-              <p className="text-sm font-bold uppercase tracking-[0.14em] text-[var(--blue-dark)]">A quick privacy note</p>
-              <p className="mt-3 text-base leading-7 text-[var(--ink)]">Tools like Claude for Teachers add extra K-12 privacy protections and do not use your content to train the AI. Even so, your school and district policies still apply. When you can, remove student names and other identifying details before pasting anything into an AI tool. The AI does not need a real name to help you, and you can add it back afterward.</p>
-            </aside>
           </div>
         </section>
 
