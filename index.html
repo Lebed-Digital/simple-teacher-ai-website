@@ -16,15 +16,30 @@
     <meta name="twitter:title" content="Simple Teacher AI | Practical AI Help for Teachers" />
     <meta name="twitter:description" content="Practical, teacher-friendly AI prompts, tools, tutorials, and honest advice from a real classroom teacher." />
     <title>Simple Teacher AI | Practical AI Help for Teachers</title>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-92MDBR2WW8"></script>
+    <!-- Google Analytics (production hostname only, and only for real users — skips headless/automated browsers and Greg's dev flag) -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      if (window.location.hostname === 'www.simpleteacherai.com') {
-        gtag('config', 'G-92MDBR2WW8');
-      }
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var devFlag = params.get('sta_dev');
+        if (devFlag === '1') window.localStorage.setItem('sta_dev', '1');
+        if (devFlag === '0') window.localStorage.removeItem('sta_dev');
+
+        if (
+          window.location.hostname === 'www.simpleteacherai.com' &&
+          !navigator.webdriver &&
+          window.localStorage.getItem('sta_dev') !== '1'
+        ) {
+          var gaScript = document.createElement('script');
+          gaScript.async = true;
+          gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-92MDBR2WW8';
+          document.head.appendChild(gaScript);
+
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-92MDBR2WW8');
+        }
+      })();
     </script>
   </head>
   <body>
