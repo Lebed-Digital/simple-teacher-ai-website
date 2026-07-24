@@ -10,7 +10,7 @@ const socialLinks = [
 ] as const
 
 const resources = [
-  { number: '01', title: 'Simple AI prompts', description: 'Simple AI prompts for everyday teacher tasks' },
+  { number: '01', title: 'Simple AI prompts', description: 'Simple AI prompts for everyday teacher tasks', href: '#prompts' },
   { number: '02', title: 'Honest tool reviews', description: 'Honest reviews of tools made for teachers' },
   { number: '03', title: 'Real examples', description: 'Step-by-step examples from a real classroom teacher' },
 ] as const
@@ -134,13 +134,21 @@ function App() {
               <h2 id="resources-heading" className="mt-3 font-serif text-4xl font-bold tracking-[-0.03em] text-[var(--green)] sm:text-5xl">What You’ll Find Here</h2>
             </div>
             <div className="mt-12 grid gap-5 md:grid-cols-3">
-              {resources.map((resource) => (
-                <article key={resource.number} className="rounded-2xl border border-[var(--border)] bg-[var(--paper)] p-6 sm:p-8">
-                  <span className="inline-flex rounded-full bg-[var(--blue-light)] px-3 py-1 text-sm font-bold text-[var(--blue-dark)]">{resource.number}</span>
-                  <h3 className="mt-8 text-xl font-bold tracking-[-0.02em] text-[var(--green)]">{resource.title}</h3>
-                  <p className="mt-3 text-base leading-7 text-[var(--muted)]">{resource.description}</p>
-                </article>
-              ))}
+              {resources.map((resource) => {
+                const isLink = 'href' in resource
+                const Card = isLink ? 'a' : 'article'
+                const linkProps = isLink
+                  ? { href: resource.href, className: 'block rounded-2xl border border-[var(--border)] bg-[var(--paper)] p-6 transition-colors hover:border-[var(--green)] hover:bg-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--focus)] sm:p-8' }
+                  : { className: 'rounded-2xl border border-[var(--border)] bg-[var(--paper)] p-6 sm:p-8' }
+                return (
+                  <Card key={resource.number} {...linkProps}>
+                    <span className="inline-flex rounded-full bg-[var(--blue-light)] px-3 py-1 text-sm font-bold text-[var(--blue-dark)]">{resource.number}</span>
+                    <h3 className="mt-8 text-xl font-bold tracking-[-0.02em] text-[var(--green)]">{resource.title}</h3>
+                    <p className="mt-3 text-base leading-7 text-[var(--muted)]">{resource.description}</p>
+                    {isLink ? <p className="mt-4 text-sm font-bold text-[var(--green)] underline decoration-[var(--yellow)] decoration-2 underline-offset-4">Try the prompts</p> : null}
+                  </Card>
+                )
+              })}
             </div>
           </div>
         </section>
