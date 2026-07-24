@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 // Replace the placeholder href values here when your social profiles are ready.
 const socialLinks = [
   { label: 'TikTok', href: 'https://www.tiktok.com/@simpleteacherai' },
@@ -13,6 +15,83 @@ const resources = [
   { number: '03', title: 'Real examples', description: 'Step-by-step examples from a real classroom teacher' },
 ] as const
 
+const featuredPrompt = {
+  eyebrow: 'Start here',
+  title: 'Parent email reply helper',
+  description: 'Paste a parent email and get three ready-to-send replies to choose from.',
+  prompt: `Help me respond to the parent email below. Give me three versions I can choose from:
+
+1. Warm and reassuring
+2. Brief and professional
+3. More detailed and collaborative
+
+Keep every version respectful and calm. Do not sound defensive. Do not promise anything I cannot guarantee. Keep each version under 150 words.
+
+Parent email:
+[PASTE THE EMAIL HERE]`,
+} as const
+
+const quickPrompts = [
+  {
+    title: 'Rough notes into a parent email',
+    description: 'Turn a few messy notes into a clear, friendly message home.',
+    prompt: `Turn my rough notes below into a clear, friendly parent email. Keep it warm and professional, under 150 words, and easy to read on a phone. Do not add anything I did not say.
+
+My notes:
+[PASTE YOUR NOTES HERE]`,
+  },
+  {
+    title: 'Make an email sound less defensive',
+    description: 'Keep your points, lose the tone that reads as frustrated.',
+    prompt: `Rewrite the email below so it sounds calm, kind, and professional. Remove anything that could read as defensive or frustrated. Keep my main points, but make the tone something a parent would feel good receiving.
+
+My draft:
+[PASTE YOUR DRAFT HERE]`,
+  },
+  {
+    title: 'Lesson objective and exit ticket',
+    description: 'Get a plain-language objective and a quick check for understanding.',
+    prompt: `Create a simple lesson objective and a matching exit ticket for the topic below. Write the objective in plain language, and make the exit ticket three quick questions a student can answer in two minutes.
+
+Topic and grade level:
+[TYPE THE TOPIC AND GRADE HERE]`,
+  },
+  {
+    title: 'Simplify directions for students',
+    description: 'Rewrite any set of directions into clear, numbered steps.',
+    prompt: `Rewrite the directions below so they are clear and easy for my students to follow. Use short steps, simple words, and number each step. Keep it appropriate for the grade level I list.
+
+Directions and grade level:
+[PASTE THE DIRECTIONS HERE]`,
+  },
+] as const
+
+function CopyButton({ text, label, variant = 'default' }: { text: string; label: string; variant?: 'default' | 'primary' }) {
+  const [copied, setCopied] = useState(false)
+
+  async function handleCopy() {
+    try {
+      await navigator.clipboard.writeText(text)
+      setCopied(true)
+      window.setTimeout(() => setCopied(false), 2000)
+    } catch {
+      setCopied(false)
+    }
+  }
+
+  const base = 'inline-flex items-center gap-2 rounded-full text-sm font-bold transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--focus)]'
+  const styles =
+    variant === 'primary'
+      ? 'bg-[var(--green)] px-6 py-3 text-white hover:bg-[var(--green-dark)]'
+      : 'border-2 border-[var(--green)] px-5 py-2.5 text-[var(--green)] hover:bg-[var(--green)] hover:text-white'
+
+  return (
+    <button type="button" onClick={handleCopy} aria-label={`Copy the ${label} prompt`} aria-live="polite" className={`${base} ${styles}`}>
+      {copied ? 'Copied!' : 'Copy prompt'}
+    </button>
+  )
+}
+
 function App() {
   return (
     <div className="min-h-screen bg-[var(--cream)] text-[var(--ink)]">
@@ -25,9 +104,14 @@ function App() {
           <span aria-hidden="true" className="grid size-9 place-items-center rounded-lg bg-[var(--green)] text-sm font-bold text-white">ST</span>
           <span>Simple Teacher AI</span>
         </a>
-        <a href="#social-links" className="rounded-sm text-sm font-bold text-[var(--green)] underline decoration-[var(--yellow)] decoration-2 underline-offset-4 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--focus)]">
-          Follow along
-        </a>
+        <nav aria-label="Primary" className="flex items-center gap-4 sm:gap-6">
+          <a href="#prompts" className="rounded-sm text-sm font-bold text-[var(--green)] underline decoration-[var(--yellow)] decoration-2 underline-offset-4 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--focus)]">
+            Free prompts
+          </a>
+          <a href="#social-links" className="rounded-sm text-sm font-bold text-[var(--green)] underline decoration-[var(--yellow)] decoration-2 underline-offset-4 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--focus)]">
+            Follow along
+          </a>
+        </nav>
       </header>
 
       <main id="main-content">
@@ -58,6 +142,44 @@ function App() {
                 </article>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section id="prompts" className="scroll-mt-8 px-5 py-20 sm:px-8 sm:py-24" aria-labelledby="prompts-heading">
+          <div className="mx-auto max-w-6xl">
+            <div className="max-w-2xl">
+              <p className="text-sm font-bold uppercase tracking-[0.16em] text-[var(--blue-dark)]">Try it right now</p>
+              <h2 id="prompts-heading" className="mt-3 font-serif text-4xl font-bold tracking-[-0.03em] text-[var(--green)] sm:text-5xl">5 copy-and-paste prompts that save teachers time</h2>
+              <p className="mt-4 text-lg leading-8 text-[var(--muted)]">Copy a prompt, paste it into ChatGPT, Claude, or Gemini, then add your own details. Each one is built to help in under a minute.</p>
+            </div>
+
+            <article className="mt-12 rounded-3xl border-2 border-[var(--green)] bg-white p-7 shadow-[6px_6px_0_var(--yellow)] sm:p-10">
+              <span className="inline-flex rounded-full bg-[var(--green)] px-3 py-1 text-sm font-bold uppercase tracking-[0.12em] text-white">{featuredPrompt.eyebrow}</span>
+              <h3 className="mt-5 font-serif text-2xl font-bold tracking-[-0.02em] text-[var(--green)] sm:text-3xl">{featuredPrompt.title}</h3>
+              <p className="mt-3 text-base leading-7 text-[var(--muted)] sm:text-lg">{featuredPrompt.description}</p>
+              <pre className="mt-6 overflow-x-auto whitespace-pre-wrap rounded-2xl border border-[var(--border)] bg-[var(--paper)] p-5 font-sans text-sm leading-7 text-[var(--ink)] sm:text-base">{featuredPrompt.prompt}</pre>
+              <div className="mt-5">
+                <CopyButton text={featuredPrompt.prompt} label={featuredPrompt.title} variant="primary" />
+              </div>
+            </article>
+
+            <div className="mt-6 grid gap-5 md:grid-cols-2">
+              {quickPrompts.map((item) => (
+                <article key={item.title} className="flex flex-col rounded-2xl border border-[var(--border)] bg-white p-6 sm:p-7">
+                  <h3 className="text-xl font-bold tracking-[-0.02em] text-[var(--green)]">{item.title}</h3>
+                  <p className="mt-2 text-base leading-7 text-[var(--muted)]">{item.description}</p>
+                  <pre className="mt-5 overflow-x-auto whitespace-pre-wrap rounded-xl border border-[var(--border)] bg-[var(--paper)] p-4 font-sans text-sm leading-6 text-[var(--ink)]">{item.prompt}</pre>
+                  <div className="mt-4">
+                    <CopyButton text={item.prompt} label={item.title} />
+                  </div>
+                </article>
+              ))}
+            </div>
+
+            <aside className="mt-10 rounded-2xl border border-[var(--blue)] bg-[var(--blue-light)] p-6 sm:p-7" aria-label="Privacy reminder">
+              <p className="text-sm font-bold uppercase tracking-[0.14em] text-[var(--blue-dark)]">A quick privacy note</p>
+              <p className="mt-3 text-base leading-7 text-[var(--ink)]">Tools like Claude for Teachers add extra K-12 privacy protections and do not use your content to train the AI. Even so, your school and district policies still apply. When you can, remove student names and other identifying details before pasting anything into an AI tool. The AI does not need a real name to help you, and you can add it back afterward.</p>
+            </aside>
           </div>
         </section>
 
