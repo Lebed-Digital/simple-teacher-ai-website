@@ -15,9 +15,9 @@ const socialLinks = [
 ] as const
 
 const resources = [
-  { number: '01', title: 'Simple AI prompts', description: 'Simple AI prompts for everyday teacher tasks', href: '#prompts' },
-  { number: '02', title: 'Honest tool reviews', description: 'Honest reviews of tools made for teachers' },
-  { number: '03', title: 'Real examples', description: 'Step-by-step examples from a real classroom teacher' },
+  { tag: 'Prompts', tone: 'yellow', title: 'Simple AI prompts', description: 'Simple AI prompts for everyday teacher tasks', href: '#prompts' },
+  { tag: 'Reviews', tone: 'blue', title: 'Honest tool reviews', description: 'Honest reviews of tools made for teachers' },
+  { tag: 'Examples', tone: 'yellow', title: 'Real examples', description: 'Step-by-step examples from a real classroom teacher' },
 ] as const
 
 const featuredPrompt = {
@@ -255,8 +255,8 @@ function App() {
       </header>
 
       <main id="main-content">
-        <section ref={heroSectionRef} className="relative overflow-hidden px-5 pb-12 pt-2 sm:px-8 sm:pb-16 sm:pt-3 lg:pt-8">
-          <div ref={ringRef} aria-hidden="true" className="absolute right-[3%] top-0 hidden size-28 rounded-full border-[18px] border-[var(--yellow)] opacity-55 lg:block" />
+        <section ref={heroSectionRef} className="ruled-paper relative overflow-hidden px-5 pb-12 pt-2 sm:px-8 sm:pb-16 sm:pt-3 lg:pt-8">
+          <div ref={ringRef} aria-hidden="true" className="absolute right-[3%] top-0 hidden size-28 rounded-full border-[18px] border-[var(--red-pen)] opacity-40 lg:block" />
           <div ref={squareRef} aria-hidden="true" className="absolute bottom-12 left-[4%] h-16 w-16 rotate-6 rounded-xl bg-[var(--blue)] opacity-50" />
           <div className="relative mx-auto max-w-4xl text-center">
             <p ref={heroEyebrowRef} className="mb-6 inline-flex rounded-full border border-[var(--green)]/20 bg-white px-4 py-2 text-sm font-bold uppercase tracking-[0.14em] text-[var(--green)]">Teacher-tested, classroom-minded</p>
@@ -282,9 +282,13 @@ function App() {
                 const linkProps = isLink
                   ? { href: resource.href, className: 'resource-card block rounded-2xl border border-[var(--border)] bg-[var(--paper)] p-6 transition-colors hover:border-[var(--green)] hover:bg-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--focus)] sm:p-8' }
                   : { className: 'resource-card rounded-2xl border border-[var(--border)] bg-[var(--paper)] p-6 sm:p-8' }
+                const tagClass =
+                  resource.tone === 'blue'
+                    ? 'bg-[var(--blue-light)] text-[var(--blue-dark)]'
+                    : 'bg-[var(--yellow-light)] text-[var(--green-dark)]'
                 return (
-                  <Card key={resource.number} {...linkProps}>
-                    <span className="inline-flex rounded-full bg-[var(--blue-light)] px-3 py-1 text-sm font-bold text-[var(--blue-dark)]">{resource.number}</span>
+                  <Card key={resource.title} {...linkProps}>
+                    <span className={`inline-flex rounded-full px-3 py-1 text-sm font-bold uppercase tracking-[0.08em] ${tagClass}`}>{resource.tag}</span>
                     <h3 className="mt-8 text-xl font-bold tracking-[-0.02em] text-[var(--green)]">{resource.title}</h3>
                     <p className="mt-3 text-base leading-7 text-[var(--muted)]">{resource.description}</p>
                     {isLink ? <p className="mt-4 text-sm font-bold text-[var(--green)] underline decoration-[var(--yellow)] decoration-2 underline-offset-4">Try the prompts</p> : null}
