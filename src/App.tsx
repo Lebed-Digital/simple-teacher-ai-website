@@ -38,7 +38,7 @@ function App() {
             <p className="mb-6 inline-flex rounded-full border border-[var(--green)]/20 bg-white px-4 py-2 text-sm font-bold uppercase tracking-[0.14em] text-[var(--green)]">Teacher-tested, classroom-minded</p>
             <h1 className="text-balance font-serif text-5xl font-bold leading-[1.02] tracking-[-0.04em] text-[var(--green)] sm:text-7xl lg:text-[5.5rem]">Simple Teacher AI</h1>
             <p className="mx-auto mt-7 max-w-3xl text-balance text-2xl font-semibold leading-snug text-[var(--ink)] sm:text-3xl">Practical AI help for teachers who do not have time to become tech experts.</p>
-            <p className="mx-auto mt-7 max-w-xl text-base leading-7 text-[var(--muted)] sm:max-w-2xl sm:text-lg sm:leading-8">I am a classroom teacher learning how to use AI to save time, simplify everyday work, and make teaching a little more manageable. I share the tools, prompts, experiments, and honest lessons that are actually useful in a real classroom.</p>
+            <p className="mx-auto mt-7 max-w-xl text-base leading-7 text-[var(--muted)] sm:max-w-2xl sm:text-lg sm:leading-8">I am a classroom teacher exploring practical ways to use AI to save time, simplify everyday work, and make teaching a little more manageable. I share the tools, prompts, experiments, and honest lessons that are actually useful in a real classroom.</p>
             <div className="mx-auto mt-10 max-w-3xl rotate-[-1deg] rounded-2xl border-2 border-[var(--green)] bg-[var(--green)] px-6 py-5 text-lg font-bold leading-7 text-white shadow-[6px_6px_0_var(--yellow)] sm:px-10 sm:text-xl">No hype. No complicated tech talk. Just simple, practical ways teachers can use AI.</div>
           </div>
         </section>
