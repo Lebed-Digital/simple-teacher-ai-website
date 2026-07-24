@@ -17,6 +17,20 @@
     <meta name="twitter:description" content="Practical, teacher-friendly AI prompts, tools, tutorials, and honest advice from a real classroom teacher." />
     <title>Simple Teacher AI | Practical AI Help for Teachers</title>
     <!-- Google tag (gtag.js) -->
+    <script>
+      // Visit /?ga_optout=1 once to permanently exclude this browser from analytics.
+      // Visit /?ga_optout=0 to re-enable. Uses gtag.js's own opt-out flag, same
+      // mechanism as the official Google Analytics Opt-out Browser Add-on.
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        var optout = params.get('ga_optout');
+        if (optout === '1') localStorage.setItem('ga_optout', '1');
+        if (optout === '0') localStorage.removeItem('ga_optout');
+        if (localStorage.getItem('ga_optout') === '1') {
+          window['ga-disable-G-92MDBR2WW8'] = true;
+        }
+      })();
+    </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-92MDBR2WW8"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
