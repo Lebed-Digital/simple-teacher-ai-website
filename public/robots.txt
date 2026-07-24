@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://simpleteacherai.com/sitemap.xml
+Sitemap: https://www.simpleteacherai.com/sitemap.xml
