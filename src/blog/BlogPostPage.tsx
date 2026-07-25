@@ -44,6 +44,20 @@ export function BlogPostPage() {
     title: post ? `${post.title} | Simple Teacher AI` : 'Post not found | Simple Teacher AI',
     description: post ? post.excerpt : 'This post could not be found.',
     path: post ? `/blog/${post.slug}` : '/blog',
+    type: post ? 'article' : 'website',
+    jsonLd: post
+      ? {
+          '@context': 'https://schema.org',
+          '@type': 'BlogPosting',
+          headline: post.title,
+          description: post.excerpt,
+          datePublished: post.date,
+          dateModified: post.date,
+          author: { '@type': 'Person', name: 'Gregory Lebed' },
+          publisher: { '@type': 'Organization', name: 'Simple Teacher AI' },
+          mainEntityOfPage: `https://www.simpleteacherai.com/blog/${post.slug}`,
+        }
+      : undefined,
   })
 
   if (!post) {
