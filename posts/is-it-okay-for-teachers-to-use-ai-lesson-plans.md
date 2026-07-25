@@ -18,17 +18,17 @@ A teacher friend texted me this last month, and right after it she sent "I feel 
 
 ## What the guilt is really about
 
-Somewhere along the way, writing every plan from scratch became a way of showing you cared. The problem is that it never actually measured that. It measured how much time you spent typing. A perfect handwritten plan that does not fit your kids is worse than a rough draft you fixed until it did.
+I think somewhere along the way, writing every plan from scratch turned into a way of showing you cared. If that is what it was, it never really measured that. It measured how much time you spent typing. A perfect handwritten plan that does not fit your kids is worse than a rough draft you fixed until it did.
 
-What matters is whether the lesson your kids actually get reflects what you know about them. Not who typed the first version.
+What matters is whether the lesson your kids actually get reflects what you know about them.
 
 ## The way I actually use it is not writing lessons at all
 
-Here is the thing though. I do not have AI write my lessons, and I do not write them myself either. I teach from a curriculum, same as most people. The lesson already exists in the teacher manual.
+I do not have AI write my lessons, and I do not really write them myself either. I teach from a curriculum, so the lesson already exists in the teacher manual.
 
 What I do is paste that lesson into AI and ask it where my kids are going to get stuck, and how I could teach the tricky parts. Because a teacher manual tells you what to teach and roughly how, but it was not written for third graders in my room, and it definitely was not written this year.
 
-I started doing this last spring. I knew an observation was coming and I wanted it to go well, so every night for about two weeks I pasted the next day's math lesson in and asked what I was missing. It kept finding things. Where kids would misread something. Which step the manual glossed over. And it would give me ways to explain the hard part that were actually built for eight and nine year olds, using stuff they care about right now, which is not something a manual printed a few years ago can do.
+I started doing this last spring. I knew an observation was coming and I wanted it to go well, so every night for about two weeks I pasted the next day's math lesson in and asked what I was missing. It kept finding things, like where kids would misread something or which step the manual kind of skipped over. And it would give me ways to explain the hard part that were actually built for eight and nine year olds, using stuff they care about right now, which is not something a manual printed a few years ago can do.
 
 That is the pattern I would defend to any administrator. The curriculum is the curriculum. The kids are mine. AI is the part that helps me get from a generic lesson to one that lands in my actual room.
 
@@ -42,7 +42,7 @@ It was kind of an accident, honestly. I was doing it to cover myself and it turn
 
 ## Where I would not use it
 
-I do not turn in an AI draft as-is for a formal observation, for an IEP-driven lesson, or for anything I am not sure I could judge myself. If I cannot tell whether what came back is any good, I have no business deciding to use it. That is the line for me. The job is still mine no matter what wrote the first draft.
+Asking AI where a lesson might trip kids up is one thing. Handing in something it wrote and calling it my plan is another, and I do not do that, especially for an observation or an IEP-driven lesson. I also stay away from it for anything I am not sure I could judge myself. If I cannot tell whether what came back is any good, I probably have no business using it. The job is still mine either way.
 
 ## Check your district policy first
 

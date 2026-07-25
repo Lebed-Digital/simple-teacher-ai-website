@@ -14,7 +14,7 @@ faq:
 
 I almost did this myself. I had some rough behavior notes written up for a meeting, pasted the whole thing into an AI tool to clean up the wording, and hit enter. Then I noticed the kid's full name was sitting right there in the first line, along with details about exactly what happened. Nothing bad came of it. But it stuck with me how easy it was to do without thinking.
 
-That is the mistake I see most: pasting real student names into an AI tool out of habit, because the name was already in your notes and taking it out feels like an extra step you do not have time for.
+I think that is probably a common one: pasting real student names into an AI tool out of habit, because the name was already in your notes and taking it out feels like an extra step you do not have time for.
 
 ## Why it matters
 
