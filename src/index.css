@@ -36,6 +36,16 @@ button, a { -webkit-tap-highlight-color: transparent; }
   background-image: repeating-linear-gradient(to bottom, transparent, transparent 35px, var(--rule-line) 36px);
 }
 
+.post-content { display: flex; flex-direction: column; gap: 1.5rem; }
+.post-content p { font-size: 1.125rem; line-height: 2rem; color: var(--ink); }
+.post-content h2 { padding-top: 1rem; font-family: "Fraunces", Georgia, "Times New Roman", serif; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; color: var(--green); }
+.post-content ul, .post-content ol { padding-left: 1.5rem; font-size: 1.125rem; line-height: 2rem; color: var(--ink); display: flex; flex-direction: column; gap: 0.5rem; }
+.post-content ul { list-style-type: disc; }
+.post-content ol { list-style-type: decimal; }
+.post-content a { color: var(--green); font-weight: 700; text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 2px; text-underline-offset: 4px; }
+.post-content strong { font-weight: 700; color: var(--green); }
+@media (min-width: 640px) { .post-content h2 { font-size: 1.875rem; } }
+
 html.lenis, html.lenis body { height: auto; }
 .lenis.lenis-smooth { scroll-behavior: auto !important; }
 .lenis.lenis-stopped { overflow: hidden; }

@@ -2,6 +2,8 @@ import { useEffect, useRef, useState } from 'react'
 import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import Lenis from 'lenis'
+import { SiteHeader } from './components/SiteHeader'
+import { SiteFooter } from './components/SiteFooter'
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -239,20 +241,7 @@ function App() {
         Skip to main content
       </a>
 
-      <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-6 sm:px-8 sm:py-8">
-        <a href="#" aria-label="Simple Teacher AI home" className="inline-flex items-center gap-3 rounded-sm font-semibold tracking-[-0.02em] text-[var(--green)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--focus)]">
-          <span aria-hidden="true" className="grid size-9 place-items-center rounded-lg bg-[var(--green)] text-sm font-bold text-white">ST</span>
-          <span>Simple Teacher AI</span>
-        </a>
-        <nav aria-label="Primary" className="flex items-center gap-4 sm:gap-6">
-          <a href="#prompts" className="rounded-sm text-sm font-bold text-[var(--green)] underline decoration-[var(--yellow)] decoration-2 underline-offset-4 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--focus)]">
-            Free prompts
-          </a>
-          <a href="#social-links" className="rounded-sm text-sm font-bold text-[var(--green)] underline decoration-[var(--yellow)] decoration-2 underline-offset-4 focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--focus)]">
-            Follow along
-          </a>
-        </nav>
-      </header>
+      <SiteHeader />
 
       <main id="main-content">
         <section ref={heroSectionRef} className="ruled-paper relative overflow-hidden px-5 pb-12 pt-2 sm:px-8 sm:pb-16 sm:pt-3 lg:pt-8">
@@ -361,10 +350,7 @@ function App() {
         </section>
       </main>
 
-      <footer className="bg-[var(--green-dark)] px-5 py-8 text-center text-sm leading-6 text-white/75 sm:px-8">
-        <p>© 2026 Simple Teacher AI</p>
-        <p>Created by a teacher, for teachers.</p>
-      </footer>
+      <SiteFooter />
     </div>
   )
 }
