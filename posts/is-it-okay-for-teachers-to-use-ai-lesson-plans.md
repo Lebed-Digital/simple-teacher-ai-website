@@ -12,13 +12,13 @@ faq:
     a: "No. AI is useful for drafting individual lessons or activities, but it does not know your standards, pacing calendar, or long-term scope and sequence. Use your curriculum as the source of truth and AI as a drafting tool within it."
 ---
 
-A teacher friend asked me this over text last month, and then immediately followed it with "I feel weird even asking." That reaction is common. There is a quiet guilt a lot of teachers carry around using AI for planning, like it means you are cutting a corner you should not be cutting. I do not think that guilt is warranted, but I do think the question deserves a real answer instead of a reassuring one.
+A teacher friend texted me this last month, and right after it she sent "I feel weird even asking." A lot of teachers feel that way. There is a guilt around using AI to plan, like you are getting away with something you should not be. I do not think you should feel bad about it. But the question deserves a real answer, not just me telling you it is fine.
 
-## What the guilt is actually about
+## What the guilt is really about
 
-Lesson planning got tangled up with professional identity a long time ago. If you write every plan from scratch, that used to be a proxy for how much you cared. But that proxy never actually measured what mattered, which is whether the lesson works for the kids in front of you. A beautifully handwritten plan that misses your students is worse than a rough AI draft you actually adapt to fit them.
+Somewhere along the way, writing every plan from scratch became a way of showing you cared. The problem is that it never actually measured that. It measured how much time you spent typing. A perfect handwritten plan that does not fit your kids is worse than a rough AI draft that you fixed until it did.
 
-What actually matters is whether the plan that ends up in front of your students reflects your judgment about what they need, not whether AI wrote the first draft.
+What matters is whether the plan your kids actually get reflects what you know about them. Not who typed the first version.
 
 ## A concrete before and after
 
@@ -28,10 +28,10 @@ That is the pattern I would defend to any administrator: AI for the first draft,
 
 ## Where I would not use it
 
-I do not use AI-generated plans as final for anything tied to a formal observation, an IEP-driven lesson, or content I am not confident I could evaluate myself. If I cannot tell whether the output is actually good, I should not be the one deciding to use it. The point is not outsourcing judgment I am supposed to be providing, regardless of what tool wrote the first draft.
+I do not turn in an AI draft as-is for a formal observation, for an IEP-driven lesson, or for anything I am not sure I could judge myself. If I cannot tell whether what came back is any good, I have no business deciding to use it. That is the line for me. The job is still mine no matter what wrote the first draft.
 
 ## Check your district policy first
 
-Some districts have specific language about AI use in instructional materials, and a few restrict which tools you can use with any student-related content. That policy question is separate from the ethics question, and it is worth five minutes to check before you build a habit around a tool your district does not allow.
+Some districts have actual rules about AI in instructional materials, and some limit which tools you can use with anything student-related. That is a separate question from whether it is okay, and it is worth five minutes to look up before you build a habit around a tool you are not allowed to use.
 
-If your district is silent on it, which many still are, the standard I would use is simple: would you be comfortable telling your principal exactly how you used it. If the answer is yes, you are probably fine.
+If your district has not said anything yet, and plenty still have not, here is the test I use: would you be fine telling your principal exactly how you used it? If yes, you are probably fine.

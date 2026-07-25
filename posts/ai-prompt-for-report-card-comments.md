@@ -1,6 +1,6 @@
 ---
 title: "The Only AI Prompt I Use for Report Card Comments"
-subtitle: "Thirty comments used to take me an entire weekend. Now it is one evening."
+subtitle: "A full set of comments used to take me an entire weekend. Now it is one evening."
 date: "2026-07-26"
 excerpt: "The exact prompt and process I use to turn a page of quick notes into report card comments that still sound like me."
 faq:
@@ -12,24 +12,24 @@ faq:
     a: "Write different fragments for each student instead of reusing the same few phrases, and process one student at a time rather than pasting a whole class list at once."
 ---
 
-Report card comments used to wreck an entire weekend for me. Thirty students, a few sentences each, and somehow every comment still had to sound specific instead of like a form letter with a name swapped in. I would sit down Saturday morning and still be typing Sunday night, mostly because I kept trying to write finished sentences from scratch instead of starting from notes.
+Report card comments used to eat my whole weekend. A class full of kids, a few sentences each, and every comment still had to sound like I was talking about that specific kid and not just filling in a template. I would start Saturday morning and still be typing Sunday night. The reason it took so long is that I kept trying to write finished sentences right out of the gate.
 
-The fix that actually worked was flipping the order. I stopped trying to write comments and started writing notes, then let AI turn the notes into comments. That one change cut the whole process down to about one evening.
+What fixed it was doing it backwards. Instead of writing comments, I write notes. Then I let AI turn the notes into comments. That one change got me down to a single evening.
 
 ## What I actually do
 
-For each student, I jot down three or four quick fragments, not full sentences: "strong in group discussion, still rushing through math checks, needs reminders to reread directions, great with younger reading buddies." That takes maybe thirty seconds per student while I still have the class fresh in my head.
+For each kid I write down three or four quick fragments. Not sentences, just fragments: "knows his facts, rushes and skips steps, needs a reminder to check his work, helps other kids at his table." Thirty seconds per student, and I do it while the class is still fresh in my head.
 
-Then I paste those fragments into AI with this prompt: "Turn these notes into a report card comment for a [grade level] student. Keep it warm and specific, about three sentences, and do not add anything I did not mention. Match a tone a parent would find encouraging but honest." I paste one student's fragments at a time so the comment stays tied to what I actually observed.
+Then I paste those fragments in with this prompt: "Turn these notes into a report card comment for a third grade student. Keep it warm and specific, about three sentences, and do not add anything I did not mention. Match a tone a parent would find encouraging but honest." I do one student at a time so the comment stays tied to what I actually saw.
 
-I read every comment before it goes anywhere near a report card. Sometimes the phrasing is a little generic and I tighten it. Sometimes it nails something I would have struggled to word myself. Either way, the fragments came from me, so the comment is still built on what I actually noticed about that kid.
+I read every comment before it goes near a report card. Sometimes it comes back a little generic and I fix it. Sometimes it words something better than I would have. Either way the details came from me, so it is still about that kid.
 
 ## Why this works better than writing from scratch
 
-Writing a comment from a blank page means holding the whole shape of the sentence in your head while also trying to remember specific details about a student you taught alongside twenty-nine others. That is two hard tasks at once. Splitting it into notes first, then wording second, means I only do one hard thing at a time. The noticing happens while the class is fresh. The wording happens later, when I am tired and would otherwise be staring at a cursor.
+Writing a comment from a blank page means doing two hard things at once. You are trying to remember what a specific kid did all quarter, and you are trying to word it well, at the same time. Splitting it up means I only do one at a time. I notice things while the class is fresh. I deal with the wording later, when I am tired and would just be staring at the screen anyway.
 
 ## Where I still slow down
 
-For any student with something sensitive going on, a hard family situation, a behavior plan, an IEP goal, I write that comment myself from the start. Those need judgment about tone and what is appropriate to include that I do not want to hand off, even for a first draft. And I never use a real last name in the prompt itself, since I do not need it there to get a good comment back.
+If a kid has something sensitive going on, a rough family situation, a behavior plan, an IEP goal, I write that one myself from the start. Those need me to think carefully about tone and about what belongs on a report card at all. I do not want to hand that off, even for a first draft. I also never put a real name in the prompt, because I do not need it there to get a good comment back.
 
-For everyone else, I turn the fragments into a comment, read it once, and move on to the next student. What used to be a lost weekend is now something I finish before dinner.
+For everyone else it is fragments in, comment out, read it once, next kid. What used to take a weekend I now finish before dinner.

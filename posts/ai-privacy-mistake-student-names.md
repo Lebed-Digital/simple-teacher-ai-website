@@ -12,24 +12,24 @@ faq:
     a: "Yes. AI tools rewrite based on content and context, not on knowing a real identity. A placeholder like \"the student\" produces the same quality of help as a real name would."
 ---
 
-I almost made this mistake myself. I had a rough draft of behavior notes for a student meeting, pasted the whole thing into an AI tool to clean up the wording, and hit enter before I noticed the student's full name was sitting right there in the first line, along with details about a specific incident. Nothing bad happened. But it made me stop and think about how easy that was to do without thinking twice.
+I almost did this myself. I had some rough behavior notes written up for a meeting, pasted the whole thing into an AI tool to clean up the wording, and hit enter. Then I noticed the kid's full name was sitting right there in the first line, along with details about exactly what happened. Nothing bad came of it. But it stuck with me how easy it was to do without thinking.
 
-That is the mistake I see most often, and I have made it myself: pasting real student names and identifying details into an AI tool out of habit, because the notes already had the name in them and removing it felt like an extra step.
+That is the mistake I see most: pasting real student names into an AI tool out of habit, because the name was already in your notes and taking it out feels like an extra step you do not have time for.
 
 ## Why it matters
 
-Most general AI tools are not built with K-12 student data protections by default. Depending on the tool and its settings, your input can be stored, reviewed, or in some cases used to improve the model. Student names attached to behavior notes, grades, or accommodations are exactly the kind of information FERPA is meant to protect, and district policies almost always cover this even when they do not mention AI by name specifically.
+Most AI tools are not built for student data. Depending on which one you use and how it is set up, what you type in can get stored, looked at by a person, or used to train the model. A kid's name attached to behavior notes or grades or accommodations is exactly what FERPA exists to protect. Your district policy almost certainly covers it too, even if it never says the word AI.
 
-I am not assuming the worst of any AI company here. The same basic rule you already follow with any other tool applies: do not put sensitive student information somewhere it does not need to be.
+I am not assuming the worst about any AI company. It is the same rule you already follow with everything else: do not put student information somewhere it does not need to be.
 
-## The fix takes about five seconds
+## The fix takes five seconds
 
-Before you paste anything into an AI tool, swap the student's real name for something generic. I use "the student" or a placeholder like "Student A." You can add the real name back yourself once you have the finished draft in front of you. The AI does not need a real name to help you rewrite a paragraph or reorganize your notes, it only needs the content.
+Before you paste, swap the real name out. I use "the student" or "Student A." Put the real name back in yourself once you have the draft. The AI does not need a name to help you reword a paragraph, it just needs the content.
 
-The same goes for parent names, other identifying details like a specific diagnosis or family situation, and anything from an IEP or 504 plan. Strip those out, get your draft, and put the specifics back in afterward.
+Same goes for parent names, a specific diagnosis, a family situation, anything out of an IEP or 504. Take it out, get your draft, put the specifics back after.
 
 ## Tools built with this in mind
 
-Some tools, like Claude for Teachers, add extra K-12 privacy protections and do not use your content to train the underlying model. That is a meaningful difference from a general consumer AI account. But even with those tools, your school and district policies still apply, and the habit of removing names before pasting is worth keeping regardless of which tool you use.
+Some tools, like Claude for Teachers, add K-12 privacy protections and do not use what you type to train the model. That is a real difference from a regular consumer account. But your school and district rules still apply either way, and I would keep the habit of pulling names out no matter which tool you are using.
 
-Building that one habit, remove the name before you paste, closes most of the actual risk without slowing you down in any way that matters.
+That one habit, take the name out before you paste, handles most of the actual risk and costs you about five seconds.
