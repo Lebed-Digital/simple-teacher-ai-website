@@ -1,7 +1,7 @@
 ---
 title: "Free vs Paid AI Tools for Teachers: What Actually Matters"
 subtitle: "I use both. Here is what the upgrade actually buys you."
-date: "2026-07-26"
+date: "2026-07-23"
 excerpt: "A practical, honest comparison of what you get from free AI tools versus paid ones, from a teacher who uses both."
 faq:
   - q: "Is a free AI account enough for most teacher tasks?"
@@ -20,7 +20,7 @@ For most of what a teacher does, the free versions of ChatGPT, Claude, and Gemin
 
 ## What paying gets you
 
-Mostly it buys you room to work, not better answers on everyday stuff. The free versions limit how many messages you can send in a stretch. If you sit down and do a big batch of something, like [a whole class worth of report card comments](/blog/ai-prompt-for-report-card-comments) in one night, you can hit that wall and end up waiting.
+Mostly it buys you room to work, not better answers on everyday stuff. The free versions limit how many messages you can send in a stretch. If you sit down and do a big batch of something, like [a whole class worth of report card comments](/blog/ai-prompt-for-report-card-comments) in one night, you can hit that wall and end up waiting. 
 
 If your AI use is spread out, an email here, an exit ticket there, you will probably never hit the limit. If you tend to save everything up and do it in one long sitting, paying gets rid of that problem.
 

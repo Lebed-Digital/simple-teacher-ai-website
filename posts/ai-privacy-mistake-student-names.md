@@ -1,7 +1,7 @@
 ---
 title: "The AI Privacy Mistake Teachers Keep Making With Student Names"
 subtitle: "It is an easy habit to fall into, and an easy one to fix."
-date: "2026-07-25"
+date: "2026-07-24"
 excerpt: "A common and easy-to-fix privacy mistake teachers make when pasting student information into AI tools, and what to do instead."
 faq:
   - q: "Is it against the law to use AI with student information?"
@@ -12,7 +12,7 @@ faq:
     a: "Yes. AI tools rewrite based on content and context, not on knowing a real identity. A placeholder like \"the student\" produces the same quality of help as a real name would."
 ---
 
-I almost did this myself. I had some rough behavior notes written up for a meeting, pasted the whole thing into an AI tool to clean up the wording, and hit enter. Then I noticed the kid's full name was sitting right there in the first line, along with details about exactly what happened. Nothing bad came of it. But it stuck with me how easy it was to do without thinking.
+I almost did this myself. I had some rough behavior notes written up for a meeting, and I was about to paste the whole thing into an AI tool to clean up the wording. Right before I hit enter, I caught the kid's full name sitting right there in the first line, along with details about exactly what happened. I pulled it out first. But it stuck with me how easy it would have been to do without thinking.
 
 I think that is probably a common one: pasting real student names into an AI tool out of habit, because the name was already in your notes and taking it out feels like an extra step you do not have time for.
 
