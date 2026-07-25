@@ -1,8 +1,8 @@
 ---
 title: "Is It Okay for Teachers to Use AI to Write Lesson Plans?"
-subtitle: "The guilt is common. Here is how I think about where the line actually is."
+subtitle: "A lot of teachers feel weird about this. I did too, until I found a better way to use it."
 date: "2026-07-25"
-excerpt: "A practical answer to a question a lot of teachers feel weird asking out loud: is using AI for lesson plans actually okay?"
+excerpt: "Whether it is okay to use AI for lesson plans, and why the way most teachers picture using it is not the way that actually helps."
 faq:
   - q: "Is using AI for lesson plans considered cheating?"
     a: "No professional standard treats it that way. Lesson plans are working documents meant to serve your students, not a test of your writing stamina. Using AI for a first draft and then adapting it with your own judgment is a normal professional workflow, similar to using a curriculum guide or a colleague's shared plan."
@@ -10,21 +10,35 @@ faq:
     a: "Most care about whether the lesson works in the room, not how the draft was produced. If you are ever asked directly, being able to explain how you adapted it for your students is the answer that matters."
   - q: "Can AI replace a curriculum or pacing guide?"
     a: "No. AI is useful for drafting individual lessons or activities, but it does not know your standards, pacing calendar, or long-term scope and sequence. Use your curriculum as the source of truth and AI as a drafting tool within it."
+  - q: "What is a better way to use AI for planning than having it write the lesson?"
+    a: "Paste in the lesson you are already teaching from your curriculum and ask where students are likely to get stuck, and for concrete ways to teach the tricky parts. You keep the curriculum as written, and you get the piece a teacher manual cannot give you: how to explain the hard part to the specific age you teach."
 ---
 
 A teacher friend texted me this last month, and right after it she sent "I feel weird even asking." A lot of teachers feel that way. There is a guilt around using AI to plan, like you are getting away with something you should not be. I do not think you should feel bad about it. But the question deserves a real answer, not just me telling you it is fine.
 
 ## What the guilt is really about
 
-Somewhere along the way, writing every plan from scratch became a way of showing you cared. The problem is that it never actually measured that. It measured how much time you spent typing. A perfect handwritten plan that does not fit your kids is worse than a rough AI draft that you fixed until it did.
+Somewhere along the way, writing every plan from scratch became a way of showing you cared. The problem is that it never actually measured that. It measured how much time you spent typing. A perfect handwritten plan that does not fit your kids is worse than a rough draft you fixed until it did.
 
-What matters is whether the plan your kids actually get reflects what you know about them. Not who typed the first version.
+What matters is whether the lesson your kids actually get reflects what you know about them. Not who typed the first version.
 
-## A concrete before and after
+## The way I actually use it is not writing lessons at all
 
-Here is what that looks like in practice. I asked for a lesson objective and warm-up on inference for a fourth grade reading group. The first draft was fine but generic: read a short passage, answer three questions, move on. I knew that would not hold my most easily distracted group, so I swapped the passage for one about a topic I knew they cared about that week, and changed the warm-up into a quick paired discussion instead of silent reading. The bones of the plan came from AI. The part that made it actually work came from me knowing that specific group of nine-year-olds.
+Here is the thing though. I do not have AI write my lessons, and I do not write them myself either. I teach from a curriculum, same as most people. The lesson already exists in the teacher manual.
 
-That is the pattern I would defend to any administrator: AI for the first draft, my judgment for the version that actually gets taught.
+What I do is paste that lesson into AI and ask it where my kids are going to get stuck, and how I could teach the tricky parts. Because a teacher manual tells you what to teach and roughly how, but it was not written for third graders in my room, and it definitely was not written this year.
+
+I started doing this last spring. I knew an observation was coming and I wanted it to go well, so every night for about two weeks I pasted the next day's math lesson in and asked what I was missing. It kept finding things. Where kids would misread something. Which step the manual glossed over. And it would give me ways to explain the hard part that were actually built for eight and nine year olds, using stuff they care about right now, which is not something a manual printed a few years ago can do.
+
+That is the pattern I would defend to any administrator. The curriculum is the curriculum. The kids are mine. AI is the part that helps me get from a generic lesson to one that lands in my actual room.
+
+## The part I did not expect
+
+The observation never happened. She never came in.
+
+But I kept doing it anyway, every night, for the rest of the year. That was not the plan. I was going to stop as soon as the observation was over. I kept going because the lessons were noticeably better, and once you have seen the difference it is hard to go back to just teaching the manual as written.
+
+It was kind of an accident, honestly. I was doing it to cover myself and it turned into one of the most useful things I do all week.
 
 ## Where I would not use it
 
