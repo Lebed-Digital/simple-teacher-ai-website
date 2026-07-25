@@ -16,17 +16,17 @@ A teacher in my building asked me last week if she should pay for ChatGPT or jus
 
 ## What the free versions cover
 
-For most of what a teacher does, the free versions of ChatGPT, Claude, and Gemini are plenty. Rewriting a parent email, simplifying a set of directions, throwing together an exit ticket, getting report card comments started. All of that works fine without paying. I used a free account for months before I even thought about it, and none of the prompts on this site need anything more.
+For most of what a teacher does, the free versions of ChatGPT, Claude, and Gemini are plenty. Rewriting a parent email, simplifying a set of directions, throwing together an exit ticket, getting report card comments started. All of that works fine without paying. I used a free account for months before I even thought about it, and none of [the things I use AI for](/blog/how-i-actually-use-ai-as-a-teacher) need anything more.
 
 ## What paying gets you
 
-Mostly it buys you room to work, not better answers on everyday stuff. The free versions limit how many messages you can send in a stretch. If you sit down and do a big batch of something, like a whole class worth of report card comments in one night, you can hit that wall and end up waiting.
+Mostly it buys you room to work, not better answers on everyday stuff. The free versions limit how many messages you can send in a stretch. If you sit down and do a big batch of something, like [a whole class worth of report card comments](/blog/ai-prompt-for-report-card-comments) in one night, you can hit that wall and end up waiting.
 
 If your AI use is spread out, an email here, an exit ticket there, you will probably never hit the limit. If you tend to save everything up and do it in one long sitting, paying gets rid of that problem.
 
 ## The thing that matters more than free versus paid
 
-For anything involving student information, privacy matters more than price. Tools built with K-12 protections in mind, like Claude for Teachers, are worth using over a regular consumer account whether or not you are paying. That protection is about how your data gets handled, not which plan you are on. Check what a tool does with what you type in before you worry about what it costs.
+For anything involving student information, privacy matters more than price. Tools built with K-12 protections in mind, like Claude for Teachers, are worth using over a regular consumer account whether or not you are paying. That protection is about how your data gets handled, not which plan you are on. Check what a tool does with what you type in before you worry about what it costs, and [take names out before you paste](/blog/ai-privacy-mistake-student-names) no matter what you land on.
 
 ## What I would tell you to do
 

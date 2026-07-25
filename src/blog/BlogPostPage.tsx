@@ -1,4 +1,5 @@
-import { Link, useParams } from 'react-router-dom'
+import { useEffect, useRef } from 'react'
+import { Link, useNavigate, useParams } from 'react-router-dom'
 import { SiteHeader } from '../components/SiteHeader'
 import { SiteFooter } from '../components/SiteFooter'
 import { getPostBySlug, posts } from './posts'
@@ -11,6 +12,33 @@ function formatDate(dateStr: string) {
 export function BlogPostPage() {
   const { slug } = useParams<{ slug: string }>()
   const post = slug ? getPostBySlug(slug) : undefined
+  const navigate = useNavigate()
+  const contentRef = useRef<HTMLDivElement>(null)
+
+  // Jump to the top when moving between posts, otherwise you land mid-article.
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [slug])
+
+  // Markdown renders plain <a> tags, which would trigger a full page reload.
+  // Route internal links through the router instead.
+  useEffect(() => {
+    const el = contentRef.current
+    if (!el) return
+
+    function handleClick(event: MouseEvent) {
+      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return
+      const anchor = (event.target as HTMLElement).closest('a')
+      if (!anchor) return
+      const href = anchor.getAttribute('href')
+      if (!href?.startsWith('/') || anchor.target === '_blank') return
+      event.preventDefault()
+      navigate(href)
+    }
+
+    el.addEventListener('click', handleClick)
+    return () => el.removeEventListener('click', handleClick)
+  }, [navigate, post])
 
   useSeoMeta({
     title: post ? `${post.title} | Simple Teacher AI` : 'Post not found | Simple Teacher AI',
@@ -52,7 +80,7 @@ export function BlogPostPage() {
           <h1 className="mt-3 text-balance font-serif text-4xl font-bold tracking-[-0.03em] text-[var(--green)] sm:text-5xl">{post.title}</h1>
           <p className="mt-4 text-xl leading-8 text-[var(--muted)]">{post.subtitle}</p>
 
-          <div className="post-content mt-10" dangerouslySetInnerHTML={{ __html: post.html }} />
+          <div ref={contentRef} className="post-content mt-10" dangerouslySetInnerHTML={{ __html: post.html }} />
 
           {post.faq.length > 0 ? (
             <section className="mt-14 rounded-2xl border border-[var(--border)] bg-white p-6 sm:p-8" aria-labelledby="faq-heading">

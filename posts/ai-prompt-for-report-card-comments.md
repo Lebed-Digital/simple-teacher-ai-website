@@ -30,6 +30,8 @@ Writing a comment from a blank page means doing two hard things at once. You are
 
 ## Where I still slow down
 
-If a kid has something sensitive going on, a rough family situation, a behavior plan, an IEP goal, I write that one myself from the start. Those need me to think carefully about tone and about what belongs on a report card at all. I do not want to hand that off, even for a first draft. I also never put a real name in the prompt, because I do not need it there to get a good comment back.
+If a kid has something sensitive going on, a rough family situation, a behavior plan, an IEP goal, I write that one myself from the start. Those need me to think carefully about tone and about what belongs on a report card at all. I do not want to hand that off, even for a first draft. I also never put a real name in the prompt, because I do not need it there to get a good comment back. That is [worth being careful about](/blog/ai-privacy-mistake-student-names) with anything student-related.
 
 For everyone else it is fragments in, comment out, read it once, next kid. What used to take a weekend I now finish before dinner.
+
+This is the same idea behind [most of how I use AI](/blog/how-i-actually-use-ai-as-a-teacher): I do the noticing, it does the wording.

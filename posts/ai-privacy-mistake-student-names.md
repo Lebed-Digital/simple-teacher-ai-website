@@ -26,10 +26,10 @@ I am not assuming the worst about any AI company. It is the same rule you alread
 
 Before you paste, swap the real name out. I use "the student" or "Student A." Put the real name back in yourself once you have the draft. The AI does not need a name to help you reword a paragraph, it just needs the content.
 
-Same goes for parent names, a specific diagnosis, a family situation, anything out of an IEP or 504. Take it out, get your draft, put the specifics back after.
+Same goes for parent names, a specific diagnosis, a family situation, anything out of an IEP or 504. Take it out, get your draft, put the specifics back after. This is how I handle it when I use AI for [report card comments](/blog/ai-prompt-for-report-card-comments), where you are writing about a specific kid by definition.
 
 ## Tools built with this in mind
 
-Some tools, like Claude for Teachers, add K-12 privacy protections and do not use what you type to train the model. That is a real difference from a regular consumer account. But your school and district rules still apply either way, and I would keep the habit of pulling names out no matter which tool you are using.
+Some tools, like Claude for Teachers, add K-12 privacy protections and do not use what you type to train the model. That is a real difference from a regular consumer account, and it matters more than [whether you are paying for the tool](/blog/free-vs-paid-ai-tools-for-teachers). But your school and district rules still apply either way, and I would keep the habit of pulling names out no matter which tool you are using.
 
 That one habit, take the name out before you paste, handles most of the actual risk and costs you about five seconds.

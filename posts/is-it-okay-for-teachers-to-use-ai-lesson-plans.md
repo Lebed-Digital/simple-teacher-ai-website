@@ -26,7 +26,7 @@ What matters is whether the lesson your kids actually get reflects what you know
 
 I do not have AI write my lessons, and I do not really write them myself either. I teach from a curriculum, so the lesson already exists in the teacher manual.
 
-What I do is paste that lesson into AI and ask it where my kids are going to get stuck, and how I could teach the tricky parts. Because a teacher manual tells you what to teach and roughly how, but it was not written for third graders in my room, and it definitely was not written this year.
+What I do is paste that lesson into AI and ask it where my kids are going to get stuck, and how I could teach the tricky parts. Because a teacher manual tells you what to teach and roughly how, but it was not written for third graders in my room, and it definitely was not written this year. This is the same pattern as [the rest of what I use AI for](/blog/how-i-actually-use-ai-as-a-teacher): I bring what I know about my kids, it fills in the part I would otherwise skip because it is late.
 
 I started doing this last spring. I knew an observation was coming and I wanted it to go well, so every night for about two weeks I pasted the next day's math lesson in and asked what I was missing. It kept finding things, like where kids would misread something or which step the manual kind of skipped over. And it would give me ways to explain the hard part that were actually built for eight and nine year olds, using stuff they care about right now, which is not something a manual printed a few years ago can do.
 
@@ -46,6 +46,6 @@ Asking AI where a lesson might trip kids up is one thing. Handing in something i
 
 ## Check your district policy first
 
-Some districts have actual rules about AI in instructional materials, and some limit which tools you can use with anything student-related. That is a separate question from whether it is okay, and it is worth five minutes to look up before you build a habit around a tool you are not allowed to use.
+Some districts have actual rules about AI in instructional materials, and some limit which tools you can use with anything student-related. That is a separate question from whether it is okay, and it is worth five minutes to look up before you build a habit around a tool you are not allowed to use. Worth reading up on [what not to paste into an AI tool](/blog/ai-privacy-mistake-student-names) while you are at it.
 
 If your district has not said anything yet, and plenty still have not, here is the test I use: would you be fine telling your principal exactly how you used it? If yes, you are probably fine.
