@@ -1,0 +1,13 @@
+# Simple Teacher AI
+
+> Practical, teacher-friendly AI prompts, tools, tutorials, and honest advice from a real classroom teacher.
+
+Simple Teacher AI is written by Gregory Lebed, a classroom teacher who uses AI daily for lesson planning, parent communication, report card comments, and everyday teacher workload. The site shares copy-and-paste prompts and honest, practical guidance, no hype, no complicated tech talk.
+
+## Blog
+
+- [How I Actually Use AI as a Teacher](https://www.simpleteacherai.com/blog/how-i-actually-use-ai-as-a-teacher)
+- [Is It Okay for Teachers to Use AI to Write Lesson Plans?](https://www.simpleteacherai.com/blog/is-it-okay-for-teachers-to-use-ai-lesson-plans)
+- [The AI Privacy Mistake Teachers Keep Making With Student Names](https://www.simpleteacherai.com/blog/ai-privacy-mistake-student-names)
+- [The Only AI Prompt I Use for Report Card Comments](https://www.simpleteacherai.com/blog/ai-prompt-for-report-card-comments)
+- [Free vs Paid AI Tools for Teachers: What Actually Matters](https://www.simpleteacherai.com/blog/free-vs-paid-ai-tools-for-teachers)
