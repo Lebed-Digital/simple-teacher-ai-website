@@ -52,31 +52,7 @@ export function BlogPostPage() {
           <h1 className="mt-3 text-balance font-serif text-4xl font-bold tracking-[-0.03em] text-[var(--green)] sm:text-5xl">{post.title}</h1>
           <p className="mt-4 text-xl leading-8 text-[var(--muted)]">{post.subtitle}</p>
 
-          <div className="mt-10 space-y-6">
-            {post.body.map((block, i) => {
-              if (block.type === 'h2') {
-                return (
-                  <h2 key={i} className="pt-4 font-serif text-2xl font-bold tracking-[-0.02em] text-[var(--green)] sm:text-3xl">
-                    {block.text}
-                  </h2>
-                )
-              }
-              if (block.type === 'list') {
-                return (
-                  <ul key={i} className="list-disc space-y-2 pl-6 text-lg leading-8 text-[var(--ink)]">
-                    {block.items.map((item, j) => (
-                      <li key={j}>{item}</li>
-                    ))}
-                  </ul>
-                )
-              }
-              return (
-                <p key={i} className="text-lg leading-8 text-[var(--ink)]">
-                  {block.text}
-                </p>
-              )
-            })}
-          </div>
+          <div className="post-content mt-10" dangerouslySetInnerHTML={{ __html: post.html }} />
 
           {post.faq.length > 0 ? (
             <section className="mt-14 rounded-2xl border border-[var(--border)] bg-white p-6 sm:p-8" aria-labelledby="faq-heading">
