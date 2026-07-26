@@ -19,11 +19,9 @@
   --blue: #8fa3f0;
   --blue-light: #e6eafd;
   --blue-dark: #2337a8;
+  /* Amber is not a second accent, only the offset-shadow colour. */
   --yellow: #ffc94d;
-  /* Pale amber wash: the warm counterpart to --blue-light for tag pills. */
-  --yellow-light: #fff3d6;
-  /* Tinted panel for the "coming soon" block. Its own token so it can stay
-     neutral while --yellow-light stays warm for tags. */
+  /* Tinted panel for the "coming soon" block. */
   --panel: #eef0fb;
   --red-pen: #2544d8;
   --border: #dedde4;

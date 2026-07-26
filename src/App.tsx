@@ -17,9 +17,9 @@ const socialLinks = [
 ] as const
 
 const resources = [
-  { tag: 'Prompts', tone: 'yellow', title: 'Simple AI prompts', description: 'Simple AI prompts for everyday teacher tasks', href: '#prompts' },
-  { tag: 'Reviews', tone: 'blue', title: 'Honest tool reviews', description: 'Honest reviews of tools made for teachers' },
-  { tag: 'Examples', tone: 'yellow', title: 'Real examples', description: 'Step-by-step examples from a real classroom teacher' },
+  { tag: 'Prompts', title: 'Simple AI prompts', description: 'Simple AI prompts for everyday teacher tasks', href: '#prompts' },
+  { tag: 'Reviews', title: 'Honest tool reviews', description: 'Honest reviews of tools made for teachers' },
+  { tag: 'Examples', title: 'Real examples', description: 'Step-by-step examples from a real classroom teacher' },
 ] as const
 
 const featuredPrompt = {
@@ -271,13 +271,9 @@ function App() {
                 const linkProps = isLink
                   ? { href: resource.href, className: 'resource-card block rounded-2xl border border-[var(--border)] bg-[var(--paper)] p-6 transition-colors hover:border-[var(--green)] hover:bg-[var(--surface)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--focus)] sm:p-8' }
                   : { className: 'resource-card rounded-2xl border border-[var(--border)] bg-[var(--paper)] p-6 sm:p-8' }
-                const tagClass =
-                  resource.tone === 'blue'
-                    ? 'bg-[var(--blue-light)] text-[var(--blue-dark)]'
-                    : 'bg-[var(--yellow-light)] text-[var(--green-dark)]'
                 return (
                   <Card key={resource.title} {...linkProps}>
-                    <span className={`inline-flex rounded-full px-3 py-1 text-sm font-bold uppercase tracking-[0.08em] ${tagClass}`}>{resource.tag}</span>
+                    <span className="inline-flex rounded-full bg-[var(--blue-light)] px-3 py-1 text-sm font-bold uppercase tracking-[0.08em] text-[var(--blue-dark)]">{resource.tag}</span>
                     <h3 className="mt-8 text-xl font-bold tracking-[-0.02em] text-[var(--heading)]">{resource.title}</h3>
                     <p className="mt-3 text-base leading-7 text-[var(--muted)]">{resource.description}</p>
                     {isLink ? <p className="mt-4 text-sm font-bold text-[var(--green)] underline decoration-[var(--yellow)] decoration-2 underline-offset-4">Try the prompts</p> : null}
