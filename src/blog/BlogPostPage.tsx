@@ -65,7 +65,7 @@ export function BlogPostPage() {
       <div className="min-h-screen bg-[var(--cream)] text-[var(--ink)]">
         <SiteHeader />
         <main className="px-5 py-24 text-center sm:px-8">
-          <h1 className="font-serif text-4xl font-bold text-[var(--green)]">Post not found</h1>
+          <h1 className="font-serif text-4xl font-bold text-[var(--heading)]">Post not found</h1>
           <p className="mt-4 text-lg text-[var(--muted)]">
             <Link to="/blog" className="font-bold text-[var(--green)] underline decoration-[var(--yellow)] decoration-2 underline-offset-4">
               Back to the blog
@@ -81,7 +81,7 @@ export function BlogPostPage() {
 
   return (
     <div className="min-h-screen bg-[var(--cream)] text-[var(--ink)]">
-      <a href="#main-content" className="fixed left-4 top-4 z-50 -translate-y-24 rounded-md bg-[var(--green)] px-4 py-3 font-semibold text-white focus:translate-y-0">
+      <a href="#main-content" className="fixed left-4 top-4 z-50 -translate-y-24 rounded-md bg-[var(--green)] px-4 py-3 font-semibold text-[var(--on-accent)] focus:translate-y-0">
         Skip to main content
       </a>
       <SiteHeader />
@@ -91,14 +91,14 @@ export function BlogPostPage() {
             ← All posts
           </Link>
           <p className="mt-6 text-sm font-semibold uppercase tracking-[0.1em] text-[var(--muted)]">{formatDate(post.date)}</p>
-          <h1 className="mt-3 text-balance font-serif text-4xl font-bold tracking-[-0.03em] text-[var(--green)] sm:text-5xl">{post.title}</h1>
+          <h1 className="mt-3 text-balance font-serif text-4xl font-bold tracking-[-0.03em] text-[var(--heading)] sm:text-5xl">{post.title}</h1>
           <p className="mt-4 text-xl leading-8 text-[var(--muted)]">{post.subtitle}</p>
 
           <div ref={contentRef} className="post-content mt-10" dangerouslySetInnerHTML={{ __html: post.html }} />
 
           {post.faq.length > 0 ? (
-            <section className="mt-14 rounded-2xl border border-[var(--border)] bg-white p-6 sm:p-8" aria-labelledby="faq-heading">
-              <h2 id="faq-heading" className="font-serif text-2xl font-bold tracking-[-0.02em] text-[var(--green)]">
+            <section className="mt-14 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-8" aria-labelledby="faq-heading">
+              <h2 id="faq-heading" className="font-serif text-2xl font-bold tracking-[-0.02em] text-[var(--heading)]">
                 Questions teachers ask
               </h2>
               <dl className="mt-6 space-y-6">
@@ -114,13 +114,13 @@ export function BlogPostPage() {
 
           {otherPosts.length > 0 ? (
             <section className="mt-14" aria-labelledby="more-heading">
-              <h2 id="more-heading" className="font-serif text-xl font-bold tracking-[-0.02em] text-[var(--green)]">
+              <h2 id="more-heading" className="font-serif text-xl font-bold tracking-[-0.02em] text-[var(--heading)]">
                 More from the blog
               </h2>
               <div className="mt-5 grid gap-4 sm:grid-cols-2">
                 {otherPosts.map((p) => (
-                  <Link key={p.slug} to={`/blog/${p.slug}`} className="block rounded-2xl border border-[var(--border)] bg-white p-5 transition-colors hover:border-[var(--green)]">
-                    <h3 className="font-bold text-[var(--green)]">{p.title}</h3>
+                  <Link key={p.slug} to={`/blog/${p.slug}`} className="block rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 transition-colors hover:border-[var(--green)]">
+                    <h3 className="font-bold text-[var(--heading)]">{p.title}</h3>
                     <p className="mt-2 text-sm leading-6 text-[var(--muted)]">{p.excerpt}</p>
                   </Link>
                 ))}

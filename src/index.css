@@ -2,28 +2,41 @@
 
 :root {
   font-family: "Figtree", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #173c34;
-  background: #f8f5ec;
+  color: #1e1d26;
+  background: #fafaf8;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --cream: #f8f5ec;
-  --paper: #fcfbf6;
-  --ink: #193730;
-  --muted: #4f655f;
-  --green: #245c4f;
-  --green-dark: #173f36;
-  --blue: #89b8c5;
-  --blue-light: #dcecef;
-  --blue-dark: #2c6472;
-  --yellow: #edc95d;
-  --yellow-light: #fff5cf;
-  --red-pen: #c1502f;
-  --border: #d7ded8;
-  --rule-line: rgba(36, 92, 79, 0.07);
-  --focus: #c99c12;
-  --focus-light: #f7dc83;
+  --cream: #fafaf8;
+  --paper: #f4f4f2;
+  --ink: #1e1d26;
+  --muted: #56555f;
+  /* --accent. Still named --green for now: it is referenced ~45 times
+     across the components. Rename in a separate pass. */
+  --green: #2544d8;
+  --green-dark: #1b32a4;
+  --blue: #8fa3f0;
+  --blue-light: #e6eafd;
+  --blue-dark: #2337a8;
+  /* Amber is not a second accent, only the offset-shadow colour. */
+  --yellow: #ffc94d;
+  /* Tinted panel for the "coming soon" block. */
+  --panel: #eef0fb;
+  --red-pen: #2544d8;
+  --border: #dedde4;
+  --rule-line: rgba(37, 68, 216, 0.1);
+  --focus: #2544d8;
+  --focus-light: #b9c4f7;
+  --surface: #ffffff;
+  --on-accent: #ffffff;
+  --heading: #14131a;
+  /* Full-width colour bands: social section and footer. Kept separate from
+     the accent so the bands can go near-black rather than bright blue. */
+  --band: #14131a;
+  --band-deep: #0c0b10;
+  --on-band: #fafaf8;
+  --shadow: #ffc94d;
 }
 
 * { box-sizing: border-box; }
@@ -38,7 +51,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .post-content { display: flex; flex-direction: column; gap: 1.5rem; }
 .post-content p { font-size: 1.125rem; line-height: 2rem; color: var(--ink); }
-.post-content h2 { padding-top: 1rem; font-family: "Fraunces", Georgia, "Times New Roman", serif; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; color: var(--green); }
+.post-content h2 { padding-top: 1rem; font-family: "Fraunces", Georgia, "Times New Roman", serif; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; color: var(--heading); }
 .post-content ul, .post-content ol { padding-left: 1.5rem; font-size: 1.125rem; line-height: 2rem; color: var(--ink); display: flex; flex-direction: column; gap: 0.5rem; }
 .post-content ul { list-style-type: disc; }
 .post-content ol { list-style-type: decimal; }
