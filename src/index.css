@@ -24,6 +24,103 @@
   --rule-line: rgba(36, 92, 79, 0.07);
   --focus: #c99c12;
   --focus-light: #f7dc83;
+  --surface: #ffffff;
+  --on-accent: #ffffff;
+  --heading: #245c4f;
+  /* Full-width colour bands (social section, footer). Kept separate from
+     --green so a dark theme can hold them dark instead of inverting them. */
+  --band: #245c4f;
+  --band-deep: #173f36;
+  --on-band: #ffffff;
+  --shadow: #edc95d;
+}
+
+/* ---------------------------------------------------------------
+   THEME EXPLORATIONS (temporary, for review on this branch only)
+   Set data-theme on <html> to preview. Default (no attribute) is
+   the current live site, unchanged.
+   --------------------------------------------------------------- */
+
+/* A. Warm and human: terracotta accent, near-black headings */
+:root[data-theme="warm"] {
+  --heading: #1c1a17;
+  --ink: #241f1a;
+  --muted: #5f544a;
+  --green: #b8482a;
+  --green-dark: #8f3720;
+  --blue: #d8a48f;
+  --blue-light: #f7e9e2;
+  --blue-dark: #9c4a2e;
+  --yellow: #e8b23f;
+  --yellow-light: #fdf1d8;
+  --border: #e2d8cc;
+  --rule-line: rgba(120, 80, 60, 0.07);
+  --focus: #b8482a;
+  --focus-light: #f2c4ae;
+  --band: #b8482a;
+  --band-deep: #8f3720;
+  --on-band: #ffffff;
+}
+
+/* B. Sharp and modern: ink blue accent, cooler paper */
+:root[data-theme="sharp"] {
+  --cream: #fafaf8;
+  --paper: #f4f4f2;
+  --heading: #14131a;
+  --ink: #1e1d26;
+  --muted: #56555f;
+  --green: #2544d8;
+  --green-dark: #1b32a4;
+  --blue: #8fa3f0;
+  --blue-light: #e6eafd;
+  --blue-dark: #2337a8;
+  --yellow: #ffc94d;
+  --yellow-light: #fff3d6;
+  --border: #dedde4;
+  --rule-line: rgba(37, 68, 216, 0.05);
+  --focus: #2544d8;
+  --focus-light: #b9c4f7;
+  --red-pen: #2544d8;
+  --band: #14131a;
+  --band-deep: #0c0b10;
+  --on-band: #fafaf8;
+  background: #fafaf8;
+}
+
+/* C. Dark, done properly: warm near-black, amber accent */
+:root[data-theme="dark"] {
+  --cream: #14120f;
+  --paper: #1c1917;
+  --surface: #1c1917;
+  --heading: #f4efe4;
+  --ink: #e8e2d6;
+  --muted: #a49b8c;
+  --green: #edc95d;
+  --green-dark: #d4ae42;
+  --on-accent: #14120f;
+  --blue: #7fa8b8;
+  --blue-light: #22302f;
+  --blue-dark: #9cc4d2;
+  --yellow: #edc95d;
+  --yellow-light: #241f16;
+  --red-pen: #e07a52;
+  --border: #33302a;
+  --rule-line: rgba(237, 201, 93, 0.05);
+  --focus: #edc95d;
+  --focus-light: #f7e3a8;
+  /* --shadow normally equals --yellow, but here that matches the amber
+     accent, so offset shadows would vanish against amber fills. */
+  --shadow: #8a6a1f;
+  --band: #1c1917;
+  --band-deep: #12100e;
+  --on-band: #f4efe4;
+  color: #e8e2d6;
+  background: #14120f;
+}
+
+/* D. Distribution fix only: original green, demoted to accent */
+:root[data-theme="demoted"] {
+  --heading: #1c1a17;
 }
 
 * { box-sizing: border-box; }
@@ -38,7 +135,7 @@ button, a { -webkit-tap-highlight-color: transparent; }
 
 .post-content { display: flex; flex-direction: column; gap: 1.5rem; }
 .post-content p { font-size: 1.125rem; line-height: 2rem; color: var(--ink); }
-.post-content h2 { padding-top: 1rem; font-family: "Fraunces", Georgia, "Times New Roman", serif; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; color: var(--green); }
+.post-content h2 { padding-top: 1rem; font-family: "Fraunces", Georgia, "Times New Roman", serif; font-size: 1.5rem; font-weight: 700; letter-spacing: -0.02em; color: var(--heading); }
 .post-content ul, .post-content ol { padding-left: 1.5rem; font-size: 1.125rem; line-height: 2rem; color: var(--ink); display: flex; flex-direction: column; gap: 0.5rem; }
 .post-content ul { list-style-type: disc; }
 .post-content ol { list-style-type: decimal; }

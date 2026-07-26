@@ -8,7 +8,7 @@ export function SiteHeader() {
         aria-label="Simple Teacher AI home"
         className="inline-flex items-center gap-3 rounded-sm font-semibold tracking-[-0.02em] text-[var(--green)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--focus)]"
       >
-        <span aria-hidden="true" className="grid size-9 place-items-center rounded-lg bg-[var(--green)] text-sm font-bold text-white">ST</span>
+        <span aria-hidden="true" className="grid size-9 place-items-center rounded-lg bg-[var(--green)] text-sm font-bold text-[var(--on-accent)]">ST</span>
         <span>Simple Teacher AI</span>
       </Link>
       <nav aria-label="Primary" className="flex items-center gap-4 sm:gap-6">

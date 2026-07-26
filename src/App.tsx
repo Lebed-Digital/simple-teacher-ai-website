@@ -110,8 +110,8 @@ function CopyButton({ text, label, variant = 'default' }: { text: string; label:
   const base = 'inline-flex items-center gap-2 rounded-full text-sm font-bold transition-colors focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--focus)]'
   const styles =
     variant === 'primary'
-      ? 'bg-[var(--green)] px-6 py-3 text-white hover:bg-[var(--green-dark)]'
-      : 'border-2 border-[var(--green)] px-5 py-2.5 text-[var(--green)] hover:bg-[var(--green)] hover:text-white'
+      ? 'bg-[var(--green)] px-6 py-3 text-[var(--on-accent)] hover:bg-[var(--green-dark)]'
+      : 'border-2 border-[var(--green)] px-5 py-2.5 text-[var(--green)] hover:bg-[var(--green)] hover:text-[var(--on-accent)]'
 
   return (
     <button type="button" onClick={handleCopy} aria-label={`Copy the ${label} prompt`} aria-live="polite" className={`${base} ${styles}`}>
@@ -237,7 +237,7 @@ function App() {
 
   return (
     <div className="min-h-screen bg-[var(--cream)] text-[var(--ink)]">
-      <a href="#main-content" className="fixed left-4 top-4 z-50 -translate-y-24 rounded-md bg-[var(--green)] px-4 py-3 font-semibold text-white focus:translate-y-0">
+      <a href="#main-content" className="fixed left-4 top-4 z-50 -translate-y-24 rounded-md bg-[var(--green)] px-4 py-3 font-semibold text-[var(--on-accent)] focus:translate-y-0">
         Skip to main content
       </a>
 
@@ -248,28 +248,28 @@ function App() {
           <div ref={ringRef} aria-hidden="true" className="absolute right-[3%] top-0 hidden size-28 rounded-full border-[18px] border-[var(--red-pen)] opacity-40 lg:block" />
           <div ref={squareRef} aria-hidden="true" className="absolute bottom-12 left-[4%] h-16 w-16 rotate-6 rounded-xl bg-[var(--blue)] opacity-50" />
           <div className="relative mx-auto max-w-4xl text-center">
-            <p ref={heroEyebrowRef} className="mb-6 inline-flex rounded-full border border-[var(--green)]/20 bg-white px-4 py-2 text-sm font-bold uppercase tracking-[0.14em] text-[var(--green)]">Teacher-tested, classroom-minded</p>
-            <h1 className="text-balance font-serif text-5xl font-bold leading-[1.02] tracking-[-0.04em] text-[var(--green)] sm:text-7xl lg:text-[5.5rem]">
+            <p ref={heroEyebrowRef} className="mb-6 inline-flex rounded-full border border-[var(--green)]/20 bg-[var(--surface)] px-4 py-2 text-sm font-bold uppercase tracking-[0.14em] text-[var(--green)]">Teacher-tested, classroom-minded</p>
+            <h1 className="text-balance font-serif text-5xl font-bold leading-[1.02] tracking-[-0.04em] text-[var(--heading)] sm:text-7xl lg:text-[5.5rem]">
               <SplitHeading text="Simple Teacher AI" />
             </h1>
             <p ref={heroSubRef} className="mx-auto mt-7 max-w-3xl text-balance text-2xl font-semibold leading-snug text-[var(--ink)] sm:text-3xl">Practical AI help for teachers who do not have time to become tech experts.</p>
             <p ref={heroDescRef} className="mx-auto mt-7 max-w-xl text-base leading-7 text-[var(--muted)] sm:max-w-2xl sm:text-lg sm:leading-8">I am a classroom teacher exploring practical ways to use AI to save time, simplify everyday work, and make teaching a little more manageable. I share the tools, prompts, experiments, and honest lessons that are actually useful in a real classroom.</p>
-            <div ref={heroNoteRef} className="mx-auto mt-10 max-w-3xl rotate-[-1deg] rounded-2xl border-2 border-[var(--green)] bg-[var(--green)] px-6 py-5 text-lg font-bold leading-7 text-white shadow-[6px_6px_0_var(--yellow)] sm:px-10 sm:text-xl">No hype. No complicated tech talk. Just simple, practical ways teachers can use AI.</div>
+            <div ref={heroNoteRef} className="mx-auto mt-10 max-w-3xl rotate-[-1deg] rounded-2xl border-2 border-[var(--green)] bg-[var(--green)] px-6 py-5 text-lg font-bold leading-7 text-[var(--on-accent)] shadow-[6px_6px_0_var(--shadow)] sm:px-10 sm:text-xl">No hype. No complicated tech talk. Just simple, practical ways teachers can use AI.</div>
           </div>
         </section>
 
-        <section className="bg-white px-5 py-20 sm:px-8 sm:py-28" aria-labelledby="resources-heading">
+        <section className="bg-[var(--surface)] px-5 py-20 sm:px-8 sm:py-28" aria-labelledby="resources-heading">
           <div className="mx-auto max-w-6xl">
             <div className="max-w-2xl">
               <p className="text-sm font-bold uppercase tracking-[0.16em] text-[var(--blue-dark)]">The useful stuff</p>
-              <h2 id="resources-heading" className="mt-3 font-serif text-4xl font-bold tracking-[-0.03em] text-[var(--green)] sm:text-5xl">What You’ll Find Here</h2>
+              <h2 id="resources-heading" className="mt-3 font-serif text-4xl font-bold tracking-[-0.03em] text-[var(--heading)] sm:text-5xl">What You’ll Find Here</h2>
             </div>
             <div className="mt-12 grid gap-5 md:grid-cols-3">
               {resources.map((resource) => {
                 const isLink = 'href' in resource
                 const Card = isLink ? 'a' : 'article'
                 const linkProps = isLink
-                  ? { href: resource.href, className: 'resource-card block rounded-2xl border border-[var(--border)] bg-[var(--paper)] p-6 transition-colors hover:border-[var(--green)] hover:bg-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--focus)] sm:p-8' }
+                  ? { href: resource.href, className: 'resource-card block rounded-2xl border border-[var(--border)] bg-[var(--paper)] p-6 transition-colors hover:border-[var(--green)] hover:bg-[var(--surface)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--focus)] sm:p-8' }
                   : { className: 'resource-card rounded-2xl border border-[var(--border)] bg-[var(--paper)] p-6 sm:p-8' }
                 const tagClass =
                   resource.tone === 'blue'
@@ -278,7 +278,7 @@ function App() {
                 return (
                   <Card key={resource.title} {...linkProps}>
                     <span className={`inline-flex rounded-full px-3 py-1 text-sm font-bold uppercase tracking-[0.08em] ${tagClass}`}>{resource.tag}</span>
-                    <h3 className="mt-8 text-xl font-bold tracking-[-0.02em] text-[var(--green)]">{resource.title}</h3>
+                    <h3 className="mt-8 text-xl font-bold tracking-[-0.02em] text-[var(--heading)]">{resource.title}</h3>
                     <p className="mt-3 text-base leading-7 text-[var(--muted)]">{resource.description}</p>
                     {isLink ? <p className="mt-4 text-sm font-bold text-[var(--green)] underline decoration-[var(--yellow)] decoration-2 underline-offset-4">Try the prompts</p> : null}
                   </Card>
@@ -292,7 +292,7 @@ function App() {
           <div className="mx-auto max-w-6xl">
             <div className="max-w-2xl">
               <p className="text-sm font-bold uppercase tracking-[0.16em] text-[var(--blue-dark)]">Try it right now</p>
-              <h2 id="prompts-heading" className="mt-3 font-serif text-4xl font-bold tracking-[-0.03em] text-[var(--green)] sm:text-5xl">5 copy-and-paste prompts that save teachers time</h2>
+              <h2 id="prompts-heading" className="mt-3 font-serif text-4xl font-bold tracking-[-0.03em] text-[var(--heading)] sm:text-5xl">5 copy-and-paste prompts that save teachers time</h2>
               <p className="mt-4 text-lg leading-8 text-[var(--muted)]">Copy a prompt, paste it into ChatGPT, Claude, or Gemini, then add your own details. Each one is built to help in under a minute.</p>
             </div>
 
@@ -301,9 +301,9 @@ function App() {
               <p className="mt-3 text-base leading-7 text-[var(--ink)]">Tools like Claude for Teachers add extra K-12 privacy protections and do not use your content to train the AI. Even so, your school and district policies still apply. When you can, remove student names and other identifying details before pasting anything into an AI tool. The AI does not need a real name to help you, and you can add it back afterward.</p>
             </aside>
 
-            <article ref={featuredPromptRef} className="mt-6 rounded-3xl border-2 border-[var(--green)] bg-white p-7 shadow-[6px_6px_0_var(--yellow)] sm:p-10">
-              <span className="inline-flex rounded-full bg-[var(--green)] px-3 py-1 text-sm font-bold uppercase tracking-[0.12em] text-white">{featuredPrompt.eyebrow}</span>
-              <h3 className="mt-5 font-serif text-2xl font-bold tracking-[-0.02em] text-[var(--green)] sm:text-3xl">{featuredPrompt.title}</h3>
+            <article ref={featuredPromptRef} className="mt-6 rounded-3xl border-2 border-[var(--green)] bg-[var(--surface)] p-7 shadow-[6px_6px_0_var(--shadow)] sm:p-10">
+              <span className="inline-flex rounded-full bg-[var(--green)] px-3 py-1 text-sm font-bold uppercase tracking-[0.12em] text-[var(--on-accent)]">{featuredPrompt.eyebrow}</span>
+              <h3 className="mt-5 font-serif text-2xl font-bold tracking-[-0.02em] text-[var(--heading)] sm:text-3xl">{featuredPrompt.title}</h3>
               <p className="mt-3 text-base leading-7 text-[var(--muted)] sm:text-lg">{featuredPrompt.description}</p>
               <pre className="mt-6 overflow-x-auto whitespace-pre-wrap rounded-2xl border border-[var(--border)] bg-[var(--paper)] p-5 font-sans text-sm leading-7 text-[var(--ink)] sm:text-base">{featuredPrompt.prompt}</pre>
               <div className="mt-5">
@@ -313,8 +313,8 @@ function App() {
 
             <div ref={quickPromptsRef} className="mt-6 grid gap-5 md:grid-cols-2">
               {quickPrompts.map((item) => (
-                <article key={item.title} className="quick-prompt-card flex flex-col rounded-2xl border border-[var(--border)] bg-white p-6 sm:p-7">
-                  <h3 className="text-xl font-bold tracking-[-0.02em] text-[var(--green)]">{item.title}</h3>
+                <article key={item.title} className="quick-prompt-card flex flex-col rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 sm:p-7">
+                  <h3 className="text-xl font-bold tracking-[-0.02em] text-[var(--heading)]">{item.title}</h3>
                   <p className="mt-2 text-base leading-7 text-[var(--muted)]">{item.description}</p>
                   <pre className="mt-5 overflow-x-auto whitespace-pre-wrap rounded-xl border border-[var(--border)] bg-[var(--paper)] p-4 font-sans text-sm leading-6 text-[var(--ink)]">{item.prompt}</pre>
                   <div className="mt-4">
@@ -330,20 +330,20 @@ function App() {
           <div ref={comingSoonRef} className="mx-auto grid max-w-6xl gap-10 rounded-3xl border border-[var(--border)] bg-[var(--yellow-light)] p-7 sm:p-12 md:grid-cols-[1fr_auto] md:items-center">
             <div className="max-w-2xl">
               <p className="text-sm font-bold uppercase tracking-[0.16em] text-[var(--green)]">Just getting started</p>
-              <h2 id="coming-soon-heading" className="mt-3 font-serif text-3xl font-bold tracking-[-0.02em] text-[var(--green)] sm:text-4xl">More is coming soon</h2>
+              <h2 id="coming-soon-heading" className="mt-3 font-serif text-3xl font-bold tracking-[-0.02em] text-[var(--heading)] sm:text-4xl">More is coming soon</h2>
               <p className="mt-4 text-lg leading-8 text-[var(--muted)]">More resources, tutorials, and teacher-friendly AI guides are coming soon.</p>
             </div>
-            <div aria-hidden="true" className="grid size-24 rotate-3 place-items-center rounded-2xl border-2 border-[var(--green)] bg-white font-serif text-4xl font-bold text-[var(--green)] shadow-[5px_5px_0_var(--blue)]">A+</div>
+            <div aria-hidden="true" className="grid size-24 rotate-3 place-items-center rounded-2xl border-2 border-[var(--green)] bg-[var(--surface)] font-serif text-4xl font-bold text-[var(--green)] shadow-[5px_5px_0_var(--shadow)]">A+</div>
           </div>
         </section>
 
-        <section ref={socialNavRef} id="social-links" className="scroll-mt-8 bg-[var(--green)] px-5 py-16 text-white sm:px-8 sm:py-20" aria-labelledby="social-heading">
+        <section ref={socialNavRef} id="social-links" className="scroll-mt-8 bg-[var(--band)] px-5 py-16 text-[var(--on-band)] sm:px-8 sm:py-20" aria-labelledby="social-heading">
           <div className="mx-auto max-w-6xl text-center">
             <h2 id="social-heading" className="font-serif text-3xl font-bold sm:text-4xl">Follow Simple Teacher AI</h2>
-            <p className="mx-auto mt-3 max-w-xl text-base leading-7 text-white/80">Find practical ideas, honest experiments, and teacher-friendly tips wherever you like to scroll.</p>
+            <p className="mx-auto mt-3 max-w-xl text-base leading-7 text-[var(--on-band)]/80">Find practical ideas, honest experiments, and teacher-friendly tips wherever you like to scroll.</p>
             <nav aria-label="Social media" className="mt-8 flex flex-wrap justify-center gap-3">
               {socialLinks.map((social) => (
-                <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer" className="social-pill rounded-full border border-white/35 bg-white/10 px-5 py-3 text-sm font-bold text-white transition-colors hover:bg-white hover:text-[var(--green)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--focus-light)]">{social.label}</a>
+                <a key={social.label} href={social.href} target="_blank" rel="noopener noreferrer" className="social-pill rounded-full border border-[var(--on-band)]/35 bg-[var(--on-band)]/10 px-5 py-3 text-sm font-bold text-[var(--on-band)] transition-colors hover:bg-[var(--on-band)] hover:text-[var(--band)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--focus-light)]">{social.label}</a>
               ))}
             </nav>
           </div>
