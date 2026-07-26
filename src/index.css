@@ -2,125 +2,43 @@
 
 :root {
   font-family: "Figtree", ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #173c34;
-  background: #f8f5ec;
+  color: #1e1d26;
+  background: #fafaf8;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  --cream: #f8f5ec;
-  --paper: #fcfbf6;
-  --ink: #193730;
-  --muted: #4f655f;
-  --green: #245c4f;
-  --green-dark: #173f36;
-  --blue: #89b8c5;
-  --blue-light: #dcecef;
-  --blue-dark: #2c6472;
-  --yellow: #edc95d;
-  --yellow-light: #fff5cf;
-  --red-pen: #c1502f;
-  --border: #d7ded8;
-  --rule-line: rgba(36, 92, 79, 0.07);
-  --focus: #c99c12;
-  --focus-light: #f7dc83;
-  --surface: #ffffff;
-  --on-accent: #ffffff;
-  --heading: #245c4f;
-  /* Full-width colour bands (social section, footer). Kept separate from
-     --green so a dark theme can hold them dark instead of inverting them. */
-  --band: #245c4f;
-  --band-deep: #173f36;
-  --on-band: #ffffff;
-  --shadow: #edc95d;
-}
-
-/* ---------------------------------------------------------------
-   THEME EXPLORATIONS (temporary, for review on this branch only)
-   Set data-theme on <html> to preview. Default (no attribute) is
-   the current live site, unchanged.
-   --------------------------------------------------------------- */
-
-/* A. Warm and human: terracotta accent, near-black headings */
-:root[data-theme="warm"] {
-  --heading: #1c1a17;
-  --ink: #241f1a;
-  --muted: #5f544a;
-  --green: #b8482a;
-  --green-dark: #8f3720;
-  --blue: #d8a48f;
-  --blue-light: #f7e9e2;
-  --blue-dark: #9c4a2e;
-  --yellow: #e8b23f;
-  --yellow-light: #fdf1d8;
-  --border: #e2d8cc;
-  --rule-line: rgba(120, 80, 60, 0.07);
-  --focus: #b8482a;
-  --focus-light: #f2c4ae;
-  --band: #b8482a;
-  --band-deep: #8f3720;
-  --on-band: #ffffff;
-}
-
-/* B. Sharp and modern: ink blue accent, cooler paper */
-:root[data-theme="sharp"] {
   --cream: #fafaf8;
   --paper: #f4f4f2;
-  --heading: #14131a;
   --ink: #1e1d26;
   --muted: #56555f;
+  /* --accent. Still named --green for now: it is referenced ~45 times
+     across the components. Rename in a separate pass. */
   --green: #2544d8;
   --green-dark: #1b32a4;
   --blue: #8fa3f0;
   --blue-light: #e6eafd;
   --blue-dark: #2337a8;
   --yellow: #ffc94d;
+  /* Pale amber wash: the warm counterpart to --blue-light for tag pills. */
   --yellow-light: #fff3d6;
+  /* Tinted panel for the "coming soon" block. Its own token so it can stay
+     neutral while --yellow-light stays warm for tags. */
+  --panel: #eef0fb;
+  --red-pen: #2544d8;
   --border: #dedde4;
-  --rule-line: rgba(37, 68, 216, 0.05);
+  --rule-line: rgba(37, 68, 216, 0.1);
   --focus: #2544d8;
   --focus-light: #b9c4f7;
-  --red-pen: #2544d8;
+  --surface: #ffffff;
+  --on-accent: #ffffff;
+  --heading: #14131a;
+  /* Full-width colour bands: social section and footer. Kept separate from
+     the accent so the bands can go near-black rather than bright blue. */
   --band: #14131a;
   --band-deep: #0c0b10;
   --on-band: #fafaf8;
-  background: #fafaf8;
-}
-
-/* C. Dark, done properly: warm near-black, amber accent */
-:root[data-theme="dark"] {
-  --cream: #14120f;
-  --paper: #1c1917;
-  --surface: #1c1917;
-  --heading: #f4efe4;
-  --ink: #e8e2d6;
-  --muted: #a49b8c;
-  --green: #edc95d;
-  --green-dark: #d4ae42;
-  --on-accent: #14120f;
-  --blue: #7fa8b8;
-  --blue-light: #22302f;
-  --blue-dark: #9cc4d2;
-  --yellow: #edc95d;
-  --yellow-light: #241f16;
-  --red-pen: #e07a52;
-  --border: #33302a;
-  --rule-line: rgba(237, 201, 93, 0.05);
-  --focus: #edc95d;
-  --focus-light: #f7e3a8;
-  /* --shadow normally equals --yellow, but here that matches the amber
-     accent, so offset shadows would vanish against amber fills. */
-  --shadow: #8a6a1f;
-  --band: #1c1917;
-  --band-deep: #12100e;
-  --on-band: #f4efe4;
-  color: #e8e2d6;
-  background: #14120f;
-}
-
-/* D. Distribution fix only: original green, demoted to accent */
-:root[data-theme="demoted"] {
-  --heading: #1c1a17;
+  --shadow: #ffc94d;
 }
 
 * { box-sizing: border-box; }

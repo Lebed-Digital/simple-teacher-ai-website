@@ -327,7 +327,7 @@ function App() {
         </section>
 
         <section className="px-5 py-20 sm:px-8 sm:py-24" aria-labelledby="coming-soon-heading">
-          <div ref={comingSoonRef} className="mx-auto grid max-w-6xl gap-10 rounded-3xl border border-[var(--border)] bg-[var(--yellow-light)] p-7 sm:p-12 md:grid-cols-[1fr_auto] md:items-center">
+          <div ref={comingSoonRef} className="mx-auto grid max-w-6xl gap-10 rounded-3xl border border-[var(--border)] bg-[var(--panel)] p-7 sm:p-12 md:grid-cols-[1fr_auto] md:items-center">
             <div className="max-w-2xl">
               <p className="text-sm font-bold uppercase tracking-[0.16em] text-[var(--green)]">Just getting started</p>
               <h2 id="coming-soon-heading" className="mt-3 font-serif text-3xl font-bold tracking-[-0.02em] text-[var(--heading)] sm:text-4xl">More is coming soon</h2>
