@@ -34,4 +34,6 @@ If a kid has something sensitive going on, a rough family situation, a behavior 
 
 For everyone else it is fragments in, comment out, read it once, next kid. What used to take a weekend now gets done before dinner and I get to actually spend time with my own kid.
 
+This is close to why I built [ShortHand](https://getshorthandapp.com) in the first place: logging those quick fragments as they happen so there is something real to work from later, instead of trying to remember a whole semester in one sitting.
+
 This is the same idea behind [most of how I use AI](/blog/how-i-actually-use-ai-as-a-teacher): I do the noticing, it does the wording.
