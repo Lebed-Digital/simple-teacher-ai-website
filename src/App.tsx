@@ -132,6 +132,41 @@ function App() {
   const quickPromptsRef = useRef<HTMLDivElement>(null)
   const comingSoonRef = useRef<HTMLDivElement>(null)
   const socialNavRef = useRef<HTMLElement>(null)
+  const lenisRef = useRef<Lenis | null>(null)
+
+  // The browser can't act on a #hash at load time here: this is an SPA, so the
+  // target section doesn't exist yet when the initial HTML parses. Scroll to it
+  // ourselves once React has mounted. Runs for the vanity social redirects
+  // (/fb, /ig, /tt, /yt, /sub all land on /#prompts) and for in-page anchors.
+  useEffect(() => {
+    const hash = window.location.hash
+    if (!hash || hash.length < 2) return
+
+    let cancelled = false
+    // Two frames: one for React to commit, one for layout to settle, so the
+    // measured offset isn't stale.
+    const raf = requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        if (cancelled) return
+        const target = document.querySelector(hash)
+        if (!target) return
+
+        const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        // Lenis owns scroll position when it's running, so ask it rather than
+        // calling scrollTo underneath it. It's absent under reduced motion.
+        if (lenisRef.current && !prefersReduced) {
+          lenisRef.current.scrollTo(target as HTMLElement, { offset: -32, immediate: true })
+        } else {
+          target.scrollIntoView({ behavior: prefersReduced ? 'auto' : 'smooth' })
+        }
+      })
+    })
+
+    return () => {
+      cancelled = true
+      cancelAnimationFrame(raf)
+    }
+  }, [])
 
   useEffect(() => {
     const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches
@@ -142,6 +177,7 @@ function App() {
 
     const ctx = gsap.context(() => {
       lenis = new Lenis({ lerp: 0.1 })
+      lenisRef.current = lenis
       tickerFn = (time: number) => lenis!.raf(time * 1000)
       gsap.ticker.add(tickerFn)
       gsap.ticker.lagSmoothing(0)
@@ -231,6 +267,7 @@ function App() {
     return () => {
       if (tickerFn) gsap.ticker.remove(tickerFn)
       lenis?.destroy()
+      lenisRef.current = null
       ctx.revert()
     }
   }, [])
