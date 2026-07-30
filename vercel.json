@@ -24,6 +24,16 @@
       "source": "/sub",
       "destination": "/?utm_source=substack&utm_medium=newsletter&utm_campaign=social_bio#prompts",
       "permanent": false
+    },
+    {
+      "source": "/x",
+      "destination": "/?utm_source=x&utm_medium=organic_social&utm_campaign=social_bio#prompts",
+      "permanent": false
+    },
+    {
+      "source": "/li",
+      "destination": "/?utm_source=linkedin&utm_medium=organic_social&utm_campaign=social_bio#prompts",
+      "permanent": false
     }
   ],
   "rewrites": [{ "source": "/(.*)", "destination": "/index.html" }]
