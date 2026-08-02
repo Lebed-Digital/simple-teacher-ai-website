@@ -14,7 +14,7 @@ faq:
     a: "No, and you should not. This prompt only needs the lesson itself. If you want to mention something about your class, describe it in general terms, like 'several students read below grade level,' instead of naming anyone."
 ---
 
-<div style="position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:1rem;margin-bottom:0.5rem;"><iframe src="https://www.youtube.com/embed/TmzL0Hy7030" title="AI prompt for finding where a lesson will confuse students" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
+<div style="max-width:280px;margin:0 auto 0.5rem;position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:1rem;"><iframe src="https://www.youtube.com/embed/TmzL0Hy7030" title="AI prompt for finding where a lesson will confuse students" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
 
 I read the lesson the night before, and it looked fine. Clear objective, clear steps, nothing weird. Then I taught it, and about five minutes in, half the class stalled on one word I did not even think twice about. That is the part nobody warns you about with lesson plans. They read clean. They do not teach clean.
 
@@ -45,7 +45,7 @@ That last line matters. Left alone, AI will happily rewrite your whole lesson fo
 
 ## What actually comes back
 
-Usually it is stuff I half-knew and had not thought about that day. A vocabulary word that sounds simple to an adult and means nothing to an eight year old. A direction with three steps buried in one sentence. A misconception that shows up almost every year, like kids mixing up the number of groups with the number in each group during multiplication, that I would have caught anyway, but now I catch it before the lesson instead of during it.
+Usually it is stuff I half-knew and had not thought about that day. A vocabulary word that sounds simple to an adult and means nothing to an eight-year-old. A direction with three steps buried in one sentence. Or it flags a misconception that shows up almost every year, like students mixing up the number of groups with the number in each group during multiplication. I probably would have caught it anyway, but now I catch it before the lesson instead of during it.
 
 It is not always right. Sometimes it flags something my kids would never struggle with, and I just ignore that line. I am not looking for a perfect list. I am looking for the one thing I would have missed.
 
@@ -57,7 +57,7 @@ I also never put a student's name or any real details about a specific kid into 
 
 ## This is not lesson planning
 
-I want to be clear about what this is not. I am not asking AI to write my lesson or plan my unit. I already have the lesson. I am asking it to read over my shoulder and point at the parts likely to cause trouble, the way a second teacher would if you handed them your plan and said "does anything jump out." That is a narrower job, and it is why it actually works. It is the same reason [asking AI where a curriculum lesson will trip up my kids](/blog/is-it-okay-for-teachers-to-use-ai-lesson-plans) turned into one of the most useful things I do most nights, not asking it to plan the lesson itself.
+I want to be clear about what this is not. I am not asking AI to write my lesson or plan my unit. I already have the lesson. I am asking it to read over my shoulder and point at the parts likely to cause trouble, the way a second teacher would if you handed them your plan and said "does anything jump out." That narrow job is why it works so well. I am not asking AI to plan the lesson. I am asking it to help me spot problems before I teach it, which is the same habit that turned into [one of the most useful things I do most nights](/blog/is-it-okay-for-teachers-to-use-ai-lesson-plans).
 
 ## Try it on tomorrow's lesson
 
