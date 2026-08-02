@@ -14,7 +14,7 @@ faq:
     a: "No, and you should not. This prompt only needs the lesson itself. If you want to mention something about your class, describe it in general terms, like 'several students read below grade level,' instead of naming anyone."
 ---
 
-<div style="max-width:280px;margin:0 auto 0.5rem;position:relative;padding-bottom:177.78%;height:0;overflow:hidden;border-radius:1rem;"><iframe src="https://www.youtube.com/embed/TmzL0Hy7030" title="AI prompt for finding where a lesson will confuse students" style="position:absolute;top:0;left:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
+<div style="max-width:280px;width:100%;margin:0 auto 0.5rem;aspect-ratio:9/16;overflow:hidden;border-radius:1rem;"><iframe src="https://www.youtube.com/embed/TmzL0Hy7030" title="AI prompt for finding where a lesson will confuse students" style="width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe></div>
 
 I read the lesson the night before, and it looked fine. Clear objective, clear steps, nothing weird. Then I taught it, and about five minutes in, half the class stalled on one word I did not even think twice about. That is the part nobody warns you about with lesson plans. They read clean. They do not teach clean.
 
