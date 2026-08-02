@@ -51,7 +51,7 @@ It is not always right. Sometimes it flags something my kids would never struggl
 
 ## What I do not paste in
 
-I do not copy an entire curriculum lesson into an AI tool. A lot of curriculum publishers do not allow that, and I do not need the whole document anyway. A short outline in my own words works just as well and keeps me on the right side of whatever my district's materials policy says.
+I do not copy an entire curriculum lesson into an AI tool. Some publishers restrict that in their terms, and I do not need the whole document anyway. A short outline in my own words works just as well and keeps me on the right side of whatever my district's materials policy says.
 
 I also never put a student's name or any real details about a specific kid into this prompt, and you should not either. This one does not need it. "Where will students struggle with this lesson" does not require knowing who your students are, and [that is generally the safest way to think about anything you paste into AI](/blog/ai-privacy-mistake-student-names).
 
