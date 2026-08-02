@@ -57,6 +57,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 .post-content ol { list-style-type: decimal; }
 .post-content a { color: var(--green); font-weight: 700; text-decoration: underline; text-decoration-color: var(--yellow); text-decoration-thickness: 2px; text-underline-offset: 4px; }
 .post-content strong { font-weight: 700; color: var(--green); }
+.post-content pre { margin: 0; overflow-x: auto; white-space: pre-wrap; border-radius: 1rem; border: 1px solid var(--border); background: var(--paper); padding: 1.25rem; font-family: inherit; font-size: 1rem; line-height: 1.75rem; color: var(--ink); }
+.post-content pre code { font-family: inherit; background: none; padding: 0; }
 @media (min-width: 640px) { .post-content h2 { font-size: 1.875rem; } }
 
 html.lenis, html.lenis body { height: auto; }
