@@ -12,3 +12,4 @@ Simple Teacher AI is written by Gregory Lebed, a classroom teacher who uses AI d
 - [The Only AI Prompt I Use for Report Card Comments](https://www.simpleteacherai.com/blog/ai-prompt-for-report-card-comments)
 - [Free vs Paid AI Tools for Teachers: What Actually Matters](https://www.simpleteacherai.com/blog/free-vs-paid-ai-tools-for-teachers)
 - [The AI Prompt That Finds Where Your Lesson Will Fall Apart](https://www.simpleteacherai.com/blog/ai-prompt-find-where-students-will-struggle)
+- [Why AI Keeps Giving You Generic Teacher Stuff](https://www.simpleteacherai.com/blog/why-ai-keeps-giving-generic-teacher-stuff)
