@@ -14,7 +14,7 @@ faq:
     a: "Describe the class in general terms. Do not put in names or anything that points to one kid. A line like 'several students still need smaller numbers' is enough."
 ---
 
-The first time I opened ChatGPT for school, I typed something like "write a third grade lesson on fractions." What came back looked like a lesson. Objective, activities, exit ticket. I would never have taught it. The numbers were too hard for September, the activity needed scissors and extra copies I was not about to make, and the wording sounded like a textbook talking to nobody.
+The first time I opened ChatGPT for school, I typed something like "write a third grade lesson on fractions." What came back looked like a lesson. Objective, activities, exit ticket. I would never have taught it. The numbers were too hard for September, the activity needed scissors and extra copies I did not have time to make, and the wording sounded like a textbook talking to nobody.
 
 I closed the tab and figured I was bad at this. I had asked a stranger to plan my Tuesday without telling them anything about my Tuesday.
 
@@ -56,11 +56,11 @@ The starter is the classroom. The second sentence is the job.
 
 ## What that looks like in real life
 
-Last week I needed an exit ticket for a telling-time lesson. The old version of me would have typed "exit ticket for telling time third grade." I would have gotten ten questions, some about elapsed time we had not taught yet, and a cute word problem about a train.
+A few months ago I needed an exit ticket for a telling-time lesson. The old version of me would have typed "exit ticket for telling time third grade." I would have gotten ten questions, some about elapsed time we had not taught yet, and a cute word problem about a train.
 
 What I typed instead was the starter, then: "Give me three questions I can put on a half sheet. We only got through telling time to the nearest five minutes. No elapsed time. Numbers only, no word problems. I need this in two minutes."
 
-What came back was something I could print. I still changed one number. It took longer to type than "exit ticket for telling time," and it still saved me the fifteen minutes of rewriting a generic set.
+What came back was something I could print. I still changed one number. That prompt took longer to type than "exit ticket for telling time." I still finished faster, because I did not spend the next fifteen minutes cutting questions and rewriting the ones that did not match the lesson.
 
 I have used this same starter for parent emails and [report card comments](/blog/ai-prompt-for-report-card-comments). The job changes, but the four blanks stay the same.
 
@@ -73,13 +73,13 @@ I do not start over. I talk back to it the way I would talk to a student teacher
 "I only have fifteen minutes."
 "Do not rewrite the lesson. Just give me the three questions."
 
-The first answer is a draft. The second or third one is usually the one I use. Fast only helps if I can tell whether it is any good, which is why I still [read the draft before I send anything](/blog/how-i-actually-use-ai-as-a-teacher).
+The first answer is a draft. The second or third one is usually the one I use. I still [read it myself before I send it](/blog/how-i-actually-use-ai-as-a-teacher). A fast draft only helps if I check that it actually says what I meant.
 
 ## What I still leave out on purpose
 
-I still take names out. "Several kids are still mixing up the hour and the minute hand" is useful. A real student's name is not, and [it does not belong in an AI tool](/blog/ai-privacy-mistake-student-names). Same for a diagnosis, a family situation, or anything from an IEP.
+I still take names out. "Several kids are still mixing up the hour and the minute hand" is useful. A real student's name is not useful, and [it definitely does not belong in an AI tool](/blog/ai-privacy-mistake-student-names). Same for a diagnosis, a family situation, or anything from an IEP. Leave it out of your prompt.
 
-I also do not ask it to invent a lesson from a topic name anymore. If I already have the lesson, I say so. If I am using the curriculum, I say that too. That is how I stay on the useful side of [using AI for planning](/blog/is-it-okay-for-teachers-to-use-ai-lesson-plans), instead of ending up with a second, worse lesson I then have to undo.
+I also do not ask it to invent a lesson from a topic name anymore. If I already have the lesson, I say so. If I am using a curriculum, I say that too. That is how I stay on the useful side of [using AI for planning](/blog/is-it-okay-for-teachers-to-use-ai-lesson-plans), instead of ending up with a second, worse lesson I then have to undo.
 
 ## Try it on the next thing you were going to write from scratch
 
