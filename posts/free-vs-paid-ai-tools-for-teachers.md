@@ -31,3 +31,5 @@ For anything involving student information, privacy matters more than price. Too
 ## What I would tell you to do
 
 Start free. Use it for a month and notice whether you are actually hitting limits or sitting there waiting. If you are, paying is worth it. If you are not, do not pay for room you are not using.
+
+Which tool to start with is a different question than whether to pay. I bounce between ChatGPT, Claude, and Gemini, and I wrote up [what I tell teachers who ask](/blog/chatgpt-claude-or-gemini-for-teachers).
