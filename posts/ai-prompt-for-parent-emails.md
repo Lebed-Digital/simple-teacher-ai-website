@@ -16,7 +16,7 @@ faq:
 
 I had a parent email sitting in drafts for two days last spring. I knew what I wanted to say. I also knew that if I typed it the way it was sitting in my head, it would come out too blunt. So I left it there, which did not help anyone.
 
-What I do now is type the blunt version on purpose. Then I ask AI to make it sound like a person a parent would want to hear from. I still read every word. I still change lines. But I am not staring at a blank email for twenty minutes anymore.
+What I do now is type the blunt version on purpose. It's easy to write it out quickly when I know the AI is going to clean it up and make sure it sounds professional. I still read every word. I still change lines. But I am not staring at a blank email for twenty minutes anymore.
 
 ## What I actually type
 
