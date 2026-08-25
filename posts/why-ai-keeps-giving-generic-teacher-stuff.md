@@ -62,7 +62,7 @@ What I typed instead was the starter, then: "Give me three questions I can put o
 
 What came back was something I could print. I still changed one number. That prompt took longer to type than "exit ticket for telling time." I still finished faster, because I did not spend the next fifteen minutes cutting questions and rewriting the ones that did not match the lesson.
 
-I have used this same starter for parent emails and [report card comments](/blog/ai-prompt-for-report-card-comments). The job changes, but the four blanks stay the same.
+I have used this same starter for [parent emails](/blog/ai-prompt-for-parent-emails) and [report card comments](/blog/ai-prompt-for-report-card-comments). The job changes, but the four blanks stay the same.
 
 ## If the first answer is still off
 
