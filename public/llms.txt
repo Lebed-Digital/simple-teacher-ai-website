@@ -16,3 +16,58 @@ Simple Teacher AI is written by Gregory Lebed, a classroom teacher who uses AI d
 - [The AI Prompt I Use for Parent Emails](https://www.simpleteacherai.com/blog/ai-prompt-for-parent-emails)
 - [The AI Prompt I Use to Rewrite Directions Kids Can Follow](https://www.simpleteacherai.com/blog/ai-prompt-rewrite-student-directions)
 - [ChatGPT, Claude, or Gemini: What I Tell Teachers Who Ask](https://www.simpleteacherai.com/blog/chatgpt-claude-or-gemini-for-teachers)
+
+<!-- IDEAS:START -->
+## Tested AI ideas for teachers
+
+Machine-readable feed with every prompt and test verdict: https://www.simpleteacherai.com/ideas.json
+
+- [Build your emergency sub plans once, not the night you're sick](https://www.simpleteacherai.com/ideas/build-your-emergency-sub-plans-once-not-the-night): Planning, K-12. Works after a fix.
+- [A lesson hook in 30 seconds](https://www.simpleteacherai.com/ideas/a-lesson-hook-in-30-seconds): Planning, K-12. Worked first try.
+- [Turn a lesson into a slide deck draft](https://www.simpleteacherai.com/ideas/turn-a-lesson-into-a-slide-deck-draft): Planning, 3-12. Worked first try.
+- [Turn your unit notes into a podcast students can listen to](https://www.simpleteacherai.com/ideas/turn-your-unit-notes-into-a-podcast-students-can): Planning, 4-12. Not tested yet.
+- [Ask questions of your own curriculum](https://www.simpleteacherai.com/ideas/ask-questions-of-your-own-curriculum): Planning, K-12. Not tested yet.
+- [Know the likely mix-ups before you teach](https://www.simpleteacherai.com/ideas/know-the-likely-mix-ups-before-you-teach): Planning, K-12. Worked first try.
+- [Turn a standard into kid-friendly "I can" statements](https://www.simpleteacherai.com/ideas/turn-a-standard-into-kid-friendly-i-can-statements): Planning, K-8. Works after a fix.
+- [One passage, three versions](https://www.simpleteacherai.com/ideas/one-passage-three-versions): Differentiation, 2-12. Works, needs your edit.
+- [Custom decodable text in 10 minutes](https://www.simpleteacherai.com/ideas/custom-decodable-text-in-10-minutes): Differentiation, K-3. Works, needs your edit.
+- [Word problems about what your class actually cares about](https://www.simpleteacherai.com/ideas/word-problems-about-what-your-class-actually-cares-about): Differentiation, 1-8. Works after a fix.
+- [Make the directions readable for everyone](https://www.simpleteacherai.com/ideas/make-the-directions-readable-for-everyone): Differentiation, K-12. Works, needs your edit.
+- [Plan reteach groups from your quiz results](https://www.simpleteacherai.com/ideas/plan-reteach-groups-from-your-quiz-results): Differentiation, K-12. Worked first try.
+- [An exit ticket bank with answers](https://www.simpleteacherai.com/ideas/an-exit-ticket-bank-with-answers): Assessment, K-12. Worked first try.
+- [Multiple choice where the wrong answers mean something](https://www.simpleteacherai.com/ideas/multiple-choice-where-the-wrong-answers-mean-something): Assessment, 3-12. Works after a fix.
+- [A rubric from your assignment directions](https://www.simpleteacherai.com/ideas/a-rubric-from-your-assignment-directions): Assessment, 2-12. Worked first try.
+- [A practice quiz from your phone](https://www.simpleteacherai.com/ideas/a-practice-quiz-from-your-phone): Assessment, K-12. Not tested yet.
+- [First-draft feedback on writing, using your rubric](https://www.simpleteacherai.com/ideas/first-draft-feedback-on-writing-using-your-rubric): Feedback, 3-12. Worked first try.
+- [A report card comment bank (no student data needed)](https://www.simpleteacherai.com/ideas/a-report-card-comment-bank-no-student-data-needed): Feedback, K-8. Works after a fix.
+- [Weekly family newsletter from your scribbled notes](https://www.simpleteacherai.com/ideas/weekly-family-newsletter-from-your-scribbled-notes): Parent communication, K-8. Worked first try.
+- [Translate a family message, carefully](https://www.simpleteacherai.com/ideas/translate-a-family-message-carefully): Parent communication, K-12. Works after a fix.
+- [Rehearse a hard parent conference out loud](https://www.simpleteacherai.com/ideas/rehearse-a-hard-parent-conference-out-loud): Parent communication, K-12. Works, needs your edit.
+- [Cool down an email before you hit send](https://www.simpleteacherai.com/ideas/cool-down-an-email-before-you-hit-send): Parent communication, K-12. Worked first try.
+- [Explain school jargon to families in plain English](https://www.simpleteacherai.com/ideas/explain-school-jargon-to-families-in-plain-english): Parent communication, K-12. Worked first try.
+- [Get ChatGPT for Teachers free](https://www.simpleteacherai.com/ideas/get-chatgpt-for-teachers-free): Tools, K-12 (US). Not tested yet.
+- [Stop re-explaining your class every time](https://www.simpleteacherai.com/ideas/stop-re-explaining-your-class-every-time): Tools, K-12. Not tested yet.
+- [An assembly ate 20 minutes. Shrink tomorrow's lesson.](https://www.simpleteacherai.com/ideas/an-assembly-ate-20-minutes-shrink-tomorrows-lesson): Planning, K-12. Worked first try.
+- [Worked examples, then one for them](https://www.simpleteacherai.com/ideas/worked-examples-then-one-for-them): Planning, 2-12. Works after a fix.
+- [Hear the hardest questions before your students ask them](https://www.simpleteacherai.com/ideas/hear-the-hardest-questions-before-your-students-ask-them): Planning, 2-12. Worked first try.
+- [Find the blind spots in your lesson plan](https://www.simpleteacherai.com/ideas/find-the-blind-spots-in-your-lesson-plan): Planning, K-12. Worked first try.
+- [Plan the stopping points for a read-aloud](https://www.simpleteacherai.com/ideas/plan-the-stopping-points-for-a-read-aloud): Planning, K-5. Worked first try.
+- [Kid-friendly vocabulary, with examples and nonexamples](https://www.simpleteacherai.com/ideas/kid-friendly-vocabulary-with-examples-and-nonexamples): Planning, K-8. Worked first try.
+- [A 10-minute reteach that comes at it a different way](https://www.simpleteacherai.com/ideas/a-10-minute-reteach-that-comes): Differentiation, K-8. Worked first try.
+- [Same goal, two ways in: make practice easier to start without making it easier](https://www.simpleteacherai.com/ideas/same-goal-two-ways-in-make-practice-easier): Differentiation, 2-12. Works after a fix.
+- [Sentence frames so every kid can join the discussion](https://www.simpleteacherai.com/ideas/sentence-frames-so-every-kid-can-join-the-discussion): Differentiation, K-12. Worked first try.
+- [A fluency passage with the word counts done for you](https://www.simpleteacherai.com/ideas/a-fluency-passage-with-the-word-counts-done): Differentiation, 1-5. Works after a fix.
+- [An early-finisher choice board that still practices the skill](https://www.simpleteacherai.com/ideas/an-early-finisher-choice-board-that-still-practices): Differentiation, K-8. Worked first try.
+- [Find the mistake: realistic wrong answers for kids to fix](https://www.simpleteacherai.com/ideas/find-the-mistake-realistic-wrong-answers-for-kids): Assessment, 2-12. Worked first try.
+- [Sort a stack of math exit tickets by mistake](https://www.simpleteacherai.com/ideas/sort-a-stack-of-math-exit-tickets-by-mistake): Assessment, 1-12. Works after a fix.
+- [A class story to teach (or reteach) a routine](https://www.simpleteacherai.com/ideas/a-class-story-to-teach-or-reteach-a-routine): Classroom routines, PreK-5. Works after a fix.
+- [Gemini is now on for your students. Here's what changed.](https://www.simpleteacherai.com/ideas/gemini-is-now-on-for-your-students-heres-what): Students and AI, K-12. Not tested yet.
+- [Assign a Gemini Notebook, then see what your class asked it](https://www.simpleteacherai.com/ideas/assign-a-gemini-notebook-then-see-what-your-class): Students and AI, K-12. Not tested yet.
+- [A study buddy that's told not to do the homework](https://www.simpleteacherai.com/ideas/a-study-buddy-thats-told-not-to-do): Students and AI, 3-12. Works after a fix.
+- [Tell students exactly how they may use AI on this assignment](https://www.simpleteacherai.com/ideas/tell-students-exactly-how-they-may-use-ai): Students and AI, 4-12. Worked first try.
+- [Catch the AI's mistakes: a 10-minute AI literacy warm-up](https://www.simpleteacherai.com/ideas/catch-the-ais-mistakes-a-10-minute-ai-literacy): Students and AI, 3-12. Works after a fix.
+- [A 60-second explainer video from your own notes](https://www.simpleteacherai.com/ideas/a-60-second-explainer-video-from-your-own-notes): Tools, 3-12. Not tested yet.
+- [An infographic or comic strip from Gemini in Classroom](https://www.simpleteacherai.com/ideas/an-infographic-or-comic-strip-from-gemini-in-classroom): Tools, K-12. Not tested yet.
+- [Claude for Teachers is free for US K-12 teachers](https://www.simpleteacherai.com/ideas/claude-for-teachers-is-free-for-us-k-12): Tools, K-12 (US). Not tested yet.
+- [Tell families how your class uses AI, in plain words](https://www.simpleteacherai.com/ideas/tell-families-how-your-class-uses-ai-in-plain): Parent communication, K-12. Worked first try.
+<!-- IDEAS:END -->
