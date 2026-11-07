@@ -64,9 +64,9 @@ export function IdeaCard({ idea, style }: { idea: Idea; style?: CSSProperties })
   const c = categoryOf(idea.category)
   return (
     <article className="idea-card reveal" style={{ '--cat': c.color, '--cat-tint': c.tint, ...style } as CSSProperties}>
-      <div className="flex items-start justify-between gap-3">
+      <div className="card-topline">
         <CategoryPill name={idea.category} />
-        <Stamp status={idea.status} />
+        <span className="card-arrow" aria-hidden="true">↗</span>
       </div>
       <h3 className="mt-5 font-serif text-[1.35rem] font-semibold leading-tight tracking-[-0.02em] text-[var(--heading)]">
         <Link to={`/ideas/${idea.slug}`} className="stretched focus-visible:outline-none">
@@ -74,6 +74,7 @@ export function IdeaCard({ idea, style }: { idea: Idea; style?: CSSProperties })
         </Link>
       </h3>
       <p className="mt-3 line-clamp-3 text-[0.95rem] leading-6 text-[var(--muted)]">{idea.summary}</p>
+      <div className="card-verdict"><Stamp status={idea.status} /></div>
       <dl className="mt-auto flex flex-wrap gap-x-4 gap-y-1 pt-5 text-xs font-semibold text-[var(--muted)]">
         <div className="flex gap-1"><dt className="sr-only">Grades</dt><dd>🎒 {idea.grades}</dd></div>
         <div className="flex gap-1"><dt className="sr-only">Takes about</dt><dd>⏱️ {idea.time.split(/[,(]/)[0].trim()}</dd></div>

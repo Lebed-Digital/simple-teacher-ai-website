@@ -85,7 +85,7 @@ export function BlogPostPage() {
         Skip to main content
       </a>
       <SiteHeader />
-      <main id="main-content" className="px-5 pb-24 pt-4 sm:px-8">
+      <main id="main-content" className="blog-post px-5 pb-24 pt-4 sm:px-8">
         <article className="mx-auto max-w-3xl">
           <Link to="/blog" className="text-sm font-bold text-[var(--green)] underline decoration-[var(--yellow)] decoration-2 underline-offset-4">
             ← All posts

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 export function SiteFooter() {
   return (
-    <footer className="bg-[var(--band-deep)] px-4 py-10 text-sm leading-6 text-[var(--on-band)]/75 sm:px-8">
+    <footer className="site-footer bg-[var(--band-deep)] px-4 py-10 text-sm leading-6 text-[var(--on-band)]/75 sm:px-8">
       <div className="mx-auto flex max-w-6xl flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
         <div>
           <p className="font-bold text-[var(--on-band)]">Simple Teacher AI</p>

@@ -22,7 +22,7 @@ function HeroCard({ idea, className }: { idea: Idea; className: string }) {
   const c = categoryOf(idea.category)
   return (
     <Link to={`/ideas/${idea.slug}`} className={`float-card ${className}`} style={{ '--cat': c.color, '--cat-tint': c.tint } as CSSProperties}>
-      <div className="flex items-center justify-between gap-2">
+      <div className="hero-card-meta">
         <span className="text-xs font-bold uppercase tracking-[0.1em] text-[var(--cat)]">{c.icon} {idea.category}</span>
         <Stamp status={idea.status} />
       </div>
@@ -47,7 +47,8 @@ function App() {
   useEffect(() => {
     const id = hash.slice(1)
     if (!id) return
-    requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }))
+    const frame = requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' }))
+    return () => cancelAnimationFrame(frame)
   }, [hash])
 
   function search(form: HTMLFormElement) {
@@ -60,11 +61,11 @@ function App() {
   return (
     <PageShell>
       {/* HERO */}
-      <section className="hero-glow px-4 pb-16 pt-8 sm:px-8 sm:pb-24 sm:pt-14">
+      <section className="home-hero hero-glow px-4 pb-16 pt-8 sm:px-8 sm:pb-24 sm:pt-14">
         <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.1fr_1fr]">
           <div>
             <p className="glass-pill rise"><span className="dot" />New: {stats.total} ideas, {stats.tested} tested by hand</p>
-            <h1 className="rise mt-6 text-balance font-serif text-[2.9rem] font-semibold leading-[1] tracking-[-0.045em] text-[var(--heading)] sm:text-7xl" style={{ animationDelay: '.06s' }}>
+            <h1 className="hero-title rise mt-6 font-serif font-semibold text-[var(--heading)]" style={{ animationDelay: '.06s' }}>
               AI ideas for teachers, <em className="grad-text">tested before you try them.</em>
             </h1>
             <p className="rise mt-6 max-w-xl text-lg leading-8 text-[var(--muted)]" style={{ animationDelay: '.12s' }}>
@@ -76,18 +77,19 @@ function App() {
               role="search"
               onSubmit={(e) => { e.preventDefault(); search(e.currentTarget) }}
             >
-              <span aria-hidden="true" className="text-xl">🔎</span>
+              <span aria-hidden="true" className="search-icon" />
               <label htmlFor="hero-search" className="sr-only">Search AI ideas</label>
               <input id="hero-search" name="q" type="search" placeholder="What do you need help with?" autoComplete="off" />
               <button type="submit" className="btn-shine btn-sm">Search</button>
             </form>
             <div className="rise mt-5 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm font-bold" style={{ animationDelay: '.24s' }}>
-              <Link to="/ideas" className="link-arrow">Browse all {stats.total} ideas →</Link>
+              <Link to="/ideas" className="link-arrow">Browse all {stats.total} ideas <span aria-hidden="true">↗</span></Link>
               <a href="#newsletter" className="text-[var(--muted)] hover:text-[var(--heading)]">Get one new idea a week</a>
             </div>
           </div>
 
           <div className="hero-stack" aria-label="Example ideas">
+            <div className="desk-label" aria-hidden="true"><span>From the teacher’s desk</span><span>✳</span></div>
             {heroStack.map((idea, i) => <HeroCard key={idea.id} idea={idea} className={`float-card-${i + 1}`} />)}
             <span className="red-pen" aria-hidden="true">checked by a teacher ✓</span>
           </div>
@@ -127,7 +129,7 @@ function App() {
       </section>
 
       {/* FEATURED */}
-      <section id="prompts" className="scroll-mt-24 bg-[var(--surface)] px-4 py-20 sm:px-8 sm:py-28" aria-labelledby="prompts-heading">
+      <section id="prompts" className="featured-section scroll-mt-24 px-4 py-20 sm:px-8 sm:py-28" aria-labelledby="prompts-heading">
         <div className="mx-auto max-w-6xl">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <div className="max-w-2xl">

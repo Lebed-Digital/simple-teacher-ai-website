@@ -21,7 +21,7 @@ export function BlogListPage() {
         Skip to main content
       </a>
       <SiteHeader />
-      <main id="main-content" className="px-5 pb-24 pt-4 sm:px-8">
+      <main id="main-content" className="blog-index px-5 pb-24 pt-4 sm:px-8">
         <div className="mx-auto max-w-4xl">
           <p className="text-sm font-bold uppercase tracking-[0.16em] text-[var(--blue-dark)]">From the classroom</p>
           <h1 className="mt-3 font-serif text-4xl font-bold tracking-[-0.03em] text-[var(--heading)] sm:text-5xl">The Blog</h1>
@@ -32,7 +32,7 @@ export function BlogListPage() {
               <Link
                 key={post.slug}
                 to={`/blog/${post.slug}`}
-                className="block rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 transition-colors hover:border-[var(--green)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--focus)] sm:p-8"
+                className="blog-card block rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-6 transition-colors hover:border-[var(--green)] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[var(--focus)] sm:p-8"
               >
                 <p className="text-sm font-semibold uppercase tracking-[0.1em] text-[var(--muted)]">{formatDate(post.date)}</p>
                 <h2 className="mt-3 font-serif text-2xl font-bold tracking-[-0.02em] text-[var(--heading)] sm:text-3xl">{post.title}</h2>
