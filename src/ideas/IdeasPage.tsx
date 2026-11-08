@@ -6,7 +6,7 @@ import { IdeaCard, NewsletterBand, PageShell } from './ui'
 
 const FILTERS = [
   { key: '', label: 'All' },
-  { key: 'tested', label: 'Tested' },
+  { key: 'fixed', label: 'Fixed + retested' },
   { key: 'first-try', label: 'Worked first try' },
 ] as const
 
@@ -20,7 +20,7 @@ export function IdeasPage() {
 
   useSeoMeta({
     title: `${stats.total} Tested AI Ideas for Teachers | Simple Teacher AI`,
-    description: `Copy-and-paste AI prompts for teachers. ${stats.tested} of ${stats.total} were run on a sample class and checked by hand, with notes on what the AI got wrong.`,
+    description: `Copy-and-paste AI prompts for teachers. All ${stats.total} were run on a sample class and checked by hand, with notes on what the AI got wrong.`,
     path: '/ideas',
   })
 
@@ -35,7 +35,7 @@ export function IdeasPage() {
     const words = normalize(q).split(' ').filter(Boolean)
     return ideas.filter((i) => {
       if (cat && i.category !== cat) return false
-      if (show === 'tested' && i.status === 'untested') return false
+      if (show === 'fixed' && i.status !== 'fixed') return false
       if (show === 'first-try' && i.status !== 'first-try') return false
       const hay = normalize(`${i.title} ${i.category} ${i.tool} ${i.grades} ${i.summary} ${i.prompt}`)
       return words.every((w) => hay.includes(w))
@@ -54,7 +54,7 @@ export function IdeasPage() {
         <div className="mx-auto max-w-6xl">
           <div className="library-intro">
             <div>
-              <p className="glass-pill rise"><span className="dot" />{stats.tested} of {stats.total} tested by hand</p>
+              <p className="glass-pill rise"><span className="dot" />Every idea tested by hand</p>
               <h1 className="rise mt-5 max-w-3xl text-balance font-serif text-5xl font-semibold leading-[1.02] tracking-[-0.04em] text-[var(--heading)] sm:text-7xl" style={{ animationDelay: '.06s' }}>
                 The idea <em className="grad-text">library.</em>
               </h1>

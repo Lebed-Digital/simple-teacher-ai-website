@@ -92,11 +92,20 @@ for (const c of cards) {
   c.slug = slug
 }
 
+// Untested cards stay in the markdown but are held off the site until they get a test result.
+const published = (c) => c.test && c.test.status !== 'untested'
+
 // "card 18" inside a batch points at that batch's card 18: turn it into a link with the real title.
+// A "(card N)" aside pointing at a held-back card is dropped, so nothing links to a missing page.
 const linkCards = (md, batch) =>
-  md.replace(/\bcard (\d+)\b/g, (m, n) => {
+  md.replace(/(\s*\()?\bcard (\d+)\b(\))?/g, (m, open, n, close) => {
     const t = cards.find((c) => c.batch === batch && c.number === Number(n))
-    return t ? `[${t.title}](/ideas/${t.slug})` : m
+    if (!t) return m
+    if (!published(t)) {
+      if (open && close) return ''
+      throw new Error(`Batch ${batch} links to held-back card ${n} outside "(card N)": reword it`)
+    }
+    return `${open ?? ''}[${t.title}](/ideas/${t.slug})${close ?? ''}`
   })
 const html = (md, batch) => marked.parse(linkCards(md, batch), { async: false }).trim()
 
@@ -107,7 +116,8 @@ const VERDICT = {
   untested: 'Not tested yet',
 }
 
-const ideas = cards.map((c) => {
+const held = cards.filter((c) => !published(c))
+const ideas = cards.filter(published).map((c) => {
   const prompt = c.segments.find((s) => s.type === 'prompt')?.text ?? ''
   const why = c.segments.find((s) => s.type === 'note' && /^\*\*(Why it works|What it is|What changed)/.test(s.md))
   const testFirst = c.test?.md.split('\n')[0] ?? ''
@@ -175,4 +185,4 @@ write('public/sitemap.xml', between(read('public/sitemap.xml'), 'sitemap', [
 ].join('\n')))
 
 const tested = ideas.filter((i) => i.status !== 'untested').length
-console.log(`build-ideas: ${ideas.length} ideas (${tested} tested) from ${files.join(', ')}`)
+console.log(`build-ideas: ${ideas.length} ideas (${tested} tested) from ${files.join(', ')}; ${held.length} untested held back`)

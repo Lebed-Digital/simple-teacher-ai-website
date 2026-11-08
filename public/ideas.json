@@ -70,58 +70,6 @@
       "date": "2026-11-07"
     },
     {
-      "url": "https://www.simpleteacherai.com/ideas/turn-your-unit-notes-into-a-podcast-students-can",
-      "title": "Turn your unit notes into a podcast students can listen to",
-      "category": "Planning",
-      "grades": "4-12",
-      "tool": "Gemini Notebook (formerly NotebookLM)",
-      "takes_about": "5 min, then it generates",
-      "tested": false,
-      "verdict": "Not tested yet",
-      "verdict_detail": "",
-      "prompt": null,
-      "why_it_works": "Great for review before a test, absent students, and kids who learn better by listening.",
-      "sources": [
-        {
-          "title": "Google: NotebookLM is now Gemini Notebook",
-          "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/notebooklm-gemini-notebook/"
-        },
-        {
-          "title": "Gemini Notebook help: Audio Overviews",
-          "url": "https://support.google.com/gemininotebook/answer/16212820"
-        },
-        {
-          "title": "Class Tech Tips",
-          "url": "https://classtechtips.com/2024/12/26/teachers-can-use-notebooklm/"
-        }
-      ],
-      "date": "2026-11-07"
-    },
-    {
-      "url": "https://www.simpleteacherai.com/ideas/ask-questions-of-your-own-curriculum",
-      "title": "Ask questions of your own curriculum",
-      "category": "Planning",
-      "grades": "K-12",
-      "tool": "Gemini Notebook (formerly NotebookLM)",
-      "takes_about": "10 min to set up, then seconds per question",
-      "tested": false,
-      "verdict": "Not tested yet",
-      "verdict_detail": "",
-      "prompt": "For each answer, name the document and the lesson or page it came from. If my documents don't answer it, say so instead of guessing. Which lessons in unit 4 cover [standard]? What vocabulary do students need before lesson 6? Where does the curriculum assume students already know [skill]?",
-      "why_it_works": "It answers from your documents and shows where each answer came from, so you can check it in seconds.",
-      "sources": [
-        {
-          "title": "Gemini Notebook help",
-          "url": "https://support.google.com/gemininotebook/answer/16179559"
-        },
-        {
-          "title": "Monash University",
-          "url": "https://www.monash.edu/learning-teaching/teachhq/learning-technologies/google-suite/how-to/use-google-notebooklm-for-teaching"
-        }
-      ],
-      "date": "2026-11-07"
-    },
-    {
       "url": "https://www.simpleteacherai.com/ideas/know-the-likely-mix-ups-before-you-teach",
       "title": "Know the likely mix-ups before you teach",
       "category": "Planning",
@@ -330,26 +278,6 @@
       "date": "2026-11-07"
     },
     {
-      "url": "https://www.simpleteacherai.com/ideas/a-practice-quiz-from-your-phone",
-      "title": "A practice quiz from your phone",
-      "category": "Assessment",
-      "grades": "K-12",
-      "tool": "Gemini in Google Classroom (mobile app)",
-      "takes_about": "2 min",
-      "tested": false,
-      "verdict": "Not tested yet",
-      "verdict_detail": "",
-      "prompt": null,
-      "why_it_works": "You can build tomorrow's review in the pickup line. It's for teachers 18+, and your district admin has to turn Gemini on, so it may not appear for you yet.",
-      "sources": [
-        {
-          "title": "Google Workspace Updates, June 2026",
-          "url": "https://workspaceupdates.googleblog.com/2026/06/updates-to-gemini-in-google-classroom.html"
-        }
-      ],
-      "date": "2026-11-07"
-    },
-    {
       "url": "https://www.simpleteacherai.com/ideas/first-draft-feedback-on-writing-using-your-rubric",
       "title": "First-draft feedback on writing, using your rubric",
       "category": "Feedback",
@@ -489,50 +417,6 @@
         {
           "title": "Truth for Teachers",
           "url": "https://truthforteachers.com/chatgpt/"
-        }
-      ],
-      "date": "2026-11-07"
-    },
-    {
-      "url": "https://www.simpleteacherai.com/ideas/get-chatgpt-for-teachers-free",
-      "title": "Get ChatGPT for Teachers free",
-      "category": "Tools",
-      "grades": "K-12 (US)",
-      "tool": "ChatGPT for Teachers",
-      "takes_about": "5 min to verify",
-      "tested": false,
-      "verdict": "Not tested yet",
-      "verdict_detail": "",
-      "prompt": null,
-      "why_it_works": "OpenAI offers a free ChatGPT plan for verified US K-12 teachers and staff.",
-      "sources": [
-        {
-          "title": "OpenAI",
-          "url": "https://openai.com/index/chatgpt-for-teachers/"
-        },
-        {
-          "title": "OpenAI Help Center",
-          "url": "https://help.openai.com/en/articles/12844995-chatgpt-for-teachers"
-        }
-      ],
-      "date": "2026-11-07"
-    },
-    {
-      "url": "https://www.simpleteacherai.com/ideas/stop-re-explaining-your-class-every-time",
-      "title": "Stop re-explaining your class every time",
-      "category": "Tools",
-      "grades": "K-12",
-      "tool": "ChatGPT (custom GPT or Project), Claude (Project), Gemini",
-      "takes_about": "10 min once",
-      "tested": false,
-      "verdict": "Not tested yet",
-      "verdict_detail": "",
-      "prompt": "I teach [grade] [subject] in [state]. Our curriculum is [name]. My class is [size, general needs, no names]. I like materials that are [your style]. For anything students will read, match the reading level to the task, but keep the real subject words they need to learn. Write math as plain text so it pastes cleanly. Never ask me for student names.",
-      "why_it_works": "Every chat inside that Project or GPT starts with your context already loaded, so your prompts get shorter and your answers get better.",
-      "sources": [
-        {
-          "title": "OpenAI Help Center, ChatGPT for Teachers features",
-          "url": "https://help.openai.com/en/articles/12844995-chatgpt-for-teachers"
         }
       ],
       "date": "2026-11-07"
@@ -834,50 +718,6 @@
       "date": "2026-11-07"
     },
     {
-      "url": "https://www.simpleteacherai.com/ideas/gemini-is-now-on-for-your-students-heres-what",
-      "title": "Gemini is now on for your students. Here's what changed.",
-      "category": "Students and AI",
-      "grades": "K-12",
-      "tool": "Gemini in Google Classroom",
-      "takes_about": "5 min to check",
-      "tested": false,
-      "verdict": "Not tested yet",
-      "verdict_detail": "",
-      "prompt": null,
-      "why_it_works": "Since August 10, 2026, Gemini in Google Classroom is open to K-12 students of all ages, not just adults, in schools where the admin allows it.",
-      "sources": [
-        {
-          "title": "Google Workspace Updates, August 4, 2026",
-          "url": "https://workspaceupdates.googleblog.com/2026/08/gemini-in-google-classroom-is-expanding-to-users-of-all-ages-with-contextualized-Gemini-starter-prompts-for-students.html"
-        }
-      ],
-      "date": "2026-11-07"
-    },
-    {
-      "url": "https://www.simpleteacherai.com/ideas/assign-a-gemini-notebook-then-see-what-your-class",
-      "title": "Assign a Gemini Notebook, then see what your class asked it",
-      "category": "Students and AI",
-      "grades": "K-12",
-      "tool": "Gemini Notebook in Google Classroom",
-      "takes_about": "10 min to set up",
-      "tested": false,
-      "verdict": "Not tested yet",
-      "verdict_detail": "",
-      "prompt": null,
-      "why_it_works": "You build a notebook from your own materials (up to 50 sources) and assign it in Classroom.",
-      "sources": [
-        {
-          "title": "Google Workspace Updates, October 19, 2026",
-          "url": "https://workspaceupdates.googleblog.com/2026/10/teacher-led-gemini-notebook-in-google-Classroom-now-offers-insight-summaries-for-educators-and-updated-sharing-settings-for-admins-including-trusted-domains.html"
-        },
-        {
-          "title": "Google Classroom Help: Create and assign Gemini Notebook and Gems",
-          "url": "https://support.google.com/edu/classroom/answer/16534159"
-        }
-      ],
-      "date": "2026-11-07"
-    },
-    {
       "url": "https://www.simpleteacherai.com/ideas/a-study-buddy-thats-told-not-to-do",
       "title": "A study buddy that's told not to do the homework",
       "category": "Students and AI",
@@ -945,70 +785,6 @@
         {
           "title": "Common Sense Education, AI literacy lessons",
           "url": "https://www.commonsense.org/education/collections/ai-literacy-lessons-for-grades-k-12"
-        }
-      ],
-      "date": "2026-11-07"
-    },
-    {
-      "url": "https://www.simpleteacherai.com/ideas/a-60-second-explainer-video-from-your-own-notes",
-      "title": "A 60-second explainer video from your own notes",
-      "category": "Tools",
-      "grades": "3-12",
-      "tool": "Gemini Notebook (formerly NotebookLM)",
-      "takes_about": "5 min, then it generates",
-      "tested": false,
-      "verdict": "Not tested yet",
-      "verdict_detail": "",
-      "prompt": null,
-      "why_it_works": "Gemini Notebook can now make Short Video Overviews: about 60 seconds, animated, in more than 80 languages, from the sources you upload.",
-      "sources": [
-        {
-          "title": "Google Workspace Updates, September 18, 2026",
-          "url": "https://workspaceupdates.googleblog.com/2026/09/new-back-to-school-features-and-learning-tools-available-in-Gemini-Notebook.html"
-        }
-      ],
-      "date": "2026-11-07"
-    },
-    {
-      "url": "https://www.simpleteacherai.com/ideas/an-infographic-or-comic-strip-from-gemini-in-classroom",
-      "title": "An infographic or comic strip from Gemini in Classroom",
-      "category": "Tools",
-      "grades": "K-12",
-      "tool": "Gemini in Google Classroom",
-      "takes_about": "3 min plus your check",
-      "tested": false,
-      "verdict": "Not tested yet",
-      "verdict_detail": "",
-      "prompt": "Topic: [what students are learning]. For [grade] students. Use only these facts: [paste 3-5 facts from your lesson]. Keep the words short and large enough to read from the back of the room.",
-      "why_it_works": "Gemini in Classroom has starter prompts for \"Create an infographic,\" \"Draw a comic strip,\" and \"Visualize a concept,\" powered by Google's Nano Banana 2 image model.",
-      "sources": [
-        {
-          "title": "Google Workspace Updates, June 2026",
-          "url": "https://workspaceupdates.googleblog.com/2026/06/updates-to-gemini-in-google-classroom.html"
-        }
-      ],
-      "date": "2026-11-07"
-    },
-    {
-      "url": "https://www.simpleteacherai.com/ideas/claude-for-teachers-is-free-for-us-k-12",
-      "title": "Claude for Teachers is free for US K-12 teachers",
-      "category": "Tools",
-      "grades": "K-12 (US)",
-      "tool": "Claude for Teachers",
-      "takes_about": "5 min to verify",
-      "tested": false,
-      "verdict": "Not tested yet",
-      "verdict_detail": "",
-      "prompt": null,
-      "why_it_works": "Anthropic offers Claude for Teachers free to verified US K-12 educators.",
-      "sources": [
-        {
-          "title": "Anthropic, Claude for Teachers",
-          "url": "https://www.anthropic.com/news/claude-for-teachers"
-        },
-        {
-          "title": "Claude blog, now available for schools and districts",
-          "url": "https://claude.com/blog/claude-for-teachers-now-available-for-schools-and-districts"
         }
       ],
       "date": "2026-11-07"

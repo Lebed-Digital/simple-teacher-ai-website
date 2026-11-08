@@ -16,7 +16,6 @@ const pick = (ids: string[]) => ids.map((id) => ideas.find((i) => i.id === id)).
 
 const heroStack = pick(['b1-22', 'b2-17', 'b1-01'])
 const featured = pick(['b1-22', 'b1-01', 'b2-04', 'b2-13', 'b2-17', 'b2-23'])
-const fresh = pick(['b2-15', 'b2-22', 'b1-24', 'b2-16'])
 
 function HeroCard({ idea, className }: { idea: Idea; className: string }) {
   const c = categoryOf(idea.category)
@@ -38,7 +37,7 @@ function App() {
 
   useSeoMeta({
     title: 'Simple Teacher AI | Tested AI Ideas for Teachers',
-    description: `${stats.total} practical AI ideas for teachers, with copy-and-paste prompts. ${stats.tested} were tested on a sample class and checked by hand.`,
+    description: `${stats.total} practical AI ideas for teachers, with copy-and-paste prompts. Every one was tested on a sample class and checked by hand.`,
     path: '/',
   })
 
@@ -64,7 +63,7 @@ function App() {
       <section className="home-hero hero-glow px-4 pb-16 pt-8 sm:px-8 sm:pb-24 sm:pt-14">
         <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.1fr_1fr]">
           <div>
-            <p className="glass-pill rise"><span className="dot" />New: {stats.total} ideas, {stats.tested} tested by hand</p>
+            <p className="glass-pill rise"><span className="dot" />New: {stats.total} ideas, every one tested by hand</p>
             <h1 className="hero-title rise mt-6 font-serif font-semibold text-[var(--heading)]" style={{ animationDelay: '.06s' }}>
               AI ideas for teachers, <em className="grad-text">tested before you try them.</em>
             </h1>
@@ -99,8 +98,8 @@ function App() {
       {/* STATS */}
       <section className="px-4 sm:px-8" aria-label="By the numbers">
         <dl className="stats-strip mx-auto max-w-6xl">
-          <div><dt>Ideas in the library</dt><dd>{stats.total}</dd></div>
-          <div><dt>Tested on a sample class</dt><dd>{stats.tested}</dd></div>
+          <div><dt>Ideas, all tested on a sample class</dt><dd>{stats.total}</dd></div>
+          <div><dt>Fixed, then retested</dt><dd>{stats.fixed}</dd></div>
           <div><dt>Worked on the first try</dt><dd>{stats.firstTry}</dd></div>
           <div><dt>Real student names used</dt><dd>0</dd></div>
         </dl>
@@ -174,26 +173,6 @@ function App() {
             <blockquote className="ai-says ai-says-good">“Start with 10 groups of 6, which is 60, and take away one group of 6.”</blockquote>
             {study ? <Link to={`/ideas/${study.slug}`} className="link-arrow mt-6 inline-block text-sm font-bold">See the fixed prompt →</Link> : null}
           </figure>
-        </div>
-      </section>
-
-      {/* FRESH */}
-      <section className="px-4 pb-24 sm:px-8" aria-labelledby="fresh-heading">
-        <div className="mx-auto max-w-6xl">
-          <p className="eyebrow">New this fall</p>
-          <h2 id="fresh-heading" className="section-title">Things your district <em className="grad-text">might not have told you.</em></h2>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2">
-            {fresh.map((idea) => {
-              const c = categoryOf(idea.category)
-              return (
-                <Link key={idea.id} to={`/ideas/${idea.slug}`} className="news-row reveal" style={{ '--cat': c.color, '--cat-tint': c.tint } as CSSProperties}>
-                  <span className="news-tag">News</span>
-                  <span className="font-serif text-lg font-semibold leading-snug text-[var(--heading)]">{idea.title}</span>
-                  <span className="line-clamp-2 text-sm text-[var(--muted)]">{idea.summary}</span>
-                </Link>
-              )
-            })}
-          </div>
         </div>
       </section>
 
