@@ -6,8 +6,8 @@
   "privacy": "Never put student names or identifying details into an AI tool. Use your district-approved tool.",
   "items": [
     {
-      "url": "https://www.simpleteacherai.com/ideas/build-your-emergency-sub-plans-once-not-the-night",
-      "title": "Build your emergency sub plans once, not the night you're sick",
+      "url": "https://www.simpleteacherai.com/ideas/emergency-sub-plans-ai",
+      "title": "Emergency sub plans: build them once with AI, not the night you're sick",
       "category": "Planning",
       "grades": "K-12",
       "tool": "ChatGPT, Claude, or Gemini",
@@ -94,8 +94,8 @@
       "date": "2026-11-07"
     },
     {
-      "url": "https://www.simpleteacherai.com/ideas/turn-a-standard-into-kid-friendly-i-can-statements",
-      "title": "Turn a standard into kid-friendly \"I can\" statements",
+      "url": "https://www.simpleteacherai.com/ideas/i-can-statements-from-standards",
+      "title": "Kid-friendly \"I can\" statements from any standard",
       "category": "Planning",
       "grades": "K-8",
       "tool": "Any chatbot",
@@ -134,8 +134,8 @@
       "date": "2026-11-07"
     },
     {
-      "url": "https://www.simpleteacherai.com/ideas/custom-decodable-text-in-10-minutes",
-      "title": "Custom decodable text in 10 minutes",
+      "url": "https://www.simpleteacherai.com/ideas/decodable-text-generator",
+      "title": "Decodable text generator: a custom decodable story in 10 minutes",
       "category": "Differentiation",
       "grades": "K-3",
       "tool": "Any chatbot",
@@ -154,8 +154,8 @@
       "date": "2026-11-07"
     },
     {
-      "url": "https://www.simpleteacherai.com/ideas/word-problems-about-what-your-class-actually-cares-about",
-      "title": "Word problems about what your class actually cares about",
+      "url": "https://www.simpleteacherai.com/ideas/word-problem-generator",
+      "title": "Word problem generator: problems about what your class cares about",
       "category": "Differentiation",
       "grades": "1-8",
       "tool": "Any chatbot",
@@ -218,8 +218,8 @@
       "date": "2026-11-07"
     },
     {
-      "url": "https://www.simpleteacherai.com/ideas/an-exit-ticket-bank-with-answers",
-      "title": "An exit ticket bank with answers",
+      "url": "https://www.simpleteacherai.com/ideas/exit-ticket-examples",
+      "title": "Exit ticket examples with answers, and what a wrong answer means",
       "category": "Assessment",
       "grades": "K-12",
       "tool": "Any chatbot",
@@ -442,8 +442,8 @@
       "date": "2026-11-07"
     },
     {
-      "url": "https://www.simpleteacherai.com/ideas/worked-examples-then-one-for-them",
-      "title": "Worked examples, then one for them",
+      "url": "https://www.simpleteacherai.com/ideas/worked-examples-practice-page",
+      "title": "Worked examples practice page: one solved, then one for them",
       "category": "Planning",
       "grades": "2-12",
       "tool": "Any chatbot",
@@ -526,8 +526,8 @@
       "date": "2026-11-07"
     },
     {
-      "url": "https://www.simpleteacherai.com/ideas/kid-friendly-vocabulary-with-examples-and-nonexamples",
-      "title": "Kid-friendly vocabulary, with examples and nonexamples",
+      "url": "https://www.simpleteacherai.com/ideas/frayer-model-examples-nonexamples",
+      "title": "Frayer model vocabulary: kid-friendly definitions, examples, and nonexamples",
       "category": "Planning",
       "grades": "K-8",
       "tool": "Any chatbot",
@@ -590,8 +590,8 @@
       "date": "2026-11-07"
     },
     {
-      "url": "https://www.simpleteacherai.com/ideas/sentence-frames-so-every-kid-can-join-the-discussion",
-      "title": "Sentence frames so every kid can join the discussion",
+      "url": "https://www.simpleteacherai.com/ideas/sentence-frames-for-discussion",
+      "title": "Sentence frames for discussion, at three levels",
       "category": "Differentiation",
       "grades": "K-12",
       "tool": "Any chatbot",
@@ -610,8 +610,8 @@
       "date": "2026-11-07"
     },
     {
-      "url": "https://www.simpleteacherai.com/ideas/a-fluency-passage-with-the-word-counts-done",
-      "title": "A fluency passage with the word counts done for you",
+      "url": "https://www.simpleteacherai.com/ideas/fluency-passages-with-word-count",
+      "title": "Fluency passages with word counts, about anything your class likes",
       "category": "Differentiation",
       "grades": "1-5",
       "tool": "Any chatbot",
@@ -630,8 +630,8 @@
       "date": "2026-11-07"
     },
     {
-      "url": "https://www.simpleteacherai.com/ideas/an-early-finisher-choice-board-that-still-practices",
-      "title": "An early-finisher choice board that still practices the skill",
+      "url": "https://www.simpleteacherai.com/ideas/early-finisher-choice-board",
+      "title": "Early finisher choice board that still practices the skill",
       "category": "Differentiation",
       "grades": "K-8",
       "tool": "Any chatbot",
@@ -690,8 +690,8 @@
       "date": "2026-11-07"
     },
     {
-      "url": "https://www.simpleteacherai.com/ideas/a-class-story-to-teach-or-reteach-a-routine",
-      "title": "A class story to teach (or reteach) a routine",
+      "url": "https://www.simpleteacherai.com/ideas/social-story-generator-classroom-routine",
+      "title": "Free social story generator for a classroom routine",
       "category": "Classroom routines",
       "grades": "PreK-5",
       "tool": "Any chatbot",

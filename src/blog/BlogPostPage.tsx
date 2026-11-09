@@ -4,6 +4,7 @@ import { SiteHeader } from '../components/SiteHeader'
 import { SiteFooter } from '../components/SiteFooter'
 import { getPostBySlug, posts } from './posts'
 import { useSeoMeta } from './useSeoMeta'
+import { NewsletterBand } from '../ideas/ui'
 
 function formatDate(dateStr: string) {
   return new Date(`${dateStr}T12:00:00`).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })
@@ -129,6 +130,7 @@ export function BlogPostPage() {
           ) : null}
         </article>
       </main>
+      <NewsletterBand />
       <SiteFooter />
     </div>
   )

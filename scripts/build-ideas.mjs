@@ -86,7 +86,7 @@ const cards = files.flatMap((f) => parseBatch(f, parseInt(f.slice(6))))
 // Slugs, unique across batches.
 const seen = new Set()
 for (const c of cards) {
-  let slug = slugify(c.title)
+  let slug = c.meta.slug ?? slugify(c.title)
   while (seen.has(slug)) slug += '-2'
   seen.add(slug)
   c.slug = slug

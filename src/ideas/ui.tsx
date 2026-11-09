@@ -87,16 +87,16 @@ export function IdeaCard({ idea, style }: { idea: Idea; style?: CSSProperties })
   )
 }
 
-const SUBSTACK = 'https://simpleteacherai.substack.com/subscribe'
-
-// Plain GET to Substack's subscribe page with the email prefilled: no JS, no keys, works today.
-export function NewsletterForm({ dark = false }: { dark?: boolean }) {
+// Substack's official embed: teachers type their email and subscribe without leaving the page.
+export function NewsletterForm() {
   return (
-    <form action={SUBSTACK} method="get" target="_blank" className={`news-form ${dark ? 'news-form-dark' : ''}`}>
-      <label htmlFor={dark ? 'nl-email-dark' : 'nl-email'} className="sr-only">Your email</label>
-      <input id={dark ? 'nl-email-dark' : 'nl-email'} type="email" name="email" required placeholder="you@school.org" autoComplete="email" />
-      <button type="submit" className="btn-shine">Send me the ideas</button>
-    </form>
+    <iframe
+      src="https://simpleteacherai.substack.com/embed"
+      title="Sign up for the Simple Teacher AI newsletter"
+      className="news-embed"
+      loading="lazy"
+      scrolling="no"
+    />
   )
 }
 
@@ -109,10 +109,10 @@ export function NewsletterBand() {
           New AI ideas, <em className="grad-text-light">tested before they reach you.</em>
         </h2>
         <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-[var(--on-band)]/75 sm:text-lg">
-          Every week: the new tools teachers are hearing about, the prompts that held up on a real test, and what the AI still got wrong.
+          Every week: the newest tested ideas, the AI tools teachers are hearing about, and what the AI still got wrong.
         </p>
-        <div className="mx-auto mt-8 max-w-lg"><NewsletterForm dark /></div>
-        <p className="mt-4 text-xs text-[var(--on-band)]/55">Opens Substack to confirm. Unsubscribe anytime.</p>
+        <div className="mx-auto mt-8 max-w-lg"><NewsletterForm /></div>
+        <p className="mt-4 text-xs text-[var(--on-band)]/55">Free. Unsubscribe anytime.</p>
       </div>
     </section>
   )

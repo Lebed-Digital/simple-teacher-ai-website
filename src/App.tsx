@@ -83,7 +83,7 @@ function App() {
             </form>
             <div className="rise mt-5 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm font-bold" style={{ animationDelay: '.24s' }}>
               <Link to="/ideas" className="link-arrow">Browse all {stats.total} ideas <span aria-hidden="true">↗</span></Link>
-              <a href="#newsletter" className="text-[var(--muted)] hover:text-[var(--heading)]">Get one new idea a week</a>
+              <a href="#newsletter" className="text-[var(--muted)] hover:text-[var(--heading)]">Get the new ideas every week</a>
             </div>
           </div>
 
