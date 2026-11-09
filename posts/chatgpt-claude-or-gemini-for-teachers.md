@@ -44,6 +44,8 @@ For a short email or three exit ticket questions, the free versions have been en
 
 You do not need to pay to find out if this is useful. Start free.
 
+And if you teach in a U.S. K-12 school, the paid-level versions may already be free for you. Here is how to sign up for [ChatGPT for Teachers](/blog/chatgpt-for-teachers-free) (free through June 2028) and [Claude for Teachers](/blog/claude-for-teachers-free) (a free year if you sign up by June 30, 2027).
+
 ## What I would not do
 
 I would not open all three and try to learn them at once. That is how you spend your planning period comparing tools instead of finishing the email.
