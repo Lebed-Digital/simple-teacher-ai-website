@@ -204,8 +204,14 @@ em.grad-text, em.grad-text-light { font-style: italic; font-weight: 500; }
 .glow-band { position: relative; isolation: isolate; overflow: hidden; background: var(--band); }
 .glow-band::before { content: ""; position: absolute; z-index: -1; inset: -30%; pointer-events: none; background: radial-gradient(30% 40% at 25% 35%, rgba(37, 68, 216, 0.55), transparent 70%), radial-gradient(28% 38% at 75% 65%, rgba(255, 201, 77, 0.28), transparent 70%), radial-gradient(25% 35% at 60% 20%, rgba(123, 92, 240, 0.35), transparent 70%);
   filter: blur(30px); animation: drift 16s ease-in-out infinite alternate; }
-/* Substack's embed is a white card with its own name, tagline, and email box; it can't be restyled. */
-.news-embed { display: block; width: 100%; max-width: 480px; height: 320px; margin: 0 auto; border: 0; border-radius: 1.25rem; background: #fff; box-shadow: 0 16px 40px -24px rgba(37, 68, 216, 0.5); }
+/* Newsletter signup form: works on the dark band and on light sections. */
+.news-form { width: 100%; max-width: 480px; margin: 0 auto; text-align: left; }
+.news-input { flex: 1; min-width: 0; border-radius: 0.85rem; padding: 0.85rem 1rem; font-size: 1rem; color: var(--ink); background: #fff; border: 1px solid #d9dfed; }
+.news-input:focus { outline: 3px solid #2544d850; outline-offset: 2px; }
+.news-button { border-radius: 0.85rem; padding: 0.85rem 1.4rem; font-weight: 800; color: #fff; background: var(--green); box-shadow: 0 16px 40px -24px rgba(37, 68, 216, 0.8); transition: transform 0.2s; }
+.news-button:hover { transform: translateY(-1px); }
+.news-button:disabled { opacity: 0.6; }
+.news-done { border-radius: 1rem; padding: 1rem 1.2rem; border: 1px solid #2544d840; background: #2544d814; }
 
 /* Library filing panel */
 .library-intro { display: grid; grid-template-columns: minmax(0, 1fr) 16rem; align-items: center; gap: 3rem; }

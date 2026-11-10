@@ -1,4 +1,4 @@
-import { useState, type CSSProperties, type ReactNode } from 'react'
+import { useState, type CSSProperties, type FormEvent, type ReactNode } from 'react'
 import { Link } from 'react-router-dom'
 import { SiteHeader } from '../components/SiteHeader'
 import { SiteFooter } from '../components/SiteFooter'
@@ -87,16 +87,51 @@ export function IdeaCard({ idea, style }: { idea: Idea; style?: CSSProperties })
   )
 }
 
-// Substack's official embed: teachers type their email and subscribe without leaving the page.
+// Our own signup (api/subscribe.js): teachers stay on the page and get a confirmation email from Resend.
 export function NewsletterForm() {
+  const [state, setState] = useState<'idle' | 'sending' | 'sent' | 'error'>('idle')
+  const [error, setError] = useState('')
+
+  async function submit(e: FormEvent<HTMLFormElement>) {
+    e.preventDefault()
+    const form = new FormData(e.currentTarget)
+    setState('sending')
+    try {
+      const res = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email: form.get('email'), website: form.get('website') }),
+      })
+      const data = await res.json().catch(() => ({}))
+      if (!res.ok) throw new Error(data.error || 'Something went wrong. Please try again.')
+      setState('sent')
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Something went wrong. Please try again.')
+      setState('error')
+    }
+  }
+
+  if (state === 'sent') {
+    return (
+      <div className="news-form news-done" role="status">
+        <p className="font-bold">Almost done! Check your email.</p>
+        <p className="mt-1 text-sm opacity-80">Click the link we just sent to confirm. Not there in a minute? Check spam or Promotions.</p>
+      </div>
+    )
+  }
+
   return (
-    <iframe
-      src="https://simpleteacherai.substack.com/embed"
-      title="Sign up for the Simple Teacher AI newsletter"
-      className="news-embed"
-      loading="lazy"
-      scrolling="no"
-    />
+    <form onSubmit={submit} className="news-form">
+      <div className="flex flex-col gap-2 sm:flex-row">
+        <label htmlFor="news-email" className="sr-only">Email address</label>
+        <input id="news-email" name="email" type="email" required autoComplete="email" placeholder="you@example.com" className="news-input" />
+        {/* Honeypot: hidden from people, bots fill it in. */}
+        <input name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
+        <button type="submit" disabled={state === 'sending'} className="news-button">{state === 'sending' ? 'Sending…' : 'Subscribe'}</button>
+      </div>
+      {state === 'error' && <p role="alert" className="mt-2 text-sm font-semibold text-[#e5484d]">{error}</p>}
+      <p className="mt-2 text-xs opacity-70">Personal email works best. School filters sometimes block newsletters.</p>
+    </form>
   )
 }
 
