@@ -64,9 +64,9 @@ export function IdeaCard({ idea, style }: { idea: Idea; style?: CSSProperties })
   const c = categoryOf(idea.category)
   return (
     <article className="idea-card reveal" style={{ '--cat': c.color, '--cat-tint': c.tint, ...style } as CSSProperties}>
-      <div className="flex items-start justify-between gap-3">
+      <div className="card-topline">
         <CategoryPill name={idea.category} />
-        <Stamp status={idea.status} />
+        <span className="card-arrow" aria-hidden="true">↗</span>
       </div>
       <h3 className="mt-5 font-serif text-[1.35rem] font-semibold leading-tight tracking-[-0.02em] text-[var(--heading)]">
         <Link to={`/ideas/${idea.slug}`} className="stretched focus-visible:outline-none">
@@ -74,6 +74,7 @@ export function IdeaCard({ idea, style }: { idea: Idea; style?: CSSProperties })
         </Link>
       </h3>
       <p className="mt-3 line-clamp-3 text-[0.95rem] leading-6 text-[var(--muted)]">{idea.summary}</p>
+      <div className="card-verdict"><Stamp status={idea.status} /></div>
       <dl className="mt-auto flex flex-wrap gap-x-4 gap-y-1 pt-5 text-xs font-semibold text-[var(--muted)]">
         <div className="flex gap-1"><dt className="sr-only">Grades</dt><dd>🎒 {idea.grades}</dd></div>
         <div className="flex gap-1"><dt className="sr-only">Takes about</dt><dd>⏱️ {idea.time.split(/[,(]/)[0].trim()}</dd></div>
@@ -86,16 +87,16 @@ export function IdeaCard({ idea, style }: { idea: Idea; style?: CSSProperties })
   )
 }
 
-const SUBSTACK = 'https://simpleteacherai.substack.com/subscribe'
-
-// Plain GET to Substack's subscribe page with the email prefilled: no JS, no keys, works today.
-export function NewsletterForm({ dark = false }: { dark?: boolean }) {
+// Substack's official embed: teachers type their email and subscribe without leaving the page.
+export function NewsletterForm() {
   return (
-    <form action={SUBSTACK} method="get" target="_blank" className={`news-form ${dark ? 'news-form-dark' : ''}`}>
-      <label htmlFor={dark ? 'nl-email-dark' : 'nl-email'} className="sr-only">Your email</label>
-      <input id={dark ? 'nl-email-dark' : 'nl-email'} type="email" name="email" required placeholder="you@school.org" autoComplete="email" />
-      <button type="submit" className="btn-shine">Send me the ideas</button>
-    </form>
+    <iframe
+      src="https://simpleteacherai.substack.com/embed"
+      title="Sign up for the Simple Teacher AI newsletter"
+      className="news-embed"
+      loading="lazy"
+      scrolling="no"
+    />
   )
 }
 
@@ -108,10 +109,10 @@ export function NewsletterBand() {
           New AI ideas, <em className="grad-text-light">tested before they reach you.</em>
         </h2>
         <p className="mx-auto mt-5 max-w-xl text-base leading-7 text-[var(--on-band)]/75 sm:text-lg">
-          Every week: the new tools teachers are hearing about, the prompts that held up on a real test, and what the AI still got wrong.
+          Every week: the newest tested ideas, the AI tools teachers are hearing about, and what the AI still got wrong.
         </p>
-        <div className="mx-auto mt-8 max-w-lg"><NewsletterForm dark /></div>
-        <p className="mt-4 text-xs text-[var(--on-band)]/55">Opens Substack to confirm. Unsubscribe anytime.</p>
+        <div className="mx-auto mt-8 max-w-lg"><NewsletterForm /></div>
+        <p className="mt-4 text-xs text-[var(--on-band)]/55">Free. Unsubscribe anytime.</p>
       </div>
     </section>
   )

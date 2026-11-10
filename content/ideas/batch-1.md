@@ -16,8 +16,8 @@ Researched 2026-11-07. Revised after a Codex review, then every prompt that coul
 
 ## PLANNING
 
-### 1. Build your emergency sub plans once, not the night you're sick
-**Category:** Planning · **Grades:** K-12 · **Tool:** ChatGPT, Claude, or Gemini · **Takes about:** 15 min per class, once a semester
+### 1. Emergency sub plans: build them once with AI, not the night you're sick
+**Category:** Planning · **Grades:** K-12 · **Tool:** ChatGPT, Claude, or Gemini · **Takes about:** 15 min per class, once a semester · **Slug:** emergency-sub-plans-ai
 
 **Prompt:**
 > Act as an experienced instructional designer. Write a one-day emergency substitute plan for my [grade] [subject] class. It must need zero prep from the sub and use only paper, pencils, and what's in a typical classroom. Use my real schedule: [paste times]. Use my real routines: [attendance, bathroom, lining up, quiet signal]. If I didn't give you a routine, write "ASK THE TEACHER NEXT DOOR" instead of making one up. Include: a review activity on [recent topic] with an answer key, a quiet independent task, and a 5-minute filler activity. Before you finish, solve every problem and puzzle yourself and make sure each one has exactly one correct answer.
@@ -113,8 +113,8 @@ Researched 2026-11-07. Revised after a Codex review, then every prompt that coul
 
 ---
 
-### 7. Turn a standard into kid-friendly "I can" statements
-**Category:** Planning · **Grades:** K-8 · **Tool:** Any chatbot · **Takes about:** 1 min
+### 7. Kid-friendly "I can" statements from any standard
+**Category:** Planning · **Grades:** K-8 · **Tool:** Any chatbot · **Takes about:** 1 min · **Slug:** i-can-statements-from-standards
 
 **Prompt:**
 > Rewrite this standard as 2-3 "I can" statements a [grade] student would understand. Use words a [age]-year-old knows, but keep the same skill and the same level of challenge. Don't make it easier than the standard. Use a real example instead of letters or symbols from the standard. Standard: [paste standard]
@@ -151,8 +151,8 @@ Researched 2026-11-07. Revised after a Codex review, then every prompt that coul
 
 ---
 
-### 9. Custom decodable text in 10 minutes
-**Category:** Differentiation · **Grades:** K-3 · **Tool:** Any chatbot · **Takes about:** 10 min (5 with AI, 5 fixing it)
+### 9. Decodable text generator: a custom decodable story in 10 minutes
+**Category:** Differentiation · **Grades:** K-3 · **Tool:** Any chatbot · **Takes about:** 10 min (5 with AI, 5 fixing it) · **Slug:** decodable-text-generator
 
 **Prompt:**
 > Write a short decodable story for first graders. Target pattern: [e.g. short o]. Use only these high-frequency words: [list]. Every other word must use patterns we've learned: [list]. Write it about [something your class did this week]. 6-8 sentences. Every sentence must make sense to a 6-year-old and the story needs a tiny beginning, middle, and end. After the story, check every single word one at a time against the rules (including names and small words) and list any word that breaks them.
@@ -168,8 +168,8 @@ Researched 2026-11-07. Revised after a Codex review, then every prompt that coul
 
 ---
 
-### 10. Word problems about what your class actually cares about
-**Category:** Differentiation · **Grades:** 1-8 · **Tool:** Any chatbot · **Takes about:** 2 min
+### 10. Word problem generator: problems about what your class cares about
+**Category:** Differentiation · **Grades:** 1-8 · **Tool:** Any chatbot · **Takes about:** 2 min · **Slug:** word-problem-generator
 
 **Prompt:**
 > Write 8 [grade] word problems practicing [skill, e.g. two-step multiplication]. Base them on things my class is into right now: [Pokemon, recess soccer, the class fish, Minecraft]. Same difficulty as these examples from my curriculum: [paste 1-2 problems]. Vary the wording and question so the problems don't all follow the same pattern. Include an answer key.
@@ -221,11 +221,16 @@ Researched 2026-11-07. Revised after a Codex review, then every prompt that coul
 
 ## ASSESSMENT
 
-### 13. An exit ticket bank with answers
-**Category:** Assessment · **Grades:** K-12 · **Tool:** Any chatbot · **Takes about:** 2 min
+### 13. Exit ticket examples with answers, and what a wrong answer means
+**Category:** Assessment · **Grades:** K-12 · **Tool:** Any chatbot · **Takes about:** 2 min · **Slug:** exit-ticket-examples
 
 **Prompt:**
 > Write 5 exit tickets for this [grade] lesson goal: [goal]. Each one should take under 2 minutes and show me whether the student got the main idea. For each, include the answer, a short worked solution, and what a wrong answer might mean (a guess I should check, not a diagnosis).
+
+**Example from our test (3rd grade area), two of the five tickets:**
+
+- **Count the squares.** A 4-by-3 grid of squares: what is the rectangle's area? *Answer:* 12 square units. *If wrong:* "An answer of 10 might mean the student counted only the outside squares. Ask them to point to each square they counted."
+- **Check someone's thinking.** "A rectangle is 4 units long and 3 units wide. Sam says, 'Its area is 4 + 3 = 7 square units.' Is Sam correct?" *Answer:* No. The rectangle holds 3 rows of 4 squares, so 3 × 4 = 12 square units.
 
 **Why it works:** "What a wrong answer might mean" is the key line. It turns an exit ticket into tomorrow's plan.
 

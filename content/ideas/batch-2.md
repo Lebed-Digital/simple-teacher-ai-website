@@ -33,8 +33,8 @@ Researched 2026-11-07. Revised after a Codex review, then every prompt that coul
 
 ---
 
-### 2. Worked examples, then one for them
-**Category:** Planning · **Grades:** 2-12 · **Tool:** Any chatbot · **Takes about:** 3 min
+### 2. Worked examples practice page: one solved, then one for them
+**Category:** Planning · **Grades:** 2-12 · **Tool:** Any chatbot · **Takes about:** 3 min · **Slug:** worked-examples-practice-page
 
 **Prompt:**
 > I'm teaching [skill] to [grade] students. Make a practice page that alternates: a worked example, then a similar problem for students, then another worked example, then a similar problem, 4 pairs in all. Each worked example shows every step with one short sentence saying why. Make the third and fourth worked examples only half done, so students finish the last steps. Get a little harder each pair. Give each student problem a different answer from the worked example right before it, so nobody can just copy the answer. Write math as plain text, like 3 x 4. Solve every problem yourself, make sure each has exactly one correct answer, and give me an answer key at the end. In the key, show each pair's two answers side by side, and change any student problem whose answer matches its example.
@@ -103,11 +103,18 @@ Researched 2026-11-07. Revised after a Codex review, then every prompt that coul
 
 ---
 
-### 6. Kid-friendly vocabulary, with examples and nonexamples
-**Category:** Planning · **Grades:** K-8 · **Tool:** Any chatbot · **Takes about:** 3 min
+### 6. Frayer model vocabulary: kid-friendly definitions, examples, and nonexamples
+**Category:** Planning · **Grades:** K-8 · **Tool:** Any chatbot · **Takes about:** 3 min · **Slug:** frayer-model-examples-nonexamples
 
 **Prompt:**
 > Here are this week's vocabulary words from our [grade] [subject or book]: [list]. For each word, write: a student-friendly definition in everyday words a [age]-year-old knows (don't use the word itself or a harder word to explain it), one example sentence from a kid's life, one nonexample (something that is NOT this word, and why), and a quick yes/no question I can ask the class to check understanding. Keep the meaning the book uses: [paste the sentence from the book for each word, if you have it].
+
+**Example from our test (3rd grade science words):**
+
+- **Nocturnal:** "Awake and busy at night and asleep during the day." *Example:* "While I sleep at night, my pet hamster is nocturnal and runs on its wheel." *Nonexample:* "A butterfly flies during the day and rests at night, so it is not nocturnal." *Check:* "Is an animal that sleeps all day and looks for food at night nocturnal?" Yes.
+- **Scarce:** "Hard to find because there is very little." *Example:* "Blue crayons were scarce at our table, so we took turns using the only one." *Nonexample:* "A full box of crayons has lots to choose from, so crayons are not scarce." *Check:* "If there are piles of acorns everywhere, are acorns scarce?" No.
+
+That is the core of a Frayer model: a kid-friendly definition, an example, and a nonexample for each word. Copy each one into the boxes of your Frayer template.
 
 **Why it works:** Dictionary definitions rarely work for kids. Explaining a word in everyday language, then showing what it is and isn't, is the core of robust vocabulary teaching.
 
@@ -156,11 +163,21 @@ Researched 2026-11-07. Revised after a Codex review, then every prompt that coul
 
 ---
 
-### 9. Sentence frames so every kid can join the discussion
-**Category:** Differentiation · **Grades:** K-12 · **Tool:** Any chatbot · **Takes about:** 2 min
+### 9. Sentence frames for discussion, at three levels
+**Category:** Differentiation · **Grades:** K-12 · **Tool:** Any chatbot · **Takes about:** 2 min · **Slug:** sentence-frames-for-discussion
 
 **Prompt:**
 > We're discussing [question] in [grade] [subject]. Write sentence frames students can use to answer, at three levels: starting (short frames with a word bank), building (full-sentence frames), and stretching (frames for giving a reason and evidence, or disagreeing politely). Keep frames open enough that students can answer in different ways. Put the content words students need in the word bank. Then write one model answer using the "building" frames so I can say it aloud first.
+
+**Example from our test (3rd grade science: "Why do some animals hibernate in winter?"):**
+
+**Word bank:** winter, hibernate, food, scarce, cold, energy, save, body, temperature, breathing, slows
+
+- **Starting:** Some animals hibernate in ___. / In winter, ___ can be scarce. / Hibernating helps animals save ___.
+- **Building:** Some animals hibernate in winter because ___. / In winter, ___, so ___. / This helps the animal ___.
+- **Stretching:** I think some animals hibernate because ___. Evidence that supports my idea is ___. / I agree with ___ because ___. I would add ___. / I agree that ___, but the evidence about ___ makes me think ___.
+
+**Model answer:** "Some animals hibernate in winter because food becomes scarce. In winter, there is less food for them to eat, so they need to save energy. During hibernation, an animal's breathing slows. This helps the animal use less energy until more food is available."
 
 **Why it works:** Frames let English learners (and quiet kids) focus on the idea instead of hunting for the sentence. Colorín Colorado's advice is to start from a model answer and keep frames open, then drop them as kids get precise.
 
@@ -172,11 +189,21 @@ Researched 2026-11-07. Revised after a Codex review, then every prompt that coul
 
 ---
 
-### 10. A fluency passage with the word counts done for you
-**Category:** Differentiation · **Grades:** 1-5 · **Tool:** Any chatbot · **Takes about:** 5 min plus your count check
+### 10. Fluency passages with word counts, about anything your class likes
+**Category:** Differentiation · **Grades:** 1-5 · **Tool:** Any chatbot · **Takes about:** 5 min plus your count check · **Slug:** fluency-passages-with-word-count
 
 **Prompt:**
 > Write a [number]-word fluency passage for [grade] students about [topic], at a [grade] reading level. Vary the sentence lengths like a real story: some short, some long. Put one sentence per row, and at the end of each row write the running total of words so far in brackets, like [12]. Count hyphenated words and numbers as one word each. When you're done, count the whole passage again word by word and fix any total that's wrong. Then give me 3 short comprehension questions.
+
+**Example from our test (the first 7 rows of a 150-word 3rd grade passage):**
+
+- Our class garden began with a patch of dirt behind the school. [12]
+- On Monday, we pulled weeds and dug small holes for seeds. [23]
+- I planted three bean seeds beside a row of carrots. [33]
+- Then we waited. [36]
+- Every morning, our class took turns watering the soil and looking for tiny green leaves. [51]
+- For a week, nothing seemed to happen. [58]
+- "Maybe our seeds are sleeping," Maya said. [65]
 
 **Why it works:** Timed repeated reading needs a passage with running word counts so you can score words correct per minute fast. Writing a passage about something your class cares about takes seconds. Counting is the part to check. Correct counts don't make it the right level: read it yourself, and use your program's leveled passages for benchmark testing. This is for practice.
 
@@ -190,11 +217,19 @@ Researched 2026-11-07. Revised after a Codex review, then every prompt that coul
 
 ---
 
-### 11. An early-finisher choice board that still practices the skill
-**Category:** Differentiation · **Grades:** K-8 · **Tool:** Any chatbot · **Takes about:** 3 min
+### 11. Early finisher choice board that still practices the skill
+**Category:** Differentiation · **Grades:** K-8 · **Tool:** Any chatbot · **Takes about:** 3 min · **Slug:** early-finisher-choice-board
 
 **Prompt:**
 > Make a 3x3 choice board for [grade] students who finish early in [subject]. Every square must practice [this week's skill], not just keep them busy. Each square needs directions a student can follow alone without asking me, using only paper, pencil, and what's in a typical classroom. Mix it up: some drawing, some writing, some puzzles, one that makes them explain their thinking. Solve every problem or puzzle yourself and make sure each has exactly one answer (or say that it's open-ended). Add an answer key for anything with a right answer.
+
+**Example from our test (3rd grade, 3s and 4s facts), three of the nine squares:**
+
+- **Missing-Factor Detective:** Copy and fill each blank: 3 × ___ = 21, 4 × ___ = 32, 3 × ___ = 27, 4 × ___ = 20.
+- **Secret Number:** I am greater than 20 and less than 30. I am a product in both the 3s and 4s facts. What number am I? Write a multiplication equation using 3 and another using 4 to prove your answer.
+- **Fix the Facts:** Exactly two equations are wrong. Copy all four, replacing each wrong product with the correct product: 3 × 8 = 21, 4 × 6 = 24, 3 × 9 = 27, 4 × 7 = 32.
+
+The answer key came back too: 7, 8, 9, 5 for the blanks, 24 for the secret number, and 3 × 8 = 24 and 4 × 7 = 28 for the fixes.
 
 **Why it works:** "Every square must practice the skill" is the line that turns busywork into practice. "Follow alone without asking me" means you can keep teaching your small group.
 
@@ -248,13 +283,17 @@ Researched 2026-11-07. Revised after a Codex review, then every prompt that coul
 
 ## CLASSROOM ROUTINES
 
-### 14. A class story to teach (or reteach) a routine
-**Category:** Classroom routines · **Grades:** PreK-5 · **Tool:** Any chatbot · **Takes about:** 3 min
+### 14. Free social story generator for a classroom routine
+**Category:** Classroom routines · **Grades:** PreK-5 · **Tool:** Any chatbot · **Takes about:** 3 min · **Slug:** social-story-generator-classroom-routine
 
 **Use it for the whole class, not one child:** this card is for routines everyone does (fire drills, a sub day, a new lunch line). Don't ask AI to write a behavior plan for a specific student. Common Sense Media found AI teacher assistants suggested harsher plans for students with Black-coded names than for white-coded names given the same description, and called behavior plans one of the riskiest uses. (Google and MagicSchool said they couldn't reproduce the result.)
 
 **Prompt:**
 > Write a short class story to teach my [grade] class the routine for [routine, e.g. "a fire drill"]. Use our real steps: [list the steps]. Write it in first person ("I"), present tense, in short sentences a [age]-year-old can read. Describe what happens, how it might feel (loud, surprising), and what I can do, using calm, positive words. Say what to do, not just what not to do. 8 to 12 sentences. Don't add steps I didn't give you. After the story, list situations my steps don't cover that a student might worry about (for example, being out of the room when the alarm rings), as questions for me.
+
+**Example from our test (a fire drill):**
+
+"The fire alarm rings, and it sounds loud. I might feel surprised, but I know our routine. I stop what I am doing and leave everything. I line up at the door by my table number. I walk silently behind my teacher. I go out the side door to the blacktop. I stand in our line by the fence. I wait silently while my teacher counts everyone. I walk back in when my teacher says it is time."
 
 **Why it works:** Short stories that describe a situation and what to do are called social narratives. The research behind them is mostly with autistic students, so using one for a whole-class routine is a reasonable stretch, not a tested result. Giving it your real steps keeps it from inventing procedures.
 

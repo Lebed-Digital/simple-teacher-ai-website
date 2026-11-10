@@ -65,83 +65,94 @@ export function IdeaPage() {
 
   return (
     <PageShell>
-      <article style={{ '--cat': c.color, '--cat-tint': c.tint } as CSSProperties}>
+      <article className="idea-detail" style={{ '--cat': c.color, '--cat-tint': c.tint } as CSSProperties}>
         <header className="hero-glow cat-glow px-4 pb-12 pt-8 sm:px-8 sm:pt-12">
-          <div className="mx-auto max-w-3xl">
+          <div className="mx-auto max-w-6xl">
             <Link to="/ideas" className="text-sm font-bold text-[var(--green)] hover:underline">← All ideas</Link>
             <div className="rise mt-6 flex flex-wrap items-center gap-3">
               <CategoryPill name={idea.category} />
               <Stamp status={idea.status} />
             </div>
-            <h1 className="rise mt-5 text-balance font-serif text-4xl font-semibold leading-[1.05] tracking-[-0.035em] text-[var(--heading)] sm:text-6xl" style={{ animationDelay: '.06s' }}>
+            <h1 className="detail-title rise mt-5 text-balance font-serif font-semibold text-[var(--heading)]" style={{ animationDelay: '.06s' }}>
               {idea.title}
             </h1>
-            <dl className="rise meta-grid mt-8" style={{ animationDelay: '.12s' }}>
-              <div><dt>Grades</dt><dd>{idea.grades}</dd></div>
-              <div><dt>Takes about*</dt><dd>{idea.time}</dd></div>
-              <div className="sm:col-span-2"><dt>Tool</dt><dd>{idea.tool}</dd></div>
-            </dl>
+            <p className="detail-summary rise mt-6 text-lg leading-8 text-[var(--muted)]" style={{ animationDelay: '.12s' }}>{idea.summary}</p>
           </div>
         </header>
 
-        <div ref={bodyRef} className="mx-auto max-w-3xl px-4 pb-16 sm:px-8">
-          <div className="flex flex-col gap-6">
-            {idea.segments.map((s, i) =>
-              s.type === 'note' ? (
-                <div key={i} className="idea-prose" dangerouslySetInnerHTML={{ __html: s.html }} />
-              ) : (
-                <section key={i} className="prompt-box" aria-label={s.label}>
-                  <div className="flex flex-wrap items-center justify-between gap-3">
-                    <p className="prompt-label">{s.label}</p>
-                    <CopyButton text={s.text} label={idea.title} />
-                  </div>
-                  <p className="prompt-text"><PromptText text={s.text} /></p>
-                  <p className="mt-4 text-xs font-semibold text-[var(--muted)]">
-                    Swap the <mark className="fill-in">[highlighted parts]</mark> for your own class. No student names.
-                  </p>
-                </section>
-              ),
-            )}
-          </div>
+        <div className="idea-layout mx-auto max-w-6xl px-4 pb-16 sm:px-8">
+          <aside className="idea-sidebar" aria-label="Idea details">
+            <p className="eyebrow">At a glance</p>
+            <dl className="meta-grid mt-5">
+              <div><dt>Grades</dt><dd>{idea.grades}</dd></div>
+              <div><dt>Takes about*</dt><dd>{idea.time}</dd></div>
+              <div className="meta-tool"><dt>Tool</dt><dd>{idea.tool}</dd></div>
+            </dl>
+            <nav className="detail-jumps" aria-label="On this page">
+              <a href="#idea-content">{idea.prompt ? 'Read the prompt' : 'Read the idea'} <span aria-hidden="true">↓</span></a>
+              <a href="#test-heading">{idea.status === 'untested' ? 'What to check' : 'See the test notes'} <span aria-hidden="true">↓</span></a>
+            </nav>
+          </aside>
 
-          <section className={`test-paper mt-10 test-${idea.status}`} aria-labelledby="test-heading">
-            <div className="flex flex-wrap items-center justify-between gap-3">
-              <h2 id="test-heading" className="font-serif text-2xl font-semibold tracking-[-0.02em] text-[var(--heading)]">
-                {idea.status === 'untested' ? 'Not tested yet' : 'We tested it'}
-              </h2>
-              <Stamp status={idea.status} big />
+          <div ref={bodyRef} id="idea-content" className="idea-body">
+            <div className="flex flex-col gap-6">
+              {idea.segments.map((s, i) =>
+                s.type === 'note' ? (
+                  <div key={i} className="idea-prose" dangerouslySetInnerHTML={{ __html: s.html }} />
+                ) : (
+                  <section key={i} className="prompt-box" aria-label={s.label}>
+                    <div className="flex flex-wrap items-center justify-between gap-3">
+                      <p className="prompt-label">{s.label}</p>
+                      <CopyButton text={s.text} label={idea.title} />
+                    </div>
+                    <p className="prompt-text"><PromptText text={s.text} /></p>
+                    <p className="mt-4 text-xs font-semibold text-[var(--muted)]">
+                      Swap the <mark className="fill-in">[highlighted parts]</mark> for your own class. No student names.
+                    </p>
+                  </section>
+                ),
+              )}
             </div>
-            {idea.verdictDetail && idea.status !== 'untested' ? (
-              <p className="mt-2 font-semibold text-[var(--ink)]">Result: {idea.verdictDetail}.</p>
-            ) : null}
-            <div className="idea-prose test-prose mt-4" dangerouslySetInnerHTML={{ __html: idea.testHtml }} />
-          </section>
 
-          {idea.sourcesHtml ? (
-            <section className="mt-8 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 text-sm" aria-label="Sources">
-              <p className="font-bold uppercase tracking-[0.12em] text-[var(--muted)]">Sources</p>
-              <div className="idea-prose mt-2 text-sm" dangerouslySetInnerHTML={{ __html: idea.sourcesHtml }} />
+            <section className={`test-paper mt-10 test-${idea.status}`} aria-labelledby="test-heading">
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <h2 id="test-heading" className="font-serif text-2xl font-semibold tracking-[-0.02em] text-[var(--heading)]">
+                  {idea.status === 'untested' ? 'Not tested yet' : 'We tested it'}
+                </h2>
+                <Stamp status={idea.status} big />
+              </div>
+              {idea.verdictDetail && idea.status !== 'untested' ? (
+                <p className="mt-2 font-semibold text-[var(--ink)]">Result: {idea.verdictDetail}.</p>
+              ) : null}
+              <div className="idea-prose test-prose mt-4" dangerouslySetInnerHTML={{ __html: idea.testHtml }} />
             </section>
-          ) : null}
 
-          <p className="mt-6 text-xs leading-5 text-[var(--muted)]">
-            *“Takes about” is our own estimate of hands-on time, not a researched number. Never put student names or identifying details into an AI tool, and use the tool your district approved.
-          </p>
-
-          <nav className="mt-10 grid gap-3 sm:grid-cols-2" aria-label="More ideas">
-            {prev ? (
-              <Link to={`/ideas/${prev.slug}`} className="pager">
-                <span>← Previous</span>
-                <strong>{prev.title}</strong>
-              </Link>
-            ) : <span />}
-            {next ? (
-              <Link to={`/ideas/${next.slug}`} className="pager text-right">
-                <span>Next →</span>
-                <strong>{next.title}</strong>
-              </Link>
+            {idea.sourcesHtml ? (
+              <section className="mt-8 rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5 text-sm" aria-label="Sources">
+                <p className="font-bold uppercase tracking-[0.12em] text-[var(--muted)]">Sources</p>
+                <div className="idea-prose mt-2 text-sm" dangerouslySetInnerHTML={{ __html: idea.sourcesHtml }} />
+              </section>
             ) : null}
-          </nav>
+
+            <p className="mt-6 text-xs leading-5 text-[var(--muted)]">
+              *“Takes about” is our own estimate of hands-on time, not a researched number. Never put student names or identifying details into an AI tool, and use the tool your district approved.
+            </p>
+
+            <nav className="mt-10 grid gap-3 sm:grid-cols-2" aria-label="More ideas">
+              {prev ? (
+                <Link to={`/ideas/${prev.slug}`} className="pager">
+                  <span>← Previous</span>
+                  <strong>{prev.title}</strong>
+                </Link>
+              ) : <span />}
+              {next ? (
+                <Link to={`/ideas/${next.slug}`} className="pager text-right">
+                  <span>Next →</span>
+                  <strong>{next.title}</strong>
+                </Link>
+              ) : null}
+            </nav>
+          </div>
         </div>
       </article>
 

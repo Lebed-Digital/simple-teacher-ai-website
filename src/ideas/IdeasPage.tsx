@@ -6,7 +6,7 @@ import { IdeaCard, NewsletterBand, PageShell } from './ui'
 
 const FILTERS = [
   { key: '', label: 'All' },
-  { key: 'tested', label: 'Tested' },
+  { key: 'fixed', label: 'Fixed + retested' },
   { key: 'first-try', label: 'Worked first try' },
 ] as const
 
@@ -20,7 +20,7 @@ export function IdeasPage() {
 
   useSeoMeta({
     title: `${stats.total} Tested AI Ideas for Teachers | Simple Teacher AI`,
-    description: `Copy-and-paste AI prompts for teachers. ${stats.tested} of ${stats.total} were run on a sample class and checked by hand, with notes on what the AI got wrong.`,
+    description: `Copy-and-paste AI prompts for teachers. All ${stats.total} were run on a sample class and checked by hand, with notes on what the AI got wrong.`,
     path: '/ideas',
   })
 
@@ -35,7 +35,7 @@ export function IdeasPage() {
     const words = normalize(q).split(' ').filter(Boolean)
     return ideas.filter((i) => {
       if (cat && i.category !== cat) return false
-      if (show === 'tested' && i.status === 'untested') return false
+      if (show === 'fixed' && i.status !== 'fixed') return false
       if (show === 'first-try' && i.status !== 'first-try') return false
       const hay = normalize(`${i.title} ${i.category} ${i.tool} ${i.grades} ${i.summary} ${i.prompt}`)
       return words.every((w) => hay.includes(w))
@@ -50,56 +50,67 @@ export function IdeasPage() {
 
   return (
     <PageShell>
-      <section className="hero-glow px-4 pb-10 pt-10 sm:px-8 sm:pt-16">
+      <section className="library-hero hero-glow px-4 pb-10 pt-10 sm:px-8 sm:pt-16">
         <div className="mx-auto max-w-6xl">
-          <p className="glass-pill rise"><span className="dot" />{stats.tested} of {stats.total} tested by hand</p>
-          <h1 className="rise mt-5 max-w-3xl text-balance font-serif text-5xl font-semibold leading-[1.02] tracking-[-0.04em] text-[var(--heading)] sm:text-7xl" style={{ animationDelay: '.06s' }}>
-            The idea <em className="grad-text">library.</em>
-          </h1>
-          <p className="rise mt-5 max-w-2xl text-lg leading-8 text-[var(--muted)]" style={{ animationDelay: '.12s' }}>
-            Practical ways to use AI this week. Each card says which tool to use, how long it takes, and what happened when we tried it.
-          </p>
-
-          <div className="rise search-box mt-8" style={{ animationDelay: '.18s' }}>
-            <span aria-hidden="true" className="text-xl">🔎</span>
-            <label htmlFor="idea-search" className="sr-only">Search ideas</label>
-            <input
-              id="idea-search"
-              type="search"
-              value={q}
-              onChange={(e) => set('q', e.target.value)}
-              placeholder="Try “sub plans”, “fractions”, “parent email”…"
-              autoComplete="off"
-            />
+          <div className="library-intro">
+            <div>
+              <p className="glass-pill rise"><span className="dot" />Every idea tested by hand</p>
+              <h1 className="rise mt-5 max-w-3xl text-balance font-serif text-5xl font-semibold leading-[1.02] tracking-[-0.04em] text-[var(--heading)] sm:text-7xl" style={{ animationDelay: '.06s' }}>
+                The idea <em className="grad-text">library.</em>
+              </h1>
+              <p className="rise mt-5 max-w-2xl text-lg leading-8 text-[var(--muted)]" style={{ animationDelay: '.12s' }}>
+                Practical ways to use AI this week. Each card says which tool to use, how long it takes, and what happened when we tried it.
+              </p>
+            </div>
+            <div className="library-count" aria-hidden="true">
+              <span>{stats.total}</span>
+              <p>ideas to explore</p>
+              <i>Pick one. Make it yours.</i>
+            </div>
           </div>
 
-          <div className="mt-6 flex flex-wrap gap-2" role="group" aria-label="Filter by category">
-            <button type="button" className="chip" aria-pressed={!cat} onClick={() => set('cat', '')}>
-              ✨ Everything <span className="chip-count">{stats.total}</span>
-            </button>
-            {Object.entries(CATEGORIES).filter(([name]) => counts[name]).map(([name, c]) => (
-              <button
-                key={name}
-                type="button"
-                className="chip"
-                aria-pressed={cat === name}
-                onClick={() => set('cat', cat === name ? '' : name)}
-                style={{ '--cat': c.color, '--cat-tint': c.tint } as CSSProperties}
-              >
-                <span aria-hidden="true">{c.icon}</span> {name} <span className="chip-count">{counts[name]}</span>
+          <div className="library-filters">
+            <div className="rise search-box" style={{ animationDelay: '.18s' }}>
+              <span aria-hidden="true" className="search-icon" />
+              <label htmlFor="idea-search" className="sr-only">Search ideas</label>
+              <input
+                id="idea-search"
+                type="search"
+                value={q}
+                onChange={(e) => set('q', e.target.value)}
+                placeholder="Try “sub plans”, “fractions”, “parent email”…"
+                autoComplete="off"
+              />
+            </div>
+
+            <div className="mt-6 flex flex-wrap gap-2" role="group" aria-label="Filter by category">
+              <button type="button" className="chip" aria-pressed={!cat} onClick={() => set('cat', '')}>
+                ✨ Everything <span className="chip-count">{stats.total}</span>
               </button>
-            ))}
-          </div>
-
-          <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
-            <div className="segmented" role="group" aria-label="Filter by test result">
-              {FILTERS.map((f) => (
-                <button key={f.key} type="button" aria-pressed={show === f.key} onClick={() => set('show', f.key)}>{f.label}</button>
+              {Object.entries(CATEGORIES).filter(([name]) => counts[name]).map(([name, c]) => (
+                <button
+                  key={name}
+                  type="button"
+                  className="chip"
+                  aria-pressed={cat === name}
+                  onClick={() => set('cat', cat === name ? '' : name)}
+                  style={{ '--cat': c.color, '--cat-tint': c.tint } as CSSProperties}
+                >
+                  <span aria-hidden="true">{c.icon}</span> {name} <span className="chip-count">{counts[name]}</span>
+                </button>
               ))}
             </div>
-            <p className="text-sm font-semibold text-[var(--muted)]" aria-live="polite">
-              Showing {results.length} of {stats.total}
-            </p>
+
+            <div className="mt-6 flex flex-wrap items-center justify-between gap-4">
+              <div className="segmented" role="group" aria-label="Filter by test result">
+                {FILTERS.map((f) => (
+                  <button key={f.key} type="button" aria-pressed={show === f.key} onClick={() => set('show', f.key)}>{f.label}</button>
+                ))}
+              </div>
+              <p className="text-sm font-semibold text-[var(--muted)]" aria-live="polite">
+                Showing {results.length} of {stats.total}
+              </p>
+            </div>
           </div>
         </div>
       </section>

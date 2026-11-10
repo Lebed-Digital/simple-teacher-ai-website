@@ -16,13 +16,12 @@ const pick = (ids: string[]) => ids.map((id) => ideas.find((i) => i.id === id)).
 
 const heroStack = pick(['b1-22', 'b2-17', 'b1-01'])
 const featured = pick(['b1-22', 'b1-01', 'b2-04', 'b2-13', 'b2-17', 'b2-23'])
-const fresh = pick(['b2-15', 'b2-22', 'b1-24', 'b2-16'])
 
 function HeroCard({ idea, className }: { idea: Idea; className: string }) {
   const c = categoryOf(idea.category)
   return (
     <Link to={`/ideas/${idea.slug}`} className={`float-card ${className}`} style={{ '--cat': c.color, '--cat-tint': c.tint } as CSSProperties}>
-      <div className="flex items-center justify-between gap-2">
+      <div className="hero-card-meta">
         <span className="text-xs font-bold uppercase tracking-[0.1em] text-[var(--cat)]">{c.icon} {idea.category}</span>
         <Stamp status={idea.status} />
       </div>
@@ -38,7 +37,7 @@ function App() {
 
   useSeoMeta({
     title: 'Simple Teacher AI | Tested AI Ideas for Teachers',
-    description: `${stats.total} practical AI ideas for teachers, with copy-and-paste prompts. ${stats.tested} were tested on a sample class and checked by hand.`,
+    description: `${stats.total} practical AI ideas for teachers, with copy-and-paste prompts. Every one was tested on a sample class and checked by hand.`,
     path: '/',
   })
 
@@ -47,7 +46,8 @@ function App() {
   useEffect(() => {
     const id = hash.slice(1)
     if (!id) return
-    requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }))
+    const frame = requestAnimationFrame(() => document.getElementById(id)?.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth' }))
+    return () => cancelAnimationFrame(frame)
   }, [hash])
 
   function search(form: HTMLFormElement) {
@@ -60,11 +60,11 @@ function App() {
   return (
     <PageShell>
       {/* HERO */}
-      <section className="hero-glow px-4 pb-16 pt-8 sm:px-8 sm:pb-24 sm:pt-14">
+      <section className="home-hero hero-glow px-4 pb-16 pt-8 sm:px-8 sm:pb-24 sm:pt-14">
         <div className="mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.1fr_1fr]">
           <div>
-            <p className="glass-pill rise"><span className="dot" />New: {stats.total} ideas, {stats.tested} tested by hand</p>
-            <h1 className="rise mt-6 text-balance font-serif text-[2.9rem] font-semibold leading-[1] tracking-[-0.045em] text-[var(--heading)] sm:text-7xl" style={{ animationDelay: '.06s' }}>
+            <p className="glass-pill rise"><span className="dot" />New: {stats.total} ideas, every one tested by hand</p>
+            <h1 className="hero-title rise mt-6 font-serif font-semibold text-[var(--heading)]" style={{ animationDelay: '.06s' }}>
               AI ideas for teachers, <em className="grad-text">tested before you try them.</em>
             </h1>
             <p className="rise mt-6 max-w-xl text-lg leading-8 text-[var(--muted)]" style={{ animationDelay: '.12s' }}>
@@ -76,18 +76,19 @@ function App() {
               role="search"
               onSubmit={(e) => { e.preventDefault(); search(e.currentTarget) }}
             >
-              <span aria-hidden="true" className="text-xl">🔎</span>
+              <span aria-hidden="true" className="search-icon" />
               <label htmlFor="hero-search" className="sr-only">Search AI ideas</label>
               <input id="hero-search" name="q" type="search" placeholder="What do you need help with?" autoComplete="off" />
               <button type="submit" className="btn-shine btn-sm">Search</button>
             </form>
             <div className="rise mt-5 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm font-bold" style={{ animationDelay: '.24s' }}>
-              <Link to="/ideas" className="link-arrow">Browse all {stats.total} ideas →</Link>
-              <a href="#newsletter" className="text-[var(--muted)] hover:text-[var(--heading)]">Get one new idea a week</a>
+              <Link to="/ideas" className="link-arrow">Browse all {stats.total} ideas <span aria-hidden="true">↗</span></Link>
+              <a href="#newsletter" className="text-[var(--muted)] hover:text-[var(--heading)]">Get the new ideas every week</a>
             </div>
           </div>
 
           <div className="hero-stack" aria-label="Example ideas">
+            <div className="desk-label" aria-hidden="true"><span>From the teacher’s desk</span><span>✳</span></div>
             {heroStack.map((idea, i) => <HeroCard key={idea.id} idea={idea} className={`float-card-${i + 1}`} />)}
             <span className="red-pen" aria-hidden="true">checked by a teacher ✓</span>
           </div>
@@ -97,8 +98,8 @@ function App() {
       {/* STATS */}
       <section className="px-4 sm:px-8" aria-label="By the numbers">
         <dl className="stats-strip mx-auto max-w-6xl">
-          <div><dt>Ideas in the library</dt><dd>{stats.total}</dd></div>
-          <div><dt>Tested on a sample class</dt><dd>{stats.tested}</dd></div>
+          <div><dt>Ideas, all tested on a sample class</dt><dd>{stats.total}</dd></div>
+          <div><dt>Fixed, then retested</dt><dd>{stats.fixed}</dd></div>
           <div><dt>Worked on the first try</dt><dd>{stats.firstTry}</dd></div>
           <div><dt>Real student names used</dt><dd>0</dd></div>
         </dl>
@@ -127,7 +128,7 @@ function App() {
       </section>
 
       {/* FEATURED */}
-      <section id="prompts" className="scroll-mt-24 bg-[var(--surface)] px-4 py-20 sm:px-8 sm:py-28" aria-labelledby="prompts-heading">
+      <section id="prompts" className="featured-section scroll-mt-24 px-4 py-20 sm:px-8 sm:py-28" aria-labelledby="prompts-heading">
         <div className="mx-auto max-w-6xl">
           <div className="flex flex-wrap items-end justify-between gap-6">
             <div className="max-w-2xl">
@@ -172,26 +173,6 @@ function App() {
             <blockquote className="ai-says ai-says-good">“Start with 10 groups of 6, which is 60, and take away one group of 6.”</blockquote>
             {study ? <Link to={`/ideas/${study.slug}`} className="link-arrow mt-6 inline-block text-sm font-bold">See the fixed prompt →</Link> : null}
           </figure>
-        </div>
-      </section>
-
-      {/* FRESH */}
-      <section className="px-4 pb-24 sm:px-8" aria-labelledby="fresh-heading">
-        <div className="mx-auto max-w-6xl">
-          <p className="eyebrow">New this fall</p>
-          <h2 id="fresh-heading" className="section-title">Things your district <em className="grad-text">might not have told you.</em></h2>
-          <div className="mt-10 grid gap-4 sm:grid-cols-2">
-            {fresh.map((idea) => {
-              const c = categoryOf(idea.category)
-              return (
-                <Link key={idea.id} to={`/ideas/${idea.slug}`} className="news-row reveal" style={{ '--cat': c.color, '--cat-tint': c.tint } as CSSProperties}>
-                  <span className="news-tag">News</span>
-                  <span className="font-serif text-lg font-semibold leading-snug text-[var(--heading)]">{idea.title}</span>
-                  <span className="line-clamp-2 text-sm text-[var(--muted)]">{idea.summary}</span>
-                </Link>
-              )
-            })}
-          </div>
         </div>
       </section>
 

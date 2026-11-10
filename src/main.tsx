@@ -5,11 +5,29 @@ import './index.css'
 import './site.css'
 import App from './App.tsx'
 
-const BlogListPage = lazy(() => import('./blog/BlogListPage.tsx').then((m) => ({ default: m.BlogListPage })))
-const BlogPostPage = lazy(() => import('./blog/BlogPostPage.tsx').then((m) => ({ default: m.BlogPostPage })))
-const IdeasPage = lazy(() => import('./ideas/IdeasPage.tsx').then((m) => ({ default: m.IdeasPage })))
-const IdeaPage = lazy(() => import('./ideas/IdeaPage.tsx').then((m) => ({ default: m.IdeaPage })))
-const GuidePage = lazy(() => import('./blog/GuidePage.tsx').then((m) => ({ default: m.GuidePage })))
+// After a new deploy, a tab opened before it asks for page files that no longer exist, and React
+// shows a blank page. Reload once to pick up the new version instead. The flag stops a reload loop.
+function lazyPage<T>(load: () => Promise<T>) {
+  return lazy(() =>
+    load().catch((err) => {
+      const key = `reloaded:${location.pathname}`
+      try {
+        if (sessionStorage.getItem(key)) throw err
+        sessionStorage.setItem(key, '1')
+      } catch {
+        throw err
+      }
+      location.reload()
+      return new Promise<never>(() => {})
+    }) as Promise<{ default: React.ComponentType }>,
+  )
+}
+
+const BlogListPage = lazyPage(() => import('./blog/BlogListPage.tsx').then((m) => ({ default: m.BlogListPage })))
+const BlogPostPage = lazyPage(() => import('./blog/BlogPostPage.tsx').then((m) => ({ default: m.BlogPostPage })))
+const IdeasPage = lazyPage(() => import('./ideas/IdeasPage.tsx').then((m) => ({ default: m.IdeasPage })))
+const IdeaPage = lazyPage(() => import('./ideas/IdeaPage.tsx').then((m) => ({ default: m.IdeaPage })))
+const GuidePage = lazyPage(() => import('./blog/GuidePage.tsx').then((m) => ({ default: m.GuidePage })))
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
