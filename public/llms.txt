@@ -15,6 +15,8 @@ Simple Teacher AI is written by Gregory Lebed, a classroom teacher who uses AI d
 - [Why AI Keeps Giving You Generic Teacher Stuff](https://www.simpleteacherai.com/blog/why-ai-keeps-giving-generic-teacher-stuff)
 - [The AI Prompt I Use for Parent Emails](https://www.simpleteacherai.com/blog/ai-prompt-for-parent-emails)
 - [The AI Prompt I Use to Rewrite Directions Kids Can Follow](https://www.simpleteacherai.com/blog/ai-prompt-rewrite-student-directions)
+- [ChatGPT for Teachers Is Free: How to Sign Up (and Fix Verification)](https://www.simpleteacherai.com/blog/chatgpt-for-teachers-free)
+- [Claude for Teachers Is Free for a Year: How to Sign Up](https://www.simpleteacherai.com/blog/claude-for-teachers-free)
 - [ChatGPT, Claude, or Gemini: What I Tell Teachers Who Ask](https://www.simpleteacherai.com/blog/chatgpt-claude-or-gemini-for-teachers)
 
 <!-- IDEAS:START -->
