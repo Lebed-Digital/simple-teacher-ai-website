@@ -9,7 +9,6 @@ const socialLinks = [
   { label: 'Instagram', href: 'https://www.instagram.com/simple_teacher_ai/' },
   { label: 'YouTube', href: 'https://www.youtube.com/@SimpleTeacherAI' },
   { label: 'Facebook', href: 'https://www.facebook.com/SimpleTeacherAI' },
-  { label: 'Substack', href: 'https://simpleteacherai.substack.com/' },
 ] as const
 
 const pick = (ids: string[]) => ids.map((id) => ideas.find((i) => i.id === id)).filter(Boolean) as Idea[]
