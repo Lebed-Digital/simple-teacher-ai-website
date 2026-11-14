@@ -62,4 +62,15 @@ Machine-readable feed with every prompt and test verdict: https://www.simpleteac
 - [Tell students exactly how they may use AI on this assignment](https://www.simpleteacherai.com/ideas/tell-students-exactly-how-they-may-use-ai): Students and AI, 4-12. Worked first try.
 - [Catch the AI's mistakes: a 10-minute AI literacy warm-up](https://www.simpleteacherai.com/ideas/catch-the-ais-mistakes-a-10-minute-ai-literacy): Students and AI, 3-12. Works after a fix.
 - [Tell families how your class uses AI, in plain words](https://www.simpleteacherai.com/ideas/tell-families-how-your-class-uses-ai-in-plain): Parent communication, K-12. Worked first try.
+- [Check your unit's order for missing steps](https://www.simpleteacherai.com/ideas/unit-plan-sequence-check): Planning, K-12. Worked first try.
+- [Lab safety check: find the hazards in a lab procedure before students run it](https://www.simpleteacherai.com/ideas/lab-safety-procedure-check): Planning, 6-12. Worked first try.
+- [Claim, evidence, reasoning example: a strong and a weak CER paragraph from your own lab data](https://www.simpleteacherai.com/ideas/claim-evidence-reasoning-example): Planning, 5-10. Worked first try.
+- [Number talks for the week: one problem a day, with the strategies kids will use](https://www.simpleteacherai.com/ideas/number-talks-problems): Planning, K-8. Works after a fix.
+- [Guided notes template from your own slides](https://www.simpleteacherai.com/ideas/guided-notes-template): Differentiation, 4-12. Works after a fix.
+- [Spaced review warm-ups from what you've already taught](https://www.simpleteacherai.com/ideas/retrieval-practice-warm-ups): Assessment, 3-12. Works after a fix.
+- [Study guide template that matches your test without giving it away](https://www.simpleteacherai.com/ideas/study-guide-template): Assessment, 4-12. Worked first try.
+- [Primary source comparison questions with a quote-proof answer key](https://www.simpleteacherai.com/ideas/primary-source-comparison-questions): Assessment, 6-12. Worked first try.
+- [Move the thinking where you can see it: redesign an assignment students could hand to a chatbot](https://www.simpleteacherai.com/ideas/redesign-assignment-for-ai): Assessment, 6-12. Works after a fix.
+- [National History Day banned generative AI. Sort what's allowed for your students.](https://www.simpleteacherai.com/ideas/national-history-day-ai-rules): Students and AI, 6-12. Worked first try.
+- [Guided Learning in Google Classroom: write the one source Gemini will teach from](https://www.simpleteacherai.com/ideas/guided-learning-google-classroom): Students and AI, 3-12. Worked first try.
 <!-- IDEAS:END -->
