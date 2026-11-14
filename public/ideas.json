@@ -2,7 +2,7 @@
   "name": "Simple Teacher AI: tested AI ideas for teachers",
   "home_page_url": "https://www.simpleteacherai.com/ideas",
   "description": "Practical AI use cases for K-12 teachers. Each prompt was run on a sample classroom and checked by hand. The verdict says what happened.",
-  "updated": "2026-11-07",
+  "updated": "2026-11-14",
   "privacy": "Never put student names or identifying details into an AI tool. Use your district-approved tool.",
   "items": [
     {
@@ -808,6 +808,242 @@
         }
       ],
       "date": "2026-11-07"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/unit-plan-sequence-check",
+      "title": "Check your unit's order for missing steps",
+      "category": "Planning",
+      "grades": "K-12",
+      "tool": "Any chatbot",
+      "takes_about": "5 min",
+      "tested": true,
+      "verdict": "Worked first try",
+      "verdict_detail": "worked first try",
+      "prompt": "Here is the lesson-by-lesson order for my [grade] [subject] unit on [topic]: [paste the list of lessons, one line each]. Check the order like an experienced [subject] teacher. Find up to 5 places where a lesson needs a skill my students haven't been taught yet in this unit, or where two lessons should switch places. If there are fewer than 5, say so instead of inventing more. For each one, name the lessons involved, say which skill is missing or out of order, and give one specific fix (move a lesson, or add a short mini-lesson). Assume students know what a typical [grade] student learned in earlier grades, and list what you assumed. Don't rewrite the whole unit.",
+      "why_it_works": "A unit can look fine lesson by lesson and still ask kids to use a skill two days before you teach it.",
+      "sources": [
+        {
+          "title": "Microsoft Education Blog, What's New in Microsoft EDU, October 2026",
+          "url": "https://techcommunity.microsoft.com/blog/educationblog/whats-new-in-microsoft-edu-%E2%80%93-october-2026/4516290"
+        },
+        {
+          "title": "Achieve the Core, Coherence Map (how math standards build on each other)",
+          "url": "https://tools.achievethecore.org/coherence-map/"
+        }
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/lab-safety-procedure-check",
+      "title": "Lab safety check: find the hazards in a lab procedure before students run it",
+      "category": "Planning",
+      "grades": "6-12",
+      "tool": "Any chatbot",
+      "takes_about": "5 min, plus time with the safety data sheets",
+      "tested": true,
+      "verdict": "Worked first try",
+      "verdict_detail": "worked first try",
+      "prompt": "Here is a lab procedure my [grade] [course] students will do: [paste the procedure, including chemicals, concentrations, and amounts]. Act as a careful high school lab safety reviewer. List every real safety problem you find, most dangerous first: missing protective equipment, steps in an unsafe order, chemicals that shouldn't be mixed or heated, missing cleanup or disposal steps, and directions students could misread. Don't pad the list with steps that are fine. Never tell me the procedure is safe: a qualified person at my school decides that. If you find no problems, say \"no problems found.\" For each problem, quote the step, say in plain words what could go wrong, and give a specific fix. Then list what you couldn't check from the text alone (like ventilation, eyewash access, or supervision), and what I should look up in the safety data sheet for each chemical. Don't make up chemical facts: if you aren't sure about a hazard, say so.",
+      "why_it_works": "Quoting the step makes it point at your procedure instead of reciting general lab rules.",
+      "sources": [
+        {
+          "title": "American Chemical Society, Guidelines for Chemical Laboratory Safety in Secondary Schools (PDF)",
+          "url": "https://www.acs.org/content/dam/acsorg/about/governance/committees/chemicalsafety/publications/acs-secondary-safety-guidelines.pdf"
+        },
+        {
+          "title": "ACS, middle and high school chemistry safety resources",
+          "url": "https://www.acs.org/education/policies/middle-and-high-school-chemistry/safety.html"
+        }
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/claim-evidence-reasoning-example",
+      "title": "Claim, evidence, reasoning example: a strong and a weak CER paragraph from your own lab data",
+      "category": "Planning",
+      "grades": "5-10",
+      "tool": "Any chatbot",
+      "takes_about": "4 min",
+      "tested": true,
+      "verdict": "Worked first try",
+      "verdict_detail": "worked first try",
+      "prompt": "My [grade] science students are writing claim, evidence, reasoning (CER) paragraphs to answer this question: [question]. Here is the data from our lab: [paste your data table]. If the data don't clearly support one claim, or a result doesn't fit the pattern, tell me that first, and don't change or leave out any numbers. Then write two model answers to show the class: one strong, one weak but typical. Use only the numbers in my data, copied exactly. In the strong one, the reasoning must explain why the evidence supports the claim using this science idea: [idea]. Don't just repeat the data. In the weak one, make the mistakes students this age really make (like a claim with no data, or reasoning that just restates the evidence). Label each part [Claim], [Evidence], [Reasoning]. After the weak one, list its mistakes so I can have students find them first. Keep each paragraph under [80] words.",
+      "why_it_works": "Reasoning is the part students find hardest, the \"why does this evidence matter?\" step.",
+      "sources": [
+        {
+          "title": "Edutopia, Teaching CER in Middle School Science With a 5-Day Structure",
+          "url": "https://www.edutopia.org/article/teaching-cer-middle-school-science/"
+        }
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/number-talks-problems",
+      "title": "Number talks for the week: one problem a day, with the strategies kids will use",
+      "category": "Planning",
+      "grades": "K-8",
+      "tool": "Any chatbot",
+      "takes_about": "5 min, plus 5 min to check the steps",
+      "tested": true,
+      "verdict": "Works after a fix",
+      "verdict_detail": "works after a fix",
+      "prompt": "Plan 5 number talks for my [grade] class, one per day, 5 to 10 minutes each. We are working on [skill, e.g. \"adding two-digit numbers in your head\"]. For each day give me: one problem to show the class, 2 to 4 strategies students this age might use, each written step by step the way a student would say it, one common wrong answer and the thinking behind it, and one question I can ask to push the discussion. Pick numbers that make more than one strategy useful. Write math as plain text, like 38 + 25. Each strategy must work cleanly with that day's numbers, with no false starts. The common wrong answer must come from a real misunderstanding kids this age have (like place value or forgetting to regroup), not a basic fact error like 4 + 5 = 11. Do the mistaken steps yourself to make sure they lead to that wrong answer. Solve every problem and check every step of every strategy yourself.",
+      "why_it_works": "A number talk only works if you can hear a strategy and recognize it fast.",
+      "sources": [
+        {
+          "title": "youcubed (Stanford), Number Talk activity guide (PDF)",
+          "url": "https://www.youcubed.org/wp-content/uploads/2018/09/3-Number-Talks-Final.pdf"
+        }
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/guided-notes-template",
+      "title": "Guided notes template from your own slides",
+      "category": "Differentiation",
+      "grades": "4-12",
+      "tool": "Any chatbot",
+      "takes_about": "5 min",
+      "tested": true,
+      "verdict": "Works after a fix",
+      "verdict_detail": "works after a fix (two fixes)",
+      "prompt": "Here are my notes for tomorrow's [grade] [subject] lesson: [paste your slides or notes]. Turn them into a one-page guided notes handout. Keep my order and my wording. Replace about [10] key words with blanks: only words that matter (vocabulary, key numbers, causes and effects), never small words like \"the\" or \"is.\" Each blank must be a word or short phrase that appears in my notes, so students can find it while I teach. If you blank a word, blank it everywhere it appears on the handout except the title, so the page doesn't give away its own answers. Number every blank. Make every blank the same length, like ________, so the length doesn't give the answer away. Add 2 short \"In your own words\" questions at the end. Then give me an answer key that lists every numbered blank in order with the exact word from my notes. Don't add facts that aren't in my notes.",
+      "why_it_works": "Guided notes let students listen instead of copying every word, and the blanks keep them following along.",
+      "sources": [
+        {
+          "title": "Modern Classrooms Project, A Guide to Guided Notes",
+          "url": "https://www.modernclassrooms.org/blog/a-guide-to-guided-notes"
+        }
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/retrieval-practice-warm-ups",
+      "title": "Spaced review warm-ups from what you've already taught",
+      "category": "Assessment",
+      "grades": "3-12",
+      "tool": "Any chatbot",
+      "takes_about": "5 min, plus 5 min to check the key",
+      "tested": true,
+      "verdict": "Works after a fix",
+      "verdict_detail": "works after a fix",
+      "prompt": "Here are the topics my [grade] [subject] class has learned so far this year, with the week we taught each: [list]. Make [number] days of 3-question review warm-ups. Each day, mix topics from different times: one from the last 2 weeks, one from 3 to 6 weeks ago, and one from earlier than that. Don't put the same topic on two days in a row. When a topic comes back, ask about it a different way than before (for example a word problem, finding a mistake, or working backward), so the questions don't all follow the same pattern. Questions should make students recall or use the idea, not just recognize it, so no multiple choice and no true or false. Write math as plain text, like 3/4. Solve every question yourself and make sure each has exactly one correct answer. Then give me a separate answer key, and a table showing which topic appears on which day so I can check the spacing.",
+      "why_it_works": "Coming back to old topics after a gap, and making students pull the answer from memory, are two of the best-supported study moves in learning research.",
+      "sources": [
+        {
+          "title": "IES practice guide, Organizing Instruction and Study to Improve Student Learning (Recommendations 1 and 5, PDF)",
+          "url": "https://ies.ed.gov/ncee/WWC/Docs/PracticeGuide/20072004.pdf"
+        }
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/study-guide-template",
+      "title": "Study guide template that matches your test without giving it away",
+      "category": "Assessment",
+      "grades": "4-12",
+      "tool": "Any chatbot",
+      "takes_about": "5 min, plus 5 min to work the problems",
+      "tested": true,
+      "verdict": "Worked first try",
+      "verdict_detail": "worked first try",
+      "prompt": "My [grade] [subject] class has a test on [unit]. Here is what the test covers: [list each skill and the kind of question, e.g. \"solve two-step equations (4 short problems)\"]. Make a one-page study guide students can use at home. For each skill: one sentence on what to remember, one worked example, and 2 practice problems like the test but not copies. Put all the answers in a separate answer section at the bottom. Write math as plain text, like 2x + 3 = 11. Solve every problem yourself and make sure each has exactly one correct answer. Only use the skills I listed: don't add skills that aren't on the test.",
+      "why_it_works": "Paste the list of what the test covers, not the test itself, and the guide can't leak your questions.",
+      "sources": [
+        {
+          "title": "IES practice guide, Organizing Instruction and Study to Improve Student Learning (Recommendation 5, PDF)",
+          "url": "https://ies.ed.gov/ncee/WWC/Docs/PracticeGuide/20072004.pdf"
+        }
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/primary-source-comparison-questions",
+      "title": "Primary source comparison questions with a quote-proof answer key",
+      "category": "Assessment",
+      "grades": "6-12",
+      "tool": "Any chatbot",
+      "takes_about": "5 min, plus 5 min to check the quotes",
+      "tested": true,
+      "verdict": "Worked first try",
+      "verdict_detail": "worked first try",
+      "prompt": "Here are two primary sources my [grade] [subject] class is comparing. Document A: [title, author, date, and the text]. Document B: [title, author, date, and the text]. Treat these two texts as the only sources. Write 6 questions that make students compare them: 2 about what each document says, 2 about how they are alike or different, and 2 about each author's purpose or point of view. Every question must be answerable from the two texts. Then give me an answer key that quotes the exact words from the documents that support each answer, word for word. If a question needs outside knowledge, label it \"needs background\" and say what students need to know.",
+      "why_it_works": "You choose and paste the documents, so the AI is working from real sources.",
+      "sources": [
+        {
+          "title": "Education Week, In Social Studies, Does AI Shortcut Historical Thinking or Deepen It? (October 2026)",
+          "url": "https://www.edweek.org/teaching-learning/in-social-studies-does-ai-shortcut-historical-thinking-or-deepen-it/2026/10"
+        }
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/redesign-assignment-for-ai",
+      "title": "Move the thinking where you can see it: redesign an assignment students could hand to a chatbot",
+      "category": "Assessment",
+      "grades": "6-12",
+      "tool": "Any chatbot",
+      "takes_about": "5 min",
+      "tested": true,
+      "verdict": "Works after a fix",
+      "verdict_detail": "works after a fix (two fixes)",
+      "prompt": "Here is an assignment for my [grade] [subject] class: [paste the directions and due date]. Students could hand most of it to a chatbot. Redesign it so more of the thinking happens where I can see it, without making it longer for students. Keep the learning goal, the final product, and the assignment's requirements the same. I teach [number] students, so keep the added grading under [number] minutes total. Suggest up to 4 changes, like a short in-class step, a checkpoint I grade, a quick conversation, or a choice that uses something only my class did. For each change, say how many minutes of class time it takes and how many minutes of my grading time it adds. Don't claim any change makes cheating impossible. Then rewrite the directions with the changes in, in plain words students can follow. Copy my requirements into the new directions word for word and don't add any. After the directions, list every requirement you changed or added, or write \"none.\"",
+      "why_it_works": "No assignment is AI-proof, but grading the steps along the way, not just the final product, makes the steps worth doing.",
+      "sources": [
+        {
+          "title": "Ditch That Textbook, Is AI doing too much of your students' classwork?",
+          "url": "https://ditch.beehiiv.com/p/2-16-2026"
+        }
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/national-history-day-ai-rules",
+      "title": "National History Day banned generative AI. Sort what's allowed for your students.",
+      "category": "Students and AI",
+      "grades": "6-12",
+      "tool": "Any chatbot",
+      "takes_about": "5 min",
+      "tested": true,
+      "verdict": "Worked first try",
+      "verdict_detail": "worked first try",
+      "prompt": "Here is National History Day's AI policy: [paste the policy text from NHD's AI guidance]. My [grade] students keep asking whether specific tools are OK for their NHD projects. Sort each of these into \"Allowed,\" \"Not allowed,\" or \"Ask NHD,\" using only the policy I pasted: [list, e.g. \"Grammarly rewriting a sentence,\" \"Google Translate on a Spanish-language source\"]. For each, quote the line from the policy that decides it. If the policy doesn't clearly decide it, put it in \"Ask NHD\" and say what's unclear. Then turn the result into a half-page student handout in plain words.",
+      "why_it_works": "As of October 1, 2026, National History Day says students \"may not use generative AI for research, analysis, design, or creation of their projects,\" and breaking the rule may mean disqualification.",
+      "sources": [
+        {
+          "title": "National History Day, AI Guidance for NHD Projects",
+          "url": "https://nhd.org/en/resources/ai/"
+        },
+        {
+          "title": "NHD Generative AI policy (PDF)",
+          "url": "https://nhd.org/wp-content/uploads/2026/09/NHD-GenAI-Policy.pdf"
+        }
+      ],
+      "date": "2026-11-14"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/guided-learning-google-classroom",
+      "title": "Guided Learning in Google Classroom: write the one source Gemini will teach from",
+      "category": "Students and AI",
+      "grades": "3-12",
+      "tool": "Gemini in Google Classroom, plus any chatbot to draft the source",
+      "takes_about": "15 min, including your check",
+      "tested": true,
+      "verdict": "Worked first try",
+      "verdict_detail": "worked first try (we tested the prompt that drafts the source in a plain chat, not Guided Learning itself)",
+      "prompt": "I'm making a one-page study source for a Guided Learning activity in Google Classroom. Gemini will tutor my [grade] students using this page, so it must be correct and complete. Topic: [skill]. Here is how I teach it: [paste your steps, vocabulary, and one example]. Write the page with: the goal in one sentence, key vocabulary with kid-friendly definitions, the steps in the order I teach them, 2 worked examples with every step shown, the 3 most common mistakes and how to fix each, and 3 practice problems with answers. Use my method and my words, not a different method. Write math as plain text, like 3/4. Solve every problem yourself and make sure each has exactly one correct answer. Then list anything you added that wasn't in what I gave you.",
+      "why_it_works": "Rolling out since November 3, 2026, you can attach a Guided Learning activity to any Google Classroom assignment.",
+      "sources": [
+        {
+          "title": "Google Workspace Updates, November 4, 2026",
+          "url": "https://workspaceupdates.googleblog.com/2026/11/educators-can-now-add-guided-learning-to-assignments-in-Google-Classroom-to-help-students-get-extra-support.html"
+        },
+        {
+          "title": "Google Classroom Help: Create and manage Guided Learning activities",
+          "url": "https://support.google.com/edu/classroom/answer/18866217"
+        }
+      ],
+      "date": "2026-11-14"
     }
   ]
 }
