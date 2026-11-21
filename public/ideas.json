@@ -2,7 +2,7 @@
   "name": "Simple Teacher AI: tested AI ideas for teachers",
   "home_page_url": "https://www.simpleteacherai.com/ideas",
   "description": "Practical AI use cases for K-12 teachers. Each prompt was run on a sample classroom and checked by hand. The verdict says what happened.",
-  "updated": "2026-11-14",
+  "updated": "2026-11-21",
   "privacy": "Never put student names or identifying details into an AI tool. Use your district-approved tool.",
   "items": [
     {
@@ -1044,6 +1044,246 @@
         }
       ],
       "date": "2026-11-14"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/socratic-seminar-questions",
+      "title": "Socratic seminar questions from your text, with quotes students can defend",
+      "category": "Planning",
+      "grades": "8-12",
+      "tool": "Any chatbot",
+      "takes_about": "5 min, plus 5 min to check the quotes",
+      "tested": true,
+      "verdict": "Worked first try",
+      "verdict_detail": "worked first try",
+      "prompt": "My [grade] [subject] class is holding a Socratic seminar on this text: [title, author, and the text or excerpt]. Write 6 open-ended seminar questions about it: 2 opening questions anyone who read it can answer, 2 core questions that need close reading, and 2 closing questions that connect the text to students' lives or the world today. Every question must have more than one reasonable answer a student could defend with the text, so ask why or how, not just what happened. For each opening and core question, give 2 different answers a student could defend, each backed by a short quote from the text copied word for word. Don't use any quote that isn't in the text I pasted. Then give me 3 follow-up questions I can ask when the discussion stalls.",
+      "why_it_works": "A seminar dies on a question with one right answer. Asking for two defensible answers per question proves each one is worth discussing, and word-for-word quotes let you check in seconds that the AI didn't invent a line.",
+      "sources": [
+        {
+          "title": "Edutopia, Class Discussion to Encourage Critical Thinking: Resources for Grades 9-12",
+          "url": "https://www.edutopia.org/critical-thinking-discussion-hs-resources"
+        }
+      ],
+      "date": "2026-11-21"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/which-one-doesnt-belong-math",
+      "title": "Which one doesn't belong? Math warm-ups where every choice has a reason",
+      "category": "Planning",
+      "grades": "2-8",
+      "tool": "Any chatbot",
+      "takes_about": "5 min, plus 5 min to check the reasons",
+      "tested": true,
+      "verdict": "Worked first try",
+      "verdict_detail": "worked first try",
+      "prompt": "Make 5 \"Which one doesn't belong?\" sets for my [grade] math class. We are working on [skill]. Each set has 4 numbers, equations, or expressions, labeled A, B, C, D. Every one of the 4 must be able to be the one that doesn't belong, each for a different math reason. For each letter, give the reason in one sentence a student could say. Check every reason against all 4 items: it must be true of that item and false for the other 3. Then make a table with one row per set and one column per letter, showing each reason, so I can check them fast. Write math as plain text, like 3/4. If you can't find a real reason for one letter, say so instead of forcing one.",
+      "why_it_works": "The routine only works when there's no single right answer, so every kid has something to defend.",
+      "sources": [
+        {
+          "title": "Edutopia, Which One Doesn't Belong? (Juliana Tapper)",
+          "url": "https://www.edutopia.org/article/which-one-doesnt-belong"
+        }
+      ],
+      "date": "2026-11-21"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/counterclaim-rebuttal-examples",
+      "title": "Counterclaim and rebuttal examples: the other side's best argument, then three answers to rank",
+      "category": "Planning",
+      "grades": "7-12",
+      "tool": "Any chatbot",
+      "takes_about": "4 min",
+      "tested": true,
+      "verdict": "Works after a fix",
+      "verdict_detail": "works after a fix",
+      "prompt": "My [grade] students are writing argument essays on this question: [question]. Here is the claim a typical student will make: [claim]. Write the strongest counterclaim a thoughtful person on the other side would make, in 2 to 3 sentences. Don't make it a straw man. Then write 3 rebuttals of different strength for students to rank: a weak one that sounds like a real student wrote it: it disagrees but never answers the counterclaim's actual point, a medium one that answers the counterclaim with no evidence, and a strong one that admits what is true in the counterclaim, then answers it with a reason and the kind of evidence a student could find. Put them in mixed order and don't label them. Then give me an answer key explaining the ranking. Don't use any statistics or studies: where evidence belongs, write [find a source for: what to look up]. Keep each rebuttal under [60] words.",
+      "why_it_works": "Students write weak counterclaims on purpose so they're easy to knock down.",
+      "sources": [
+        {
+          "title": "Edutopia, Engaging With Contrary Evidence (Christina Gil)",
+          "url": "https://www.edutopia.org/blog/engaging-contrary-evidence-christina-gil"
+        }
+      ],
+      "date": "2026-11-21"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/answer-key-checker",
+      "title": "Answer key checker: catch wrong answers before 120 copies go out",
+      "category": "Assessment",
+      "grades": "3-12",
+      "tool": "Any chatbot",
+      "takes_about": "5 min, plus time to look at what it flags",
+      "tested": true,
+      "verdict": "Worked first try",
+      "verdict_detail": "worked first try",
+      "prompt": "Here is a quiz for my [grade] [subject] class with my answer key: [paste the questions, answer choices, and the key]. Check the key. Solve every question yourself first, without looking at my key, and show your work in one line. Then compare your answers to my key in a table with: question number, my key's answer, your answer, and \"match\" or \"check this.\" For each \"check this,\" explain in one sentence what's wrong. Also flag any question with more than one defensible answer, no correct answer, or wording a student could misread. If everything matches, say so. Don't rewrite the quiz. Write math as plain text, like 3/4.",
+      "why_it_works": "Solving first, then comparing, keeps the AI from just agreeing with your key.",
+      "sources": [
+        {
+          "title": "Google Workspace Updates, Use Gemini in Google Forms to quickly create a new quiz (July 30, 2026)",
+          "url": "https://workspaceupdates.googleblog.com/2026/07/use-gemini-in-google-forms-to-quickly-create-a-new-quiz.html"
+        },
+        {
+          "title": "Google Docs Editors Help, Create a form with Gemini in Google Forms",
+          "url": "https://support.google.com/docs/answer/16346789"
+        }
+      ],
+      "date": "2026-11-21"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/review-game-questions",
+      "title": "Review game questions for the day before break that still make kids think",
+      "category": "Assessment",
+      "grades": "3-12",
+      "tool": "Any chatbot",
+      "takes_about": "5 min, plus 5 min to check the key",
+      "tested": true,
+      "verdict": "Worked first try",
+      "verdict_detail": "worked first try",
+      "prompt": "The day before break, my [grade] [subject] class will play a review game on what we've learned since [month]. Here are the topics: [list]. Write [20] game questions in 4 rounds of 5, easiest round first. Mix the question types so they don't all follow the same pattern: some ask students to explain why, some to find a mistake, some to solve a quick problem, some to give an example. No true or false, and nothing a student could get by guessing between two choices. Each question should take under a minute to answer out loud or on a whiteboard. Solve every question yourself and make sure each has one clear answer, or say which answers you'd accept. Write math as plain text, like 3/4. Also give me simple rules for playing it as a whiteboard game: everyone writes an answer before the reveal, how to score it, and about how long each round takes. Then give a separate answer key, and a table showing which topic each question covers so I can check the mix.",
+      "why_it_works": "The day before break is going to be a game anyway. Questions that make students pull an answer from memory turn it into real review, and the topic table shows you at a glance if one unit hogged the whole game.",
+      "sources": [
+        {
+          "title": "Edutopia, 3 Retrieval Games to Try in Your High School Classroom (June 2026)",
+          "url": "https://www.edutopia.org/article/retrieval-games-high-school-classrooms/"
+        }
+      ],
+      "date": "2026-11-21"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/flashcards-from-notes",
+      "title": "Flashcards from your own lesson notes",
+      "category": "Assessment",
+      "grades": "3-12",
+      "tool": "Any chatbot, or Copilot in OneNote Class Notebook",
+      "takes_about": "4 min",
+      "tested": true,
+      "verdict": "Works after a fix",
+      "verdict_detail": "works after a fix",
+      "prompt": "Here are my notes from today's [grade] [subject] lesson: [paste]. Make [15] flashcards from them. One idea per card. Front: a question or a term. Back: the answer in under 20 words, using my wording. Keep each fact complete: don't drop part of a fact from my notes to make it shorter. Mix the kinds of cards: some term to definition, some definition to term, at least 3 \"why\" or \"what happens if\" questions, and at least 3 that ask students to apply an idea to a new example. Don't let one card's front give away another card's answer. Don't add facts that aren't in my notes. Put the cards in a two-column table (Front, Back). Then list any card whose answer uses something that isn't in my notes, or write \"none.\"",
+      "why_it_works": "Flashcards are a form of self-quizzing, which the IES practice guide recommends for helping students remember.",
+      "sources": [
+        {
+          "title": "Microsoft 365 Message Center MC1559644, AI-powered teaching tools in OneNote Class Notebook (archived copy)",
+          "url": "https://mc.merill.net/message/MC1559644"
+        },
+        {
+          "title": "IES practice guide, Organizing Instruction and Study to Improve Student Learning (Recommendation 5, PDF)",
+          "url": "https://ies.ed.gov/ncee/WWC/Docs/PracticeGuide/20072004.pdf"
+        }
+      ],
+      "date": "2026-11-21"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/test-corrections-template",
+      "title": "Test corrections template for math: the mistakes students really make, and a redo problem",
+      "category": "Assessment",
+      "grades": "7-12",
+      "tool": "Any chatbot",
+      "takes_about": "6 min, plus 5 min to work the problems",
+      "tested": true,
+      "verdict": "Worked first try",
+      "verdict_detail": "worked first try",
+      "prompt": "Here are [5] questions from my [grade] [course] test, with the correct answers: [paste]. Make a one-page test corrections sheet. For each question, show the 2 most common wrong answers students get, and for each one, write the wrong work the way a student would, step by step, so students can find the step where it went wrong. Each wrong answer must come from a real misunderstanding (like a sign error or distributing to only one term), not a random slip. Do the mistaken steps yourself to make sure they lead to that wrong answer. Under each question, leave three short lines for students: \"My mistake,\" \"Why it's wrong,\" and \"My redo.\" End with one new practice problem per question, like the original but not a copy. Put all answers in a separate key. Write math as plain text, like x^2. Solve every problem yourself and make sure each has exactly one correct answer.",
+      "why_it_works": "\"Redo the ones you missed\" usually means copying the right answer from a friend.",
+      "sources": [
+        {
+          "title": "Edutopia, Test Corrections in High School Math",
+          "url": "https://edutopia.org/article/test-corrections-high-school-math"
+        }
+      ],
+      "date": "2026-11-21"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/morning-meeting-questions",
+      "title": "Morning meeting questions for December that every child can answer",
+      "category": "Classroom routines",
+      "grades": "K-5",
+      "tool": "Any chatbot",
+      "takes_about": "3 min",
+      "tested": true,
+      "verdict": "Worked first try",
+      "verdict_detail": "worked first try",
+      "prompt": "Write [20] morning meeting sharing questions for my [grade] class for the weeks before winter break. Every child must be able to answer every question, whether or not their family celebrates a holiday, travels, or gives gifts. So no questions about presents, trips, holiday plans, or things a family buys, and no questions that make a child explain their family. Mix the kinds: some silly, some about school, some about favorites, some \"would you rather.\" Keep each question under 15 words, in words a [grade] student can read. After the list, check each question against these rules and list any that could leave a child out, with a fix.",
+      "why_it_works": "\"What are you doing over break?\" is a hard question for the child whose break means no trip, no gifts, or a hard time at home.",
+      "sources": [
+        {
+          "title": "Responsive Classroom, Handling the Holidays: Morning Meeting Sharing",
+          "url": "https://www.responsiveclassroom.org/handling-the-holidays-morning-meeting-sharing/"
+        }
+      ],
+      "date": "2026-11-21"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/hour-of-ai-unplugged-activity",
+      "title": "Hour of AI is live: a 15-minute unplugged warm-up on how computers learn from examples",
+      "category": "Students and AI",
+      "grades": "3-8",
+      "tool": "Any chatbot to plan, no devices in class",
+      "takes_about": "5 min to plan, 10 min to make the cards",
+      "tested": true,
+      "verdict": "Worked first try",
+      "verdict_detail": "worked first try",
+      "prompt": "I'm running a 15-minute, no-device warm-up before my [grade] class does an Hour of AI activity. Plan an unplugged activity that shows how a computer learns from examples. Use a sorting game with paper cards I can make in 10 minutes: students \"train\" a classmate with labeled examples, test them on new cards, then see what goes wrong when the training examples are lopsided. Give me the materials, the exact words or pictures to put on each card, step-by-step directions with minutes for each step, 3 discussion questions, and the one big idea students should leave with, in words a [grade] student understands. Keep every claim about AI simple and accurate: don't say AI \"thinks\" or \"understands,\" and don't make claims about any specific product.",
+      "why_it_works": "Kids learn more from the Hour of AI activity if they already know the big idea: a computer learns patterns from the examples people give it, so lopsided examples give lopsided results.",
+      "sources": [
+        {
+          "title": "CodeAI, Hour of AI 2026 launch announcement (November 17, 2026)",
+          "url": "https://www.prnewswire.com/news-releases/start-building-hour-of-ai-gives-students-a-hands-on-first-step-into-understanding-technology-302941388.html"
+        },
+        {
+          "title": "Hour of AI FAQ",
+          "url": "https://hourofai.org/faq"
+        }
+      ],
+      "date": "2026-11-21"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/teams-assignment-copilot-starter-prompt",
+      "title": "Assign Copilot from a Teams assignment: write the starter prompt it needs",
+      "category": "Students and AI",
+      "grades": "7-12",
+      "tool": "Microsoft Teams Assignments, plus any chatbot to draft the prompt",
+      "takes_about": "10 min, including Try it out",
+      "tested": true,
+      "verdict": "Works after a fix",
+      "verdict_detail": "works after a fix (we tested in a plain chat, not inside Teams)",
+      "prompt": "Write a starter prompt, under 1,000 characters including spaces, that my [grade] [subject] students will see pre-filled when they open Copilot from this assignment: [paste the assignment directions]. The AI guideline for this assignment is [e.g. \"AI use for brainstorming only\"]. Copilot won't see the assignment, so the starter prompt must explain the assignment's goal in one or two sentences. Tell Copilot to help me brainstorm by asking me one question at a time, to never write sentences or paragraphs I could paste into my work, and, if I ask for a draft, to say so plainly and ask me what I want my reader to understand instead. Write it in first person, as the student talking to Copilot. After it, tell me how many characters it is.",
+      "why_it_works": "A starter prompt written as the student sets the rules before the student types anything.",
+      "sources": [
+        {
+          "title": "Microsoft Education Blog, Assign Study and Learn or Copilot from Assignments (November 17, 2026)",
+          "url": "https://techcommunity.microsoft.com/blog/educationblog/assign-study-and-learn-or-copilot-from-assignments/4572691"
+        },
+        {
+          "title": "Microsoft Support, Set Student AI Guidelines on an assignment in Microsoft Teams",
+          "url": "https://support.microsoft.com/education/assignments/set-ai-guidelines-assignment-microsoft-teams"
+        }
+      ],
+      "date": "2026-11-21"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/gemini-gems-to-skills",
+      "title": "Your Gemini Gems are turning into skills. Tighten the instructions now.",
+      "category": "Tools",
+      "grades": "K-12",
+      "tool": "Gemini app, plus any chatbot to review the instructions",
+      "takes_about": "10 min per Gem",
+      "tested": true,
+      "verdict": "Works after a fix",
+      "verdict_detail": "works after a fix",
+      "prompt": "Here are the instructions from a Gemini Gem I use with my [grade] class: [paste]. It will become a Gemini skill later this school year, so I want to tighten it now. Find up to 5 problems: rules that contradict each other, vague words like \"appropriate\" or \"engaging\" that it can't act on, missing information it needs (for example, my students' grade level), and anything that asks for student names or personal information. If the instructions already work, say that first. If there are fewer than 5 problems, say so instead of inventing more. For each, quote the line, say whether it would cause wrong replies or is just a small improvement, and give a rewrite. Then give me the full revised instructions, keeping everything that works in my words, and list every change you made. Finally, write 3 test messages I can send it to check that it follows the rules, including one that tries to break a rule.",
+      "why_it_works": "On November 17, 2026, Gems moved into Settings in the Gemini app. You can still create, edit, and use them.",
+      "sources": [
+        {
+          "title": "Google Workspace Admin Help, About the transition from Gems to skills",
+          "url": "https://knowledge.workspace.google.com/p/gems-migration"
+        },
+        {
+          "title": "Google Workspace Updates, An update on the launch of skills in the Gemini app and Workspace",
+          "url": "https://workspaceupdates.googleblog.com/2026/10/an-update-on-launch-of-skills-in-gemini-app-and-workspace.html"
+        }
+      ],
+      "date": "2026-11-21"
     }
   ]
 }
