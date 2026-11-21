@@ -74,4 +74,15 @@ Machine-readable feed with every prompt and test verdict: https://www.simpleteac
 - [Move the thinking where you can see it: redesign an assignment students could hand to a chatbot](https://www.simpleteacherai.com/ideas/redesign-assignment-for-ai): Assessment, 6-12. Works after a fix.
 - [National History Day banned generative AI. Sort what's allowed for your students.](https://www.simpleteacherai.com/ideas/national-history-day-ai-rules): Students and AI, 6-12. Worked first try.
 - [Guided Learning in Google Classroom: write the one source Gemini will teach from](https://www.simpleteacherai.com/ideas/guided-learning-google-classroom): Students and AI, 3-12. Worked first try.
+- [Socratic seminar questions from your text, with quotes students can defend](https://www.simpleteacherai.com/ideas/socratic-seminar-questions): Planning, 8-12. Worked first try.
+- [Which one doesn't belong? Math warm-ups where every choice has a reason](https://www.simpleteacherai.com/ideas/which-one-doesnt-belong-math): Planning, 2-8. Worked first try.
+- [Counterclaim and rebuttal examples: the other side's best argument, then three answers to rank](https://www.simpleteacherai.com/ideas/counterclaim-rebuttal-examples): Planning, 7-12. Works after a fix.
+- [Answer key checker: catch wrong answers before 120 copies go out](https://www.simpleteacherai.com/ideas/answer-key-checker): Assessment, 3-12. Worked first try.
+- [Review game questions for the day before break that still make kids think](https://www.simpleteacherai.com/ideas/review-game-questions): Assessment, 3-12. Worked first try.
+- [Flashcards from your own lesson notes](https://www.simpleteacherai.com/ideas/flashcards-from-notes): Assessment, 3-12. Works after a fix.
+- [Test corrections template for math: the mistakes students really make, and a redo problem](https://www.simpleteacherai.com/ideas/test-corrections-template): Assessment, 7-12. Worked first try.
+- [Morning meeting questions for December that every child can answer](https://www.simpleteacherai.com/ideas/morning-meeting-questions): Classroom routines, K-5. Worked first try.
+- [Hour of AI is live: a 15-minute unplugged warm-up on how computers learn from examples](https://www.simpleteacherai.com/ideas/hour-of-ai-unplugged-activity): Students and AI, 3-8. Worked first try.
+- [Assign Copilot from a Teams assignment: write the starter prompt it needs](https://www.simpleteacherai.com/ideas/teams-assignment-copilot-starter-prompt): Students and AI, 7-12. Works after a fix.
+- [Your Gemini Gems are turning into skills. Tighten the instructions now.](https://www.simpleteacherai.com/ideas/gemini-gems-to-skills): Tools, K-12. Works after a fix.
 <!-- IDEAS:END -->
