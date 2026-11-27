@@ -49,7 +49,7 @@ There is a copy of that prompt on the [home page](/#prompts) if you want it alre
 
 I still take names out. "The student" is enough. The AI does not need a real name to help me reword a paragraph, and [a kid's name does not belong in an AI tool](/blog/ai-privacy-mistake-student-names). Same for a diagnosis, a family situation, or anything from an IEP.
 
-If the email is about something sensitive, I often write that one myself. Same rule I use for [report card comments](/blog/ai-prompt-for-report-card-comments). Some messages need me sitting with them longer than a draft is worth.
+If the email is about something sensitive, I often write that one myself. Same rule I use for [report card comments](/blog/ai-prompt-for-report-card-comments). Some messages need me sitting with them longer than a draft is worth. And if I wrote the first version while I was upset, I [cool it down before I hit send](/ideas/cool-down-an-email-before-you-hit-send).
 
 ## What I still change by hand
 

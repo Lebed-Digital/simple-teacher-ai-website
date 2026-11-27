@@ -32,7 +32,7 @@ It is for educators only, so students cannot use it, and it follows Claude's 18-
 2. **Click "Get verified,"** then **"Verify now."**
 3. **Sign in, and verify with your school email.** You accept the K-12 terms yourself as part of signing up.
 
-Once you are verified, your account moves onto the Claude for Teachers plan. Anthropic describes it as a free Claude for Teams plan for verified educators.
+Once you are verified, your account moves onto the Claude for Teachers plan. Anthropic describes it as a free Claude for Teams plan for verified educators. Once you are in, the [classroom AI ideas](/ideas) work in Claude too, since almost all of them are written for any chatbot.
 
 If your whole district wants accounts, there is a separate path: an administrator sets that up through Anthropic's [district sign-up](https://support.claude.com/en/articles/16559896-set-up-claude-for-teachers-for-your-school-or-district), which became available on August 28, 2026. One thing to know: once a district verifies its email domain, nobody can create a new personal Claude account with a district email. If your district is going that route, you may get your account through them instead.
 

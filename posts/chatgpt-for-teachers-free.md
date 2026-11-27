@@ -66,7 +66,7 @@ So the rule I follow does not change: [take student names and identifying detail
 
 ## What happens after June 2028?
 
-OpenAI says pricing may change after June 2028, and that its goal is to keep it affordable and give advance notice. Nothing is decided yet. Sign up now, use it for free, and decide later whether it is worth paying for.
+OpenAI says pricing may change after June 2028, and that its goal is to keep it affordable and give advance notice. Nothing is decided yet. Sign up now, use it for free, and decide later whether it is worth paying for. Once you are in, my [free one-page ChatGPT guide](/guide) has 10 classroom tasks to try first.
 
 ## ChatGPT for Teachers or Claude for Teachers?
 
