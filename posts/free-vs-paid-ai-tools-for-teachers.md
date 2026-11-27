@@ -16,7 +16,7 @@ A teacher in my building asked me last week if she should pay for ChatGPT or jus
 
 ## What the free versions cover
 
-For most of what a teacher does, the free versions of ChatGPT, Claude, and Gemini are plenty. Rewriting a parent email, simplifying a set of directions, throwing together an exit ticket, getting report card comments started. All of that works fine without paying. I used a free account for months before I even thought about it, and none of [the things I use AI for](/blog/how-i-actually-use-ai-as-a-teacher) need anything more.
+For most of what a teacher does, the free versions of ChatGPT, Claude, and Gemini are plenty. Rewriting a parent email, simplifying a set of directions, throwing together an exit ticket, getting report card comments started. All of that works fine without paying, and [these tested classroom ideas](/ideas) are written for exactly that kind of task. I used a free account for months before I even thought about it, and none of [the things I use AI for](/blog/how-i-actually-use-ai-as-a-teacher) need anything more.
 
 ## What paying gets you
 

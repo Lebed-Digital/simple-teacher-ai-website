@@ -22,7 +22,7 @@ For each kid I write down three or four quick fragments. Not sentences, just fra
 
 Then I paste those fragments in and type this: "Turn these notes into a report card comment for a third grade student. Keep it warm and specific, about three sentences, and do not add anything I did not mention. Match a tone a parent would find encouraging but honest." I do one student at a time so the comment stays tied to what I actually saw.
 
-I read every comment before it goes near a report card. Sometimes it comes back a little generic and I fix it. But almost always it words the whole comment better than I would have. Either way the details came from me, so it is still about that kid.
+I read every comment before it goes near a report card. Sometimes it comes back a little generic and I fix it. But almost always it words the whole comment better than I would have. Either way the details came from me, so it is still about that kid. If you would rather put no student details in at all, build a [report card comment bank with no student data](/ideas/a-report-card-comment-bank-no-student-data-needed) first and tweak from there.
 
 ## Why this works better than writing from scratch
 
