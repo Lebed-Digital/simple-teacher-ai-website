@@ -2,7 +2,7 @@
   "name": "Simple Teacher AI: tested AI ideas for teachers",
   "home_page_url": "https://www.simpleteacherai.com/ideas",
   "description": "Practical AI use cases for K-12 teachers. Each prompt was run on a sample classroom and checked by hand. The verdict says what happened.",
-  "updated": "2026-11-21",
+  "updated": "2026-11-28",
   "privacy": "Never put student names or identifying details into an AI tool. Use your district-approved tool.",
   "items": [
     {
@@ -1284,6 +1284,238 @@
         }
       ],
       "date": "2026-11-21"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/readers-theater-scripts",
+      "title": "Readers theater scripts from the text you're already teaching",
+      "category": "Planning",
+      "grades": "2-5",
+      "tool": "Any chatbot",
+      "takes_about": "5 min, plus 5 min to check the facts",
+      "tested": true,
+      "verdict": "Works after a fix",
+      "verdict_detail": "works after a fix",
+      "prompt": "Turn this text into a readers theater script for my [grade] class: [paste the text]. Make [5] speaking parts, including a narrator. Use only facts from the text I pasted: don't add any new facts. Write it as people talking to each other: when one part says a surprising fact, a different part reacts or asks a question (\"Wait, really?\" \"How?\"), and a reaction never adds a fact. Give every part about the same number of lines, and keep each part's total words close: no part should have more than about twice the words of another. Give each part at least one line with a feeling to act out, like surprise or worry. Keep the words at the reading level of the text. Then make a table with one row per part showing how many lines it has and how many words. Finally, list every fact from the text that you left out.",
+      "why_it_works": "Readers theater is fluency practice kids want to reread, and rereading is the point.",
+      "sources": [
+        {
+          "title": "Reading Rockets, Readers Theater",
+          "url": "https://www.readingrockets.org/classroom/classroom-strategies/readers-theater"
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/analogies-for-teaching-science",
+      "title": "Analogies for teaching science, and where each one breaks",
+      "category": "Planning",
+      "grades": "6-12",
+      "tool": "Any chatbot",
+      "takes_about": "5 min, plus 5 min to check the science",
+      "tested": true,
+      "verdict": "Works after a fix",
+      "verdict_detail": "works after a fix",
+      "prompt": "I'm teaching [concept] to my [grade] [subject] class. Give me 3 analogies that compare it to something my students already know from everyday life, like [an interest or place]. For each one, make a table that matches each part of the analogy to the real science part. Then say exactly where the analogy breaks down: what a student might wrongly believe if they take it too far, and one sentence I can say to head that off. Write that sentence in words a [grade] student already knows, and don't use a science term we haven't covered unless you explain it. Check every science fact yourself and keep it accurate for [grade]. Tell me which of the 3 you'd use first and why.",
+      "why_it_works": "A good analogy gives students something to hang a hard idea on. A careless one plants a misconception that lasts for years.",
+      "sources": [
+        {
+          "title": "BOLD, How can analogies promote learning? (on Gray and Holyoak's research)",
+          "url": "https://boldscience.org/how-can-analogies-promote-learning/"
+        },
+        {
+          "title": "USC Viterbi STEM Education Research Group, Teaching with Analogies",
+          "url": "https://stem-ed.usc.edu/?p=2670"
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/station-rotation-plan",
+      "title": "Station rotation plan from one learning goal, with the materials math done",
+      "category": "Planning",
+      "grades": "6-12",
+      "tool": "Any chatbot",
+      "takes_about": "10 min, plus 5 min to check the timing and materials",
+      "tested": true,
+      "verdict": "Works after a fix",
+      "verdict_detail": "works after a fix (it took two)",
+      "prompt": "Plan a station rotation for my [grade] [subject] class on this learning goal: [goal]. I have [number] students, a [length]-minute period, and these materials: [list, with how many of each]. Break the goal into [4] smaller skills, one per station, and include one station where I work with a small group. Each station has to work no matter which station a group starts at. If a station would need results from another station (like a mass measured somewhere else), change the plan so it doesn't. At least one station must have students [do the real skill on something they measure or make themselves, at that station]. For each station, give the task, the materials and how many of each it needs per group, the directions to post at the station in student-friendly words, and what students turn in or show. Make the timing fit my period, including 2 minutes for each move between stations. Then make a table: one row per station, with group size, minutes, and materials needed, and count every material used by all the stations at the same time, and check that the total never goes over what I have. If my materials or time don't fit the plan, tell me before giving it.",
+      "why_it_works": "Stations let a small set of equipment serve a whole class: one high school teacher in an Edutopia video needed six microscopes instead of twenty.",
+      "sources": [
+        {
+          "title": "Edutopia, Helping Teens Build Skills Through Station Rotation (video, January 2026)",
+          "url": "https://www.edutopia.org/video/station-rotation-helping-teens-build-skills/"
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/sentence-combining-exercises",
+      "title": "Sentence combining exercises from your own unit",
+      "category": "Planning",
+      "grades": "4-10",
+      "tool": "Any chatbot",
+      "takes_about": "5 min, plus 5 min to check the facts and commas",
+      "tested": true,
+      "verdict": "Works after a fix",
+      "verdict_detail": "works after a fix",
+      "prompt": "Make [8] sentence-combining exercises for my [grade] class. Use sentences about [topic], a unit we're in. Each exercise has 2 or 3 short sentences to combine into one, and each of the last 3 exercises has 3. Make them get harder: start with joining words like and, but, and so, then because, when, and although, then phrases like \"which\" clauses and a describing phrase set off by commas. Make sure each joining word fits the meaning: use but or although only when the ideas really contrast. For each exercise, give 2 different correct combined sentences and name the joining word or structure each uses. Keep every fact the same: a combined sentence can't add, drop, or change a fact. Use only facts you are sure are true. Then make a table with the exercise number, the skill, and every fact in the short sentences, so I can check that each answer kept all of them.",
+      "why_it_works": "Writing Next, a review of writing research for grades 4-12, found that sentence combining improved the quality of students' writing and worked better than traditional grammar lessons.",
+      "sources": [
+        {
+          "title": "Carnegie Corporation of New York, Writing Next (Graham and Perin, 2007)",
+          "url": "https://www.carnegie.org/publications/writing-next-effective-strategies-to-improve-writing-of-adolescents-in-middle-and-high-schools/"
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/standards-alignment-check",
+      "title": "Standards alignment check: does your lesson make students do what the standard says?",
+      "category": "Planning",
+      "grades": "3-12",
+      "tool": "Any chatbot, or Align to Standards in Microsoft Teach",
+      "takes_about": "5 min",
+      "tested": true,
+      "verdict": "Worked first try",
+      "verdict_detail": "worked first try",
+      "prompt": "Here is the standard I'm teaching, word for word: [paste the standard]. Here is my lesson: [paste the lesson plan]. Break the standard into each separate thing it asks students to do. Make a table: one row per part, the exact words from the standard, where my lesson has students do it (quote the lesson), and whether it's fully covered, partly covered, or missing. Don't count it covered just because the lesson mentions the topic: students have to do the thinking the standard's verb asks for. If my lesson already covers the standard, say that first. Then suggest the smallest change that would cover each missing part.",
+      "why_it_works": "A lesson can be \"about\" a standard without asking students to do it. If the standard says \"analyze data\" and students copy notes, the verb is missing.",
+      "sources": [
+        {
+          "title": "Microsoft Education Blog, What's New in Microsoft EDU, October 2026",
+          "url": "https://techcommunity.microsoft.com/blog/educationblog/whats-new-in-microsoft-edu-%E2%80%93-october-2026/4516290"
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/accessible-worksheet-check",
+      "title": "Accessible worksheet check: what makes this page hard to read or use?",
+      "category": "Differentiation",
+      "grades": "K-12",
+      "tool": "Any chatbot",
+      "takes_about": "5 min, plus time to run its checks on the real file",
+      "tested": true,
+      "verdict": "Worked first try",
+      "verdict_detail": "worked first try",
+      "prompt": "Here is the text of a worksheet for my [grade] class, with notes in brackets about how it looks: [paste the text, and describe the fonts, layout, colors, and pictures in brackets]. Check it for things that make it hard for some students to read or use: long or tangled directions, more than one task in a step, small or decorative fonts, a crowded layout, too little space to write, important information shown only by color or a picture, reading level above the grade, and anything a screen reader would miss. If it already works, say that first. List every problem you find, most important first, quoting the part and labeling each one \"blocks some students\" or \"small improvement.\" Then rewrite the directions only, keeping my tasks and questions word for word, and list every change you made. Finally, list the checks I should run on the real file myself, since you can't see it (like color contrast, reading order, and how a screen reader reads it).",
+      "why_it_works": "Universal Design for Learning asks you to plan for the students who'd struggle with the page before they meet it: font, size, spacing, and color used to carry information all matter.",
+      "sources": [
+        {
+          "title": "CAST, UDL Guidelines 3.0: Support opportunities to customize the display of information",
+          "url": "https://udlguidelines.cast.org/representation/perception/customize-display/"
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/peer-feedback-form",
+      "title": "Peer feedback form with sentence starters tied to your rubric",
+      "category": "Feedback",
+      "grades": "6-12",
+      "tool": "Any chatbot",
+      "takes_about": "5 min",
+      "tested": true,
+      "verdict": "Works after a fix",
+      "verdict_detail": "works after a fix",
+      "prompt": "Make a peer feedback form for my [grade] students who are trading drafts of this assignment: [assignment]. Here's my rubric: [paste the rubric criteria]. For each rubric criterion, give 2 sentence starters in words a [grade] student would really use: one that tells the writer what a reader noticed or where they got confused at a specific spot (like \"In paragraph 2, I got confused when...\"), and one that suggests a next step for that spot. Add a box to write the line or paragraph they mean. No starters that only praise, like \"Good job.\" Add a short \"how to give feedback\" section on top in student words, and one finished example of a helpful comment and an unhelpful one about the same spot. Fit it on one page.",
+      "why_it_works": "Peer feedback falls flat when kids don't know what to say, so they write \"good job.\" Starters that point to a spot in the draft give them something real to say, and pairing \"what I noticed\" with \"what you could try\" gives the writer a next step.",
+      "sources": [
+        {
+          "title": "Edutopia, Teaching Kids to Give and Receive Quality Peer Feedback",
+          "url": "https://www.edutopia.org/article/teaching-kids-give-and-receive-quality-peer-feedback"
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/brag-sheet-recommendation-letter",
+      "title": "Brag sheet for recommendation letters: questions that get you real stories",
+      "category": "Feedback",
+      "grades": "11-12",
+      "tool": "Any chatbot",
+      "takes_about": "5 min",
+      "tested": true,
+      "verdict": "Worked first try",
+      "verdict_detail": "worked first try",
+      "prompt": "I'm a [grade] [subject] teacher and students are asking me for college recommendation letters. Write a one-page questionnaire (a brag sheet) for them to fill out before I write. Ask for specific moments from my class, not adjectives: a time they struggled and what they did, a project or assignment they're proud of and why, how they helped classmates, and anything outside class they want me to know. Include a line for each college's deadline and how the letter is submitted. Keep it to [8] questions or fewer, and write it to students in plain, friendly words. Don't ask about health, disability, religion, immigration status, or family finances, and add a note that they can leave out anything they'd rather not share. Then give me a short checklist for turning their answers into a letter.",
+      "why_it_works": "A recommendation letter lives or dies on one specific story, and students remember different moments than you do.",
+      "sources": [
+        {
+          "title": "Common App, Teacher Brag Sheet (student questionnaire, September 2026)",
+          "url": "https://www.commonapp.org/static/ed4c5a971117695c5feaf1c66b51ae8d/Teacher-Brag-Sheet.pdf"
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/literacy-centers-rotation-schedule",
+      "title": "Literacy centers rotation schedule for K-2, with picture-cue directions",
+      "category": "Classroom routines",
+      "grades": "K-2",
+      "tool": "Any chatbot",
+      "takes_about": "10 min, plus 5 min to check the schedule",
+      "tested": true,
+      "verdict": "Worked first try",
+      "verdict_detail": "worked first try",
+      "prompt": "Plan literacy centers for my [grade] class. I have [number] students in [number] groups of [size], a [length]-minute block, and these centers, with how many students each one fits: [list]. I meet with one group at my teacher table at a time. Make a rotation schedule so every group visits my table and every center once, no two groups are at the same place at the same time, and each rotation includes 1 minute to clean up and move. Show it as a table with rotations as rows and groups as columns, with start and end times. For each center, write the directions as 3 short steps a [grade] student can follow with picture cues (describe the picture for each step), plus what a student does when finished. If something in my setup doesn't fit, tell me before giving the plan. Then list what I need to teach before the first day of centers.",
+      "why_it_works": "Centers fall apart over logistics, not content: two groups at the listening center, or five kids for four headphones.",
+      "sources": [
+        {
+          "title": "Edutopia, 5 Tips for Creating Elementary Literacy Stations",
+          "url": "https://www.edutopia.org/article/creating-elementary-literacy-stations"
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/gemini-worksheet-google-doc",
+      "title": "Gemini now lets you preview and edit the file in the chat: a printable worksheet as a Google Doc",
+      "category": "Tools",
+      "grades": "K-12",
+      "tool": "Gemini app (school or personal account)",
+      "takes_about": "5 min, plus 5 min to work the problems",
+      "tested": true,
+      "verdict": "Worked first try",
+      "verdict_detail": "worked first try (we tested in a plain chat, not inside the Gemini app)",
+      "prompt": "Make a one-page practice worksheet as a document for my [grade] class on [skill]. Include a name and date line, [8] problems that start easy and get harder (the last 2 are word problems), space to show work under each, and an answer key on a separate page at the end. Solve every problem yourself and make sure each has exactly one answer, in simplest form. Write math as plain text, like 3/4. Use short numbered directions and no pictures. Then list the answers here in the chat too, so I can check them before I print.",
+      "why_it_works": "The copy-paste step is where worksheets used to break: math symbols turn into code and the spacing falls apart.",
+      "sources": [
+        {
+          "title": "Google Workspace Updates, Create, preview, and edit files directly in the Gemini app (October 29, 2026)",
+          "url": "https://workspaceupdates.googleblog.com/2026/10/create-preview-and-edit-files-directly-in-the-Gemini-app.html"
+        },
+        {
+          "title": "Google Workspace Updates, Move from conversation to creation with file generation in Gemini (April 27, 2026)",
+          "url": "https://workspaceupdates.googleblog.com/2026/04/move-from-conversation-to-creation-with-file-generation-in-Gemini.html"
+        }
+      ],
+      "date": "2026-11-28"
+    },
+    {
+      "url": "https://www.simpleteacherai.com/ideas/gemini-immersive-explorations-guide",
+      "title": "Gemini's immersive explorations: a question guide so students explore with a purpose",
+      "category": "Tools",
+      "grades": "6-12",
+      "tool": "Gemini app (student hub), plus any chatbot for the guide",
+      "takes_about": "15 min, including trying the exploration yourself",
+      "tested": true,
+      "verdict": "Works after a fix",
+      "verdict_detail": "works after a fix (we tested in a plain chat, not inside the Gemini app)",
+      "prompt": "My [grade] [subject] students are going to use [the exploration, e.g. Gemini's immersive exploration on the physics of lightning] for [15] minutes. I tried it myself first, and here are my notes on what students will see: [your notes, part by part]. Write a one-page exploration guide: 1 question to answer before they start (what do you already think?), 4 questions they can only answer by exploring, each naming the part of the exploration where they will find the answer, and 1 question after that connects back to [what we're learning]. For each question, give the answer I should expect, using only my notes and facts you're confident about. If a question or answer depends on something that isn't in my notes, say so. Keep the words at a [grade] reading level.",
+      "why_it_works": "Interactive scenes are easy to click through without learning anything.",
+      "sources": [
+        {
+          "title": "Google Workspace Updates, Immersive explorations now available in the Gemini app (October 28, 2026)",
+          "url": "https://workspaceupdates.googleblog.com/2026/10/immersive-explorations-now-available-in-the-Gemini-app.html"
+        },
+        {
+          "title": "Google, Designing responsible AI for learning (November 3, 2026)",
+          "url": "https://blog.google/products-and-platforms/products/education/ai-learning-era-updates-2026/"
+        }
+      ],
+      "date": "2026-11-28"
     }
   ]
 }

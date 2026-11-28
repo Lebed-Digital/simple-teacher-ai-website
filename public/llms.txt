@@ -85,4 +85,15 @@ Machine-readable feed with every prompt and test verdict: https://www.simpleteac
 - [Hour of AI is live: a 15-minute unplugged warm-up on how computers learn from examples](https://www.simpleteacherai.com/ideas/hour-of-ai-unplugged-activity): Students and AI, 3-8. Worked first try.
 - [Assign Copilot from a Teams assignment: write the starter prompt it needs](https://www.simpleteacherai.com/ideas/teams-assignment-copilot-starter-prompt): Students and AI, 7-12. Works after a fix.
 - [Your Gemini Gems are turning into skills. Tighten the instructions now.](https://www.simpleteacherai.com/ideas/gemini-gems-to-skills): Tools, K-12. Works after a fix.
+- [Readers theater scripts from the text you're already teaching](https://www.simpleteacherai.com/ideas/readers-theater-scripts): Planning, 2-5. Works after a fix.
+- [Analogies for teaching science, and where each one breaks](https://www.simpleteacherai.com/ideas/analogies-for-teaching-science): Planning, 6-12. Works after a fix.
+- [Station rotation plan from one learning goal, with the materials math done](https://www.simpleteacherai.com/ideas/station-rotation-plan): Planning, 6-12. Works after a fix.
+- [Sentence combining exercises from your own unit](https://www.simpleteacherai.com/ideas/sentence-combining-exercises): Planning, 4-10. Works after a fix.
+- [Standards alignment check: does your lesson make students do what the standard says?](https://www.simpleteacherai.com/ideas/standards-alignment-check): Planning, 3-12. Worked first try.
+- [Accessible worksheet check: what makes this page hard to read or use?](https://www.simpleteacherai.com/ideas/accessible-worksheet-check): Differentiation, K-12. Worked first try.
+- [Peer feedback form with sentence starters tied to your rubric](https://www.simpleteacherai.com/ideas/peer-feedback-form): Feedback, 6-12. Works after a fix.
+- [Brag sheet for recommendation letters: questions that get you real stories](https://www.simpleteacherai.com/ideas/brag-sheet-recommendation-letter): Feedback, 11-12. Worked first try.
+- [Literacy centers rotation schedule for K-2, with picture-cue directions](https://www.simpleteacherai.com/ideas/literacy-centers-rotation-schedule): Classroom routines, K-2. Worked first try.
+- [Gemini now lets you preview and edit the file in the chat: a printable worksheet as a Google Doc](https://www.simpleteacherai.com/ideas/gemini-worksheet-google-doc): Tools, K-12. Worked first try.
+- [Gemini's immersive explorations: a question guide so students explore with a purpose](https://www.simpleteacherai.com/ideas/gemini-immersive-explorations-guide): Tools, 6-12. Works after a fix.
 <!-- IDEAS:END -->
